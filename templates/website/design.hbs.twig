@@ -1,0 +1,17 @@
+{% extends '_layout.twig' %}
+
+{% block navigation %}
+    <bsi:include reference="navigation-Vp05IU"></bsi:include>
+{% endblock %}
+
+{% block logo %}
+    <bsi:include reference="logo-XeW2mK"></bsi:include>
+{% endblock %}
+
+{% block content %}
+    <bsi:include reference="{navigation.activePage.contentId}"></bsi:include>
+{% endblock %}
+
+{% block footer %}
+    <bsi:include reference="footer-nJDYZP"></bsi:include>
+{% endblock %}

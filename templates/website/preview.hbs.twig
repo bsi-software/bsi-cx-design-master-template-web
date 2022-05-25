@@ -1,0 +1,17 @@
+{% extends '_layout.twig' %}
+
+{% block navigation %}
+    {{ source('./includes/navigation/template.hbs')|raw }}
+{% endblock %}
+
+{% block logo %}
+    {% include './includes/logo/template.twig' %}
+{% endblock %}
+
+{% block content %}
+    {% include './includes/page/template.twig' %}
+{% endblock %}
+
+{% block footer %}
+    {% include './includes/footer/template.twig' %}
+{% endblock %}

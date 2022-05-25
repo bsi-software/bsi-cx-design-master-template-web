@@ -1,0 +1,22 @@
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+    {{#if navigation}}
+      <ul class="navbar-nav">
+        {{#each navigation.items as |lv1|}}
+          <li class="nav-item{{#if items}} dropdown{{/if}}">
+            {{#if lv1.folder}}
+              <a class="nav-link dropdown-toggle" href="#" id="nav-dropdown-{{lv1.id}}" role="button" data-bs-toggle="dropdown" aria-expanded="{{#if lv1.active}}true{{else}}false{{/if}}">{{lv1.title}}</a>
+            {{else}}
+              <a class="nav-link{{#if lv1.active}} active{{/if}}" {{#if lv1.active}}aria-current="page" {{/if}}href="{{lv1.url}}">{{lv1.title}}</a>
+            {{/if}}
+            {{#if items}}
+              <ul class="dropdown-menu" aria-labelledby="nav-dropdown-{{lv1.id}}">
+                {{#each lv1.items as |lv2|}}
+                  <li><a class="dropdown-item" href="{{lv2.url}}">Action</a></li>
+                {{/each}}
+              </ul>
+            {{/if}}
+          </li>
+        {{/each}}
+      </ul>
+    {{/if}}
+</div>

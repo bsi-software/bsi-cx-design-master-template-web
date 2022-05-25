@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BSI CX Master Template Website</title>
+        <link rel="icon" type="image/svg+xml" href="{{ bsi_cx_asset('./static/logo.svg') }}" sizes="any">
+
+        <meta charset="utf-8"/>
+        <meta content='maximum-scale=1.0, initial-scale=1.0, width=device-width' name='viewport'>
+        {# For more HTML head elements see: https://htmlhead.dev/ #}
+
+        {# Telephone numbers in the HTML code should not appear as hypertext links #}
+        <meta name="format-detection" content="telephone=no"/>
+
+        {# Delete if Google should show translations #}
+        <meta name="google" content="notranslate"/>
+
+        {# Style bundle capsuling all CSS #}
+        <link rel="stylesheet" href="{{ bsi_cx_css_href() }}"/>
+
+        {# Delete if Google reCAPTCHA is unused #}
+        <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+
+        <style>
+            {{ bsi_cx_css_inline() }}
+        </style>
+    </head>
+
+    <body class="d-flex flex-column min-vh-100">
+    {% apply spaceless %}
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <div class="navbar-brand">
+                    {% block logo %}{% endblock %}
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% block navigation %}{% endblock %}
+            </div>
+        </nav>
+
+        <div id="content" class="mb-4 flex-grow-1 d-flex flex-column">
+            {% block content %}{% endblock %}
+        </div>
+
+        {% block footer %}{% endblock %}
+
+    {% endapply %}
+    <script src="{{ bsi_cx_js_module_runtime_href() }}" data-bsi-remove-if="draft" defer="defer"></script>
+    {{ bsi_cx_js_module_missing_chunks_import() }}
+    </body>
+</html>

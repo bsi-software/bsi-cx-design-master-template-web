@@ -1,0 +1,17 @@
+@import '~@bsi-cx/design-standard-library/styles/styles.scss';
+
+/*
+ * Global styles that are independent from a specific content element
+ */
+
+.navbar-brand {
+  width: 60px;
+
+  figure {
+    margin: 0;
+
+    img {
+      margin: 0;
+    }
+  }
+}
