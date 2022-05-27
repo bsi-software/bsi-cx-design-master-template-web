@@ -1,49 +1,39 @@
 {
   "name": "@bsi-cx/design-master-template",
   "version": "1.0.0",
-  "description": "BSI CX master template for websites and landing pages.",
+  "description": "BSI CX master template for websites and landing pages",
   "scripts": {
     "build:dev": "webpack --config webpack.config.js --mode development --progress",
     "build:prod": "webpack --config webpack.config.js --mode production --progress",
     "watch": "webpack --config webpack.config.js --mode development --watch --progress"
   },
-  "license": "ISC",
+  "license": "MIT",
   "contributors": [
     {
       "name": "Yann Büchler",
-      "email": "yann.buechler@bsi-software.com",
       "url": "https://www.bsi-software.com/"
     },
     {
       "name": "Oliver Fabel",
-      "email": "oliver.fabel@bsi-software.com",
       "url": "https://www.bsi-software.com/"
     },
     {
       "name": "Lukas Heyer",
-      "email": "lukas.heyer@bsi-software.com",
       "url": "https://www.bsi-software.com/"
     },
     {
       "name": "Marleen Jattke",
-      "email": "marleen.jattke@bsi-software.com",
       "url": "https://www.bsi-software.com/"
     },
     {
       "name": "Lukas Steiger",
-      "email": "lukas.steiger@bsi-software.com",
       "url": "https://www.bsi-software.com/"
     }
   ],
   "dependencies": {
-    "@bsi-cx/design-standard-library": "github:bsi-software/bsi-cx-design-standard-library#semver:^1.0.0",
-    "alpinejs": "^3.9.1",
-    "bootstrap": "^5.1.3",
-    "bootstrap-icons": "^1.8.1",
-    "flatpickr": "^4.6.10"
+    "@bsi-cx/design-standard-library": "github:bsi-software/bsi-cx-design-standard-library#semver:^1.0.0"
   },
   "devDependencies": {
-    "@bsi-cx/design-build": "github:bsi-software/bsi-cx-design-build#semver:^1.0.0",
-    "file-loader": "^6.2.0"
+    "@bsi-cx/design-build": "github:bsi-software/bsi-cx-design-build#semver:^1.0.0"
   }
 }
