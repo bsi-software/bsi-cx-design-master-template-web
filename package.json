@@ -1,5 +1,5 @@
 {
-  "name": "@bsi-cx/design-master-template",
+  "name": "@bsi-cx/design-master-template-web",
   "version": "1.0.0",
   "description": "BSI CX master template for websites and landing pages",
   "scripts": {
@@ -31,7 +31,7 @@
     }
   ],
   "dependencies": {
-    "@bsi-cx/design-standard-library": "github:bsi-software/bsi-cx-design-standard-library#semver:^1.0.0"
+    "@bsi-cx/design-standard-library-web": "github:bsi-software/bsi-cx-design-standard-library-web#semver:^1.0.1"
   },
   "devDependencies": {
     "@bsi-cx/design-build": "github:bsi-software/bsi-cx-design-build#semver:^1.0.0"

@@ -1,1 +1,1 @@
-import '@bsi-cx/design-standard-library/core/main/index';
+import '@bsi-cx/design-standard-library-web/core/main/index';

@@ -1,6 +1,6 @@
 require('./styles.scss');
 
-const contentElement = require('@bsi-cx/design-standard-library/content-elements/base/banner/prototype');
+const contentElement = require('@bsi-cx/design-standard-library-web/content-elements/base/banner/prototype');
 
 module.exports = contentElement(
   require('./template.twig'),

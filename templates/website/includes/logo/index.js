@@ -12,4 +12,4 @@ module.exports = cx.include
     cx.dropzone
       .withDropzone('logo-dropzone-vBnV9R')
       .withMaxAllowedElements(1)
-      .withAllowedElements(require('../../content-elements/logo')));
+      .withAllowedElements(require('./../../../shared/content-elements/logo')));

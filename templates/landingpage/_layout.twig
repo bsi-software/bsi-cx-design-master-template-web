@@ -1,28 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>BSI CX Master Template Landingpage</title>
-        <link rel="icon" type="image/svg+xml" href="{{ bsi_cx_asset('./static/logo.svg') }}" sizes="any">
-
-        <meta charset="utf-8"/>
-        <meta content='maximum-scale=1.0, initial-scale=1.0, width=device-width' name='viewport'>
-        {# For more HTML head elements see: https://htmlhead.dev/ #}
-
-        {# Telephone numbers in the HTML code should not appear as hypertext links #}
-        <meta name="format-detection" content="telephone=no"/>
-
-        {# Delete if Google should show translations #}
-        <meta name="google" content="notranslate"/>
-
-        {# Style bundle capsuling all CSS #}
-        <link rel="stylesheet" href="{{ bsi_cx_css_href() }}"/>
-
-        {# Delete if Google reCAPTCHA is unused #}
-        <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
-
-        <style>
-            {{ bsi_cx_css_inline() }}
-        </style>
+        {% include  './../shared/html-header.twig' %}
     </head>
 
     <body class="d-flex flex-column min-vh-100">
@@ -31,19 +10,18 @@
             <div class="container">
                 <div class="navbar-brand" data-bsi-dropzone="logo-dropzone-vBnV9R" data-bsi-dropzone-max-number-of-elements="1" data-bsi-dropzone-allowed-elements="logo-pm7eOT">
                     {% block logo %}
-                        {% include  './content-elements/logo/template.twig' %}
+                        {% include  './../shared/content-elements/logo/template.twig' %}
                     {% endblock %}
                 </div>
             </div>
         </nav>
         <div id="header" class="mb-5" data-bsi-dropzone="header-dropzone-JPzHJO" data-bsi-dropzone-max-number-of-elements="1" data-bsi-dropzone-allowed-elements="header-image-xC4085">
             {% block header %}
-                {% include './content-elements/header-image/template.twig' %}
+                {% include './../shared/content-elements/header-image/template.twig' %}
             {% endblock %}
         </div>
         <div id="content" class="mb-4 flex-grow-1 d-flex flex-column" data-bsi-dropzone="content-dropzone-r5vJUs" data-bsi-dropzone-allowed-elements="col-one-l2ZclN col-two-ILRIL0 col-three-MEOl1p col-four-yFAGKM spacer-jarY9b html-VN5KXz">
             {% block content %}
-                {% include '@bsi-cx/design-standard-library/content-elements/layout/col-one/template.twig' %}
             {% endblock %}
         </div>
         <div id="footer" data-bsi-dropzone="footer-dropzone-z8x25E" data-bsi-dropzone-max-number-of-elements="1" data-bsi-dropzone-allowed-elements="footer-nJDYZP">

@@ -4,12 +4,12 @@
 <div class="content">
     <div data-bsi-dropzone="{{ dropzoneHeaderId }}" class="mb-5">
         {% block header %}
-            {% include '../../content-elements/header-image/template.twig' %}
+            {% include './../../../shared/content-elements/header-image/template.twig' %}
         {% endblock %}
     </div>
     <div data-bsi-dropzone="{{ dropzoneContentId }}" class="flex-grow-1 d-flex flex-column">
         {% block main %}
-            {% include '@bsi-cx/design-standard-library/content-elements/layout/col-one/template.twig' %}
+            {% include '@bsi-cx/design-standard-library-web/content-elements/layout/col-one/template.twig' %}
         {% endblock %}
     </div>
 </div>

@@ -1,0 +1,23 @@
+<title>BSI CX Master Template</title>
+<link rel="icon" type="image/svg+xml" href="{{ bsi_cx_asset('./static/logo.svg') }}" sizes="any">
+
+<meta charset="utf-8"/>
+<meta content='maximum-scale=1.0, initial-scale=1.0, width=device-width' name='viewport'>
+
+{# For more HTML head elements see: https://htmlhead.dev/ #}
+
+{# Telephone numbers in the HTML code should not appear as hypertext links #}
+<meta name="format-detection" content="telephone=no"/>
+
+{# Delete if Google should show translations #}
+<meta name="google" content="notranslate"/>
+
+{# Style bundle capsuling all CSS #}
+<link rel="stylesheet" href="{{ bsi_cx_css_href() }}"/>
+
+{# Delete if Google reCAPTCHA is unused #}
+<script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+
+<style>
+    {{ bsi_cx_css_inline() }}
+</style>

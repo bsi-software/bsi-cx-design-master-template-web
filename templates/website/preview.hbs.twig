@@ -1,5 +1,10 @@
 {% extends '_layout.twig' %}
 
+{% set colOneContentElements = [ 'base/h1','base/text','base/button'] %}
+{% set colThreeContentElements = [ 'base/card'] %}
+{% set formElements = [ 'base/h2', 'form/form-field', 'form/text-area', 'form/checkbox'] %}
+
+
 {% block navigation %}
     {{ source('./includes/navigation/template.hbs')|raw }}
 {% endblock %}
@@ -10,6 +15,59 @@
 
 {% block content %}
     {% include './includes/page/template.twig' %}
+
+    {% block main %}
+
+        {% embed '@bsi-cx/design-standard-library-web/content-elements/layout/col-one/template.twig' %}
+            {% block col_one_dropzone %}
+
+                {% for element in colOneContentElements %}
+                    {% include '@bsi-cx/design-standard-library-web/content-elements/' ~ element ~ '/template.twig' %}
+                {% endfor %}
+
+                {% include '@bsi-cx/design-standard-library-web/content-elements/layout/spacer/template.twig' %}
+
+                {% embed '@bsi-cx/design-standard-library-web/content-elements/form/form-container/template.twig' %}
+                    {% block form_container_dropzone %}
+
+                        {% for element in formElements %}
+                            {% include '@bsi-cx/design-standard-library-web/content-elements/' ~ element ~ '/template.twig' %}
+                        {% endfor %}
+
+                    {% endblock %}
+                {% endembed %}
+
+                {% include '@bsi-cx/design-standard-library-web/content-elements/layout/spacer/template.twig' %}
+
+            {% endblock %}
+        {% endembed %}
+
+        {% embed '@bsi-cx/design-standard-library-web/content-elements/layout/col-three/template.twig' %}
+            {% block col_three_dropzone_1 %}
+
+                {% for element in colThreeContentElements %}
+                    {% include '@bsi-cx/design-standard-library-web/content-elements/' ~ element ~ '/template.twig' %}
+                {% endfor %}
+
+            {% endblock %}
+            {% block col_three_dropzone_2 %}
+
+                {% for element in colThreeContentElements %}
+                    {% include '@bsi-cx/design-standard-library-web/content-elements/' ~ element ~ '/template.twig' %}
+                {% endfor %}
+
+            {% endblock %}
+            {% block col_three_dropzone_3 %}
+
+                {% for element in colThreeContentElements %}
+                    {% include '@bsi-cx/design-standard-library-web/content-elements/' ~ element ~ '/template.twig' %}
+                {% endfor %}
+
+            {% endblock %}
+        {% endembed %}
+
+    {% endblock %}
+
 {% endblock %}
 
 {% block footer %}

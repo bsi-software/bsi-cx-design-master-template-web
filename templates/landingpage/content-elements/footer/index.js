@@ -1,5 +1,5 @@
 const {cx, Icon} = require('@bsi-cx/design-build');
-const {layoutElements} = require('@bsi-cx/design-standard-library/content-elements/layout/');
+const {layoutElements} = require('@bsi-cx/design-standard-library-web/content-elements/layout/');
 
 /**
  * @returns {ContentElement}
