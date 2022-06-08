@@ -7,7 +7,9 @@ module.exports = contentElement(
   'logo-pm7eOT',
   'Logo',
   'logo-part-image-1rKWxD',
-  'Logo image',
+  /*'Logo image',*/
+  'Logo Bild',
   'logo-part-text-ySZsrw',
-  'Logo text'
+  /*'Logo text'*/
+  'Logo Text'
 ).withStyleConfigs();

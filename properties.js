@@ -33,4 +33,6 @@ module.exports = {
   gridBreakpointXL: '1200px',
   gridBreakpointXXL: '1400px',
 
+  // Allowed values: de, en
+  language: 'de'
 }

@@ -27,14 +27,16 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/layout/spacer')),
     cx.contentElementGroup
       .withGroupId('headings-J9rRcv')
-      .withLabel('Headings')
+      /*.withLabel('Headings')*/
+      .withLabel('Überschriften')
       .withContentElements(
         require('@bsi-cx/design-standard-library-web/content-elements/base/h1'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/h2'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/h3')),
     cx.contentElementGroup
       .withGroupId('content-JFLFHv')
-      .withLabel('Content')
+      /*.withLabel('Content')*/
+      .withLabel('Inhalt')
       .withContentElements(
         require('@bsi-cx/design-standard-library-web/content-elements/base/text'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/figure'),
@@ -50,7 +52,8 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/base/html')),
     cx.contentElementGroup
       .withGroupId('forms-NjbmnQ')
-      .withLabel('Forms')
+      /*.withLabel('Forms')*/
+      .withLabel('Formular')
       .withContentElements(
         require('@bsi-cx/design-standard-library-web/content-elements/form/form-container'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/multi-column'),
