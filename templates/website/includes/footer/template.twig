@@ -1,5 +1,10 @@
-{% set dropzoneId = dropzoneId ?: 'footer-dropzone-rR98ys' %}
+{% apply spaceless %}
+    {% set footerColor = (footerColor ?: properties.footerColor) ?: 'bg-dark' %}
+    {% set footerGradient = (footerGradient ?: properties.footerGradient) ?: 'bg-gradient' %}
+    {% set dropzoneId = dropzoneId ?: 'footer-dropzone-rR98ys' %}
 
-<div class="d-block bg-primary bg-gradient text-light pt-5 pb-4" data-bsi-dropzone="{{ dropzoneId }}">
-    {% include '@bsi-cx/design-standard-library-web/content-elements/layout/col-two/template.twig' %}
-</div>
+    <div class="d-block {{ footerColor }} {{ footerGradient }} pt-5 pb-5" data-bsi-dropzone="{{ dropzoneId }}">
+        {% block footer_element %}
+        {% endblock %}
+    </div>
+{% endapply %}

@@ -1,3 +1,3 @@
 @use '~@bsi-cx/design-standard-library-web/content-elements/base/banner/prototype/styles.scss' as element;
 
-@include element.styles('header-image-xC4085', bsiProperty('primaryColor', #2F4E66), bsiProperty('secondaryColor', #93C120), bsiProperty('darkColor', #000000), bsiProperty('lightColor', #ffffff));
+@include element.styles('header-image-xC4085', bsiProperty('primaryColor', #2F4E66), bsiProperty('secondaryColor', #93C120), bsiProperty('darkColor', #000000), bsiProperty('lightColor', #ffffff), bsiProperty('headerImageHeight', 400px));

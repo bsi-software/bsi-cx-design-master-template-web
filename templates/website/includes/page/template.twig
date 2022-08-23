@@ -1,15 +1,17 @@
-{% set dropzoneHeaderId = dropzoneHeaderId ?: 'page-header-dropzone-TgF6e2' %}
-{% set dropzoneContentId = dropzoneContentId ?: 'page-content-dropzone-JPzHJO' %}
+{% apply spaceless %}
+    {% set dropzoneHeaderId = dropzoneHeaderId ?: 'page-header-dropzone-TgF6e2' %}
+    {% set dropzoneContentId = dropzoneContentId ?: 'page-content-dropzone-JPzHJO' %}
 
-<div class="content">
-    <div data-bsi-dropzone="{{ dropzoneHeaderId }}" class="mb-5">
-        {% block header %}
-            {% include './../../../shared/content-elements/header-image/template.twig' %}
-        {% endblock %}
+    <div class="content">
+        <div data-bsi-dropzone="{{ dropzoneHeaderId }}" class="mb-5">
+            {% block header %}
+                {% include './../../../shared/content-elements/header-image/template.twig' %}
+            {% endblock %}
+        </div>
+        <div data-bsi-dropzone="{{ dropzoneContentId }}" class="flex-grow-1 d-flex flex-column">
+            {% block main %}
+                {% include '@bsi-cx/design-standard-library-web/content-elements/layout/col-one/template.twig' %}
+            {% endblock %}
+        </div>
     </div>
-    <div data-bsi-dropzone="{{ dropzoneContentId }}" class="flex-grow-1 d-flex flex-column">
-        {% block main %}
-            {% include '@bsi-cx/design-standard-library-web/content-elements/layout/col-one/template.twig' %}
-        {% endblock %}
-    </div>
-</div>
+{% endapply %}

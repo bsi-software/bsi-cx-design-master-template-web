@@ -1,7 +1,16 @@
 {% apply spaceless %}
-
-    {% import '@bsi-cx/design-standard-library-web/content-elements/base/banner/prototype/template.twig' as element %}
-
-    {{ element.render('header-image-xC4085', 'header-image-dropzone-Dt5Gll', 'header-image-part-MHZ8Gp', bsi_cx_asset('../../static/header.jpg')) }}
-
+    {% embed '@bsi-cx/design-standard-library-web/content-elements/base/banner/prototype/template.twig' with {
+        elementId: 'header-image-xC4085',
+        dropzoneId: 'header-image-dropzone-Dt5Gll',
+        imagePartId: 'header-image-part-MHZ8Gp',
+        imageSrc: bsi_cx_asset('../../static/header.png')
+    } %}
+        {% block banner_dropzone %}
+            {% include '@bsi-cx/design-standard-library-web/content-elements/base/h1/template.twig' with {
+                text: 'Master Template',
+                color: 'bsi-text-light',
+                style: 'display-1'
+            } only %}
+        {% endblock %}
+    {% endembed %}
 {% endapply %}

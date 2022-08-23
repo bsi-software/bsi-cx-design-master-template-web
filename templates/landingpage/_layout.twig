@@ -8,7 +8,7 @@
     <body class="d-flex flex-column min-vh-100">
     {% apply spaceless %}
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
+            <div class="container {{ properties.logoAlignment }}">
                 <div class="navbar-brand" data-bsi-dropzone="logo-dropzone-vBnV9R" data-bsi-dropzone-max-number-of-elements="1" data-bsi-dropzone-allowed-elements="logo-pm7eOT">
                     {% block logo %}
                         {% include  './../shared/content-elements/logo/template.twig' %}
@@ -16,7 +16,7 @@
                 </div>
             </div>
         </nav>
-        <div id="header" class="mb-5" data-bsi-dropzone="header-dropzone-JPzHJO" data-bsi-dropzone-max-number-of-elements="1" data-bsi-dropzone-allowed-elements="header-image-xC4085">
+        <div id="header" class="mb-4" data-bsi-dropzone="header-dropzone-JPzHJO" data-bsi-dropzone-max-number-of-elements="1" data-bsi-dropzone-allowed-elements="header-image-xC4085">
             {% block header %}
                 {% include './../shared/content-elements/header-image/template.twig' %}
             {% endblock %}
@@ -26,9 +26,19 @@
             {% endblock %}
         </div>
         <div id="footer" data-bsi-dropzone="footer-dropzone-z8x25E" data-bsi-dropzone-max-number-of-elements="1" data-bsi-dropzone-allowed-elements="footer-nJDYZP">
-            {% block footer %}
-                {% include './content-elements/footer/template.twig' %}
-            {% endblock %}
+            {% embed './content-elements/footer/template.twig' %}
+                {% block footer %}
+                    {% embed '@bsi-cx/design-standard-library-web/content-elements/layout/col-one/template.twig' with {
+                    colOneAlignment: 'bsi-col-align-center'
+                    } %}
+                        {% block col_one_dropzone %}
+                            {% include '@bsi-cx/design-standard-library-web/content-elements/base/social-media-follow/template.twig' with {
+                                iconColor: 'bsi-icon-color-light'
+                            } only %}
+                        {% endblock %}
+                    {% endembed %}
+                {% endblock %}
+            {% endembed %}
         </div>
     {% endapply %}
 

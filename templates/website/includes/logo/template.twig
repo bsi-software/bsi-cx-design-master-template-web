@@ -1,5 +1,7 @@
-{% set dropzoneId = dropzoneId ?: 'logo-dropzone-vBnV9R' %}
+{% apply spaceless %}
+    {% set dropzoneId = dropzoneId ?: 'logo-dropzone-vBnV9R' %}
 
-<div data-bsi-dropzone="{{ dropzoneId }}" class="logo">
-    {% include  './../../../shared/content-elements/logo/template.twig' %}
-</div>
+    <div data-bsi-dropzone="{{ dropzoneId }}" class="logo">
+        {% include  './../../../shared/content-elements/logo/template.twig' %}
+    </div>
+{% endapply %}

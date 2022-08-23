@@ -1,8 +1,11 @@
 {% extends '_layout.twig' %}
 
-{% set colOneContentElements = [ 'base/h1','base/text','base/button'] %}
+{% set colTwoLeftContentElements = [ 'base/h1', 'base/h2', 'base/h3', 'base/text', 'base/button'] %}
+{% set colTwoRightContentElements = [ 'base/figure'] %}
+{% set colOneContentElements = [ 'base/table', 'layout/spacer', 'base/news-snippet', 'layout/spacer', 'base/video', 'layout/spacer', 'base/social-media-share'] %}
+{% set formElements = [ 'base/h2', 'form/multi-column', 'form/form-field-tel', 'form/text-area', 'form/select', 'form/checkbox', 'form/radio'] %}
 {% set colThreeContentElements = [ 'base/card'] %}
-{% set formElements = [ 'base/h2', 'form/form-field', 'form/text-area', 'form/checkbox'] %}
+{% set colFourContentElements = [ 'base/figure'] %}
 
 
 {% block navigation %}
@@ -17,6 +20,25 @@
     {% include './includes/page/template.twig' %}
 
     {% block main %}
+
+        {% embed '@bsi-cx/design-standard-library-web/content-elements/layout/col-two/template.twig' %}
+            {% block col_two_dropzone_1 %}
+
+                {% for element in colTwoLeftContentElements %}
+                    {% include '@bsi-cx/design-standard-library-web/content-elements/' ~ element ~ '/template.twig' %}
+                {% endfor %}
+
+            {% endblock %}
+            {% block col_two_dropzone_2 %}
+
+                {% for element in colTwoRightContentElements %}
+                    {% include '@bsi-cx/design-standard-library-web/content-elements/' ~ element ~ '/template.twig' %}
+                {% endfor %}
+
+            {% endblock %}
+        {% endembed %}
+
+        {% include '@bsi-cx/design-standard-library-web/content-elements/layout/spacer/template.twig' %}
 
         {% embed '@bsi-cx/design-standard-library-web/content-elements/layout/col-one/template.twig' %}
             {% block col_one_dropzone %}
@@ -37,10 +59,10 @@
                     {% endblock %}
                 {% endembed %}
 
-                {% include '@bsi-cx/design-standard-library-web/content-elements/layout/spacer/template.twig' %}
-
             {% endblock %}
         {% endembed %}
+
+        {% include '@bsi-cx/design-standard-library-web/content-elements/layout/spacer/template.twig' %}
 
         {% embed '@bsi-cx/design-standard-library-web/content-elements/layout/col-three/template.twig' %}
             {% block col_three_dropzone_1 %}
@@ -66,10 +88,55 @@
             {% endblock %}
         {% endembed %}
 
+        {% include '@bsi-cx/design-standard-library-web/content-elements/layout/spacer/template.twig' %}
+
+        {% embed '@bsi-cx/design-standard-library-web/content-elements/layout/col-four/template.twig' %}
+            {% block col_four_dropzone_1 %}
+
+                {% for element in colFourContentElements %}
+                    {% include '@bsi-cx/design-standard-library-web/content-elements/' ~ element ~ '/template.twig' %}
+                {% endfor %}
+
+            {% endblock %}
+            {% block col_four_dropzone_2 %}
+
+                {% for element in colFourContentElements %}
+                    {% include '@bsi-cx/design-standard-library-web/content-elements/' ~ element ~ '/template.twig' %}
+                {% endfor %}
+
+            {% endblock %}
+            {% block col_four_dropzone_3 %}
+
+                {% for element in colFourContentElements %}
+                    {% include '@bsi-cx/design-standard-library-web/content-elements/' ~ element ~ '/template.twig' %}
+                {% endfor %}
+
+            {% endblock %}
+            {% block col_four_dropzone_4 %}
+
+                {% for element in colFourContentElements %}
+                    {% include '@bsi-cx/design-standard-library-web/content-elements/' ~ element ~ '/template.twig' %}
+                {% endfor %}
+
+            {% endblock %}
+        {% endembed %}
+
     {% endblock %}
 
 {% endblock %}
 
 {% block footer %}
-    {% include './includes/footer/template.twig' %}
+    {% embed './includes/footer/template.twig' %}
+        {% block footer_element %}
+            {% embed '@bsi-cx/design-standard-library-web/content-elements/layout/col-one/template.twig' with {
+                colOneAlignment: 'bsi-col-align-center'
+            } %}
+                {% block col_one_dropzone %}
+                    {% include '@bsi-cx/design-standard-library-web/content-elements/base/social-media-follow/template.twig' with {
+                        iconColor: 'bsi-icon-color-light'
+                    } only %}
+                {% endblock %}
+            {% endembed %}
+        {% endblock %}
+    {% endembed %}
 {% endblock %}

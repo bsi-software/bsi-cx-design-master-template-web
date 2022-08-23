@@ -2,14 +2,286 @@ const {css} = require('@bsi-cx/design-build');
 
 module.exports = {
 
-  // Colors:
-  primaryColor: css.color('#2F4E66'),
-  secondaryColor: css.color('#93C120'),
+  /* ============================================================= */
+  /*	                           Colors	                           */
+  /* ============================================================= */
+
+  primaryColor: css.color('#16616d'),
+  secondaryColor: css.color('#ff7d00'),
   darkColor: css.color('#383e42'),
   lightColor: css.color('#ffffff'),
   infoColor: css.color('#6c757d'),
 
-  // Chart colors:
+
+  /* ============================================================= */
+  /*	                           Fonts	                           */
+  /* ============================================================= */
+
+  // List for web safe CSS fonts: https://www.cssfontstack.com/
+  // List for choosing fallback fonts: https://help.campaignmonitor.com/email-builder-font-compatibility
+
+  // Elements using primaryFontFamily: all elements that do not explicitly have another font assigned to them
+  // To change the font family of the following elements, please scroll down and adjust it there: title H1-H3, text
+  primaryFontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
+
+
+  /* ============================================================= */
+  /*	                      Grid breakpoint	                       */
+  /* ============================================================= */
+
+  // In the CX content editor, a content is 940px wide in desktop view. The grid breakpoint LG was adapted to this.
+  gridBreakpointXS: 0,
+  gridBreakpointSM: '576px',
+  gridBreakpointMD: '768px',
+  gridBreakpointLG: '940px',
+  gridBreakpointXL: '1200px',
+  gridBreakpointXXL: '1400px',
+
+
+  /* ============================================================= */
+  /*	                          Language	                         */
+  /* ============================================================= */
+
+  // Allowed values: de, en
+  language: 'de',
+
+
+
+  /* ============================================================= */
+  /* ============================================================= */
+  /*              Content elements - Master Template               */
+  /* ============================================================= */
+  /* ============================================================= */
+
+
+
+  /* ============================================================= */
+  /*	                            Logo   	                         */
+  /* ============================================================= */
+
+  /* ----------------------- Logo alignment ---------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Align left: 'bsi-logo-align-left'
+  // Align right: 'bsi-logo-align-right'
+  logoAlignment: 'bsi-logo-align-left',
+
+  /* ------------------------- Logo width ------------------------ */
+  logoWidth: '60px',
+
+
+  /* ============================================================= */
+  /*	                        Header image	                       */
+  /* ============================================================= */
+
+  /* -------------------- Header image height -------------------- */
+  headerImageHeight: '400px',
+
+
+  /* ============================================================= */
+  /*	                           Footer 	                         */
+  /* ============================================================= */
+
+  /* ------------------------ Footer color ----------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Primary color: 'bg-primary'
+  // Secondary color: 'bg-secondary'
+  // Dark: 'bg-dark'
+  // Light: 'bg-light'
+  footerColor: 'bg-dark',
+
+  /* ---------------------- Footer gradient ---------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Don`t show background gradient: 'default'
+  // Show background gradient: 'bg-gradient'
+  footerGradient: 'bg-gradient',
+
+
+  /* ============================================================= */
+  /* ============================================================= */
+  /*              Content elements - Standard Library              */
+  /* ============================================================= */
+  /* ============================================================= */
+
+
+
+  /* ============================================================= */
+  /*	                           Button	                           */
+  /* ============================================================= */
+
+  /* ------------------------- Button text ----------------------- */
+  buttonText: 'Read more',
+
+  /* ------------------------ Button color ----------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Primary color: 'bsi-btn-color-primary'
+  // Secondary color: 'bsi-btn-color-secondary'
+  // Dark: 'bsi-btn-color-dark'
+  // Light: 'bsi-btn-color-light'
+  buttonColor: 'bsi-btn-color-primary',
+
+  /* ----------------------- Button layout ---------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Filled: 'bsi-btn-filled'
+  // Outline: 'bsi-btn-outline'
+  buttonLayout: 'bsi-btn-filled',
+
+  /* ------------------------ Button size ----------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Small: 'bsi-btn-size-sm'
+  // Medium: 'bsi-btn-size-md'
+  // Large: 'bsi-btn-size-lg'
+  buttonSize: 'bsi-btn-size-md',
+
+  /* ------------------------ Button width ----------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Default: 'bsi-btn-width-default'
+  // Wide: 'bsi-btn-width-wide'
+  buttonWidth: 'bsi-btn-width-default',
+
+  /* -------------------- Button border radius ------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Sharp corners: 'bsi-corner-sharp'
+  // Rounded corners: 'bsi-corner-rounded'
+  buttonBorderRadius: 'bsi-corner-rounded',
+
+  /* ---------------------- Button letter case ------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Default: 'bsi-btn-letter-default'
+  // All uppercase: 'bsi-btn-letter-uppercase'
+  buttonLetterCase: 'bsi-btn-letter-default',
+
+
+  /* ============================================================= */
+  /*	                       Title H1 - H3	                       */
+  /* ============================================================= */
+
+  /* ------------------------- Title text ------------------------ */
+  // If no text is selected, lorem ipsum sample text is used.
+  titleH1Text: '',
+  titleH2Text: '',
+  titleH3Text: '',
+
+  /* --------------------- Title font family --------------------- */
+  titleH1FontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
+  titleH2FontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
+  titleH3FontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
+
+  /* ---------------------- Title font size ---------------------- */
+  titleH1FontSize: '2.5rem',
+  titleH2FontSize: '2rem',
+  titleH3FontSize: '1.75rem',
+
+  /* ------------------------- Title color ----------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Primary color: 'bsi-text-primary-color'
+  // Secondary color: 'bsi-text-secondary-color'
+  // Dark: 'bsi-text-dark'
+  // Light: 'bsi-text-light'
+  titleH1Color: 'bsi-text-primary-color',
+  titleH2Color: 'bsi-text-primary-color',
+  titleH3Color: 'bsi-text-primary-color',
+
+  /* ------------------------- Title style ------------------------ */
+  // From the following choices, select the value that you want to be preselected:
+  // Regular: 'bsi-default'
+  // Large: 'display-1'
+  titleH1Style: 'bsi-default',
+  titleH2Style: 'bsi-default',
+  titleH3Style: 'bsi-default',
+
+
+  /* ============================================================= */
+  /*	                            Text 	                           */
+  /* ============================================================= */
+
+  /* ------------------------ Text content ----------------------- */
+  // If no text is selected, lorem ipsum sample text is used.
+  textContent: '',
+
+  /* --------------------- Text font family --------------------- */
+  textFontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
+
+  /* ------------------------ Text color ------------------------ */
+  textColor: css.color('#383e42'),
+
+  /* ---------------------- Text font size ---------------------- */
+  textFontSize: '16px',
+
+
+  /* ============================================================= */
+  /*	                     Social Media Follow	                   */
+  /* ============================================================= */
+
+  /* ------------------------- Icon color ------------------------ */
+  // From the following choices, select the value that you want to be preselected:
+  // Primary color: 'bsi-icon-color-primary'
+  // Secondary color: 'bsi-icon-color-secondary'
+  // Dark: 'bsi-icon-color-dark'
+  // Light: 'bsi-icon-color-light'
+  followIconColor: 'bsi-icon-color-primary',
+
+  /* ---------------------- Icon hover color --------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Primary color: 'bsi-icon-hover-color-primary'
+  // Secondary color: 'bsi-icon-hover-color-secondary'
+  // Dark: 'bsi-icon-hover-color-dark'
+  // Light: 'bsi-icon-hover-color-light'
+  followIconHoverColor: 'bsi-icon-hover-color-secondary',
+
+  /* ------------------------- Icon size ------------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Small: 'bsi-icon-size-small'
+  // Medium: 'bsi-icon-size-medium'
+  // Large: 'bsi-icon-size-large'
+  followIconSize: 'bsi-icon-size-medium',
+
+  /* -------------------- Social Media URLs ---------------------- */
+  followLinkedinURL: "https://www.linkedin.com/",
+  followXingURL: "https://www.xing.com/",
+  followTwitterURL: "https://www.twitter.com/",
+  followFacebookURL: "https://www.facebook.com/",
+  followYoutubeURL: "https://www.youtube.com/",
+  followInstagramURL: "https://www.instagram.com/",
+  followKununuURL: "https://www.kununu.com/",
+  followWhatsappURL: "https://api.whatsapp.com/",
+  followPinterestURL: "https://www.pinterest.com/",
+  followSnapchatURL: "https://www.snapchat.com/",
+
+  /* ------------------------- Hide icons ------------------------- */
+  followLinkedinHidden: false,
+  followXingHidden: false,
+  followTwitterHidden: false,
+  followFacebookHidden: false,
+  followYoutubeHidden: false,
+  followInstagramHidden: false,
+  followKununuHidden: false,
+  followWhatsappHidden: true,
+  followPinterestHidden: true,
+  followSnapchatHidden: true,
+
+
+  /* ============================================================= */
+  /*	                           Banner 	                         */
+  /* ============================================================= */
+
+  /* ----------------------- Banner height ----------------------- */
+  bannerHeight: '500px',
+
+
+  /* ============================================================= */
+  /*	                           Video 	                           */
+  /* ============================================================= */
+
+  /* ------------------------- Video URL ------------------------- */
+  // Only YouTube videos are supported, please enter YouTube embed URL, e.g. https://www.youtube.com/embed/Ekc_4btc-iM
+  videoURL: 'https://www.youtube.com/embed/Ekc_4btc-iM',
+
+
+  /* ============================================================= */
+  /*	                           Chart 	                           */
+  /* ============================================================= */
+
+  /* ------------------------ Chart colors ----------------------- */
   chartBorderColor1: css.color('#116985ff'),
   chartBorderColor2: css.color('#27aab0ff'),
   chartBorderColor3: css.color('#94e7a8ff'),
@@ -19,20 +291,104 @@ module.exports = {
   chartBackgroundColor3: css.color('#94e7a866'),
   chartBackgroundColor4: css.color('#c7f29666'),
 
-  // Fonts:
-  // List of fallback fonts: https://help.campaignmonitor.com/email-builder-font-compatibility
-  primaryFontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
-  secondaryFontFamily: 'Calibri, Carlito, PT Sans, Trebuchet MS, sans‑serif',
 
-  // Grid breakpoint
-  // In the CX content editor, a content is 940px wide in desktop view. The grid breakpoint LG was adapted to this.
-  gridBreakpointXS: 0,
-  gridBreakpointSM: '576px',
-  gridBreakpointMD: '768px',
-  gridBreakpointLG: '940px',
-  gridBreakpointXL: '1200px',
-  gridBreakpointXXL: '1400px',
+  /* ============================================================= */
+  /*	                           Form 	                           */
+  /* ============================================================= */
 
-  // Allowed values: de, en
-  language: 'de'
+  /* ------------------------ Form width ------------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Wide: 'bsi-form-wide'
+  // Slim: 'bsi-form-slim'
+  formWidth: 'bsi-form-wide',
+
+  /* ----------------------- Form layout ------------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Card: 'bsi-form-card-visible'
+  // Plain: 'bsi-form-card-hide'
+  formLayout: 'bsi-form-card-visible',
+
+  /* -------------------- Form border radius --------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Sharp corners: 'bsi-corner-sharp'
+  // Rounded corners: 'bsi-corner-rounded'
+  formBorderRadius: 'bsi-corner-rounded',
+
+  /* ------------------- Form label position --------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Top: 'bsi-form-label-top'
+  // Left: 'bsi-form-label-left'
+  // Floating: 'bsi-form-label-floating'
+  // Hide label: 'bsi-form-label-hide'
+  formLabelPosition: 'bsi-form-label-top',
+
+  /* ----------------------- Form color -------------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Primary color: 'bsi-form-color-primary'
+  // Secondary color: 'bsi-form-color-secondary'
+  formColor: 'bsi-form-color-primary',
+
+  /* ------------------- Form button layout ---------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Filled: 'bsi-form-btn-filled'
+  // Outline: 'bsi-form-btn-outline'
+  formButtonLayout: 'bsi-form-btn-outline',
+
+  /* ------------------------- Checkbox -------------------------- */
+  // If no text is selected, lorem ipsum sample text is used.
+  checkboxLabelText: '',
+  checkboxInfoText: '',
+
+  /* ------------------------ Form field ------------------------- */
+  // If no text is selected, lorem ipsum sample text is used.
+  formFieldLabelText: '',
+  formFieldInfoText: '',
+
+  /* ------------------ Form field phone number ------------------ */
+  // If no text is selected, lorem ipsum sample text is used.
+  phoneLabelText: '',
+  phoneInfoText: '',
+
+  /* --------------------------- Poll ---------------------------- */
+  pollLabelText: 'How likely is it that you will recommend our product to others?',
+  pollLabelLeftText: 'Unlikely',
+  pollLabelRightText: 'Very likely',
+  // If no text is selected, lorem ipsum sample text is used.
+  pollInfoText: '',
+
+  /* -------------------------- Radio ---------------------------- */
+  // If no text is selected, lorem ipsum sample text is used.
+  radioGroupLabelText: '',
+  radioLabelText: '',
+  radioInfoText: '',
+
+  /* ------------------------- Select ---------------------------- */
+  // If no text is selected, lorem ipsum sample text is used.
+  selectLabelText: '',
+  selectOptionText: 'Please select',
+  selectInfoText: '',
+
+  /* ----------------------- Text area --------------------------- */
+  // If no text is selected, lorem ipsum sample text is used.
+  textAreaLabelText: '',
+  textAreaInfoText: '',
+
+  /* ----------------------- Error Texts ------------------------- */
+  errorRequiredText: 'Please fill out this field.',
+  errorInvalidText: 'The value you entered for this field is invalid.',
+
+
+  /* ============================================================= */
+  /*	                          Columns 	                         */
+  /* ============================================================= */
+
+  /* ---------------------- Column alignment --------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Align left: 'bsi-col-align-left'
+  // Center: 'bsi-col-align-center'
+  // Align right: 'bsi-col-align-right'
+  colOneAlignment: 'bsi-col-align-left',
+  colTwoAlignment: 'bsi-col-align-left',
+  colThreeAlignment: 'bsi-col-align-left',
+  colFourAlignment: 'bsi-col-align-left'
 }

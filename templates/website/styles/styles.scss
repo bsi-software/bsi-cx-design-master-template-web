@@ -1,24 +1,32 @@
 @import '~@bsi-cx/design-standard-library-web/styles/styles.scss';
 
+$logoWidth: bsiProperty('logoWidth', 60px);
+
 /*
  * Global styles that are independent from a specific content element
  */
 
-.navbar-brand {
-  width: 60px;
-
-  figure {
-    margin: 0;
-
-    img {
+.navbar {
+  .navbar-brand {
+    width: $logoWidth;
+    .logo {
+      width: $logoWidth;
+    }
+    figure {
       margin: 0;
+      img {
+        margin: 0;
+      }
+    }
+  }
+  .container.bsi-logo-align-right {
+    justify-content: flex-end !important;
+    .navbar-brand {
+      margin-right: 0 !important;
     }
   }
 }
 
-.logo {
-  width: 60px;
-}
 
 .nav-center + .navigation {
   margin-left: auto;

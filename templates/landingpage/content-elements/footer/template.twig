@@ -1,5 +1,11 @@
-<div data-bsi-element="footer-nJDYZP" class="element-footer-nJDYZP d-block bg-primary bg-gradient text-light pt-5 pb-4">
-    <div data-bsi-dropzone="footer-dropzone-rR98ys">
-        {% include '@bsi-cx/design-standard-library-web/content-elements/layout/col-two/template.twig' %}
+{% apply spaceless %}
+    {% set footerColor = (footerColor ?: properties.footerColor) ?: 'bg-dark' %}
+    {% set footerGradient = (footerGradient ?: properties.footerGradient) ?: 'bg-gradient' %}
+
+    <div data-bsi-element="footer-nJDYZP" class="element-footer-nJDYZP d-block {{ footerColor }} {{ footerGradient }} pt-5 pb-5">
+        <div data-bsi-dropzone="footer-dropzone-rR98ys">
+            {% block footer %}
+            {% endblock %}
+        </div>
     </div>
-</div>
+{% endapply %}
