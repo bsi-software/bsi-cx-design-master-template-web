@@ -1,6 +1,6 @@
 {
   "name": "@bsi-cx/design-master-template-web",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "BSI CX master template for websites and landing pages",
   "scripts": {
     "build:dev": "webpack --config webpack.config.js --mode development --progress",

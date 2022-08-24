@@ -8,7 +8,7 @@
     <body class="d-flex flex-column min-vh-100">
     {% apply spaceless %}
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
+            <div class="container {{ properties.logoAlignment }}">
                 <div class="navbar-brand">
                     {% block logo %}{% endblock %}
                 </div>
@@ -19,6 +19,7 @@
                 {% block navigation %}{% endblock %}
             </div>
         </nav>
+        {% block header %}{% endblock %}
 
         <div id="content" class="mb-4 flex-grow-1 d-flex flex-column">
             {% block content %}{% endblock %}

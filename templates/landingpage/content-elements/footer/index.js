@@ -9,6 +9,9 @@ module.exports = cx.contentElement
   .withLabel('Footer')
   .withFile(require('./template.twig'))
   .withIcon(Icon.ONE_COLUMN)
+  .withStyleConfigs(
+    require('../../../shared/configs/styles/footer-color'),
+    require('../../../shared/configs/styles/footer-gradient'))
   .withDropzones(
     cx.dropzone
       .withDropzone('footer-dropzone-rR98ys')

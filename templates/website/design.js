@@ -71,5 +71,6 @@ module.exports = cx.design
       .withIncludes(
         require('./includes/navigation'),
         require('./includes/logo'),
+        require('./includes/header'),
         require('./includes/page'),
         require('./includes/footer')));
