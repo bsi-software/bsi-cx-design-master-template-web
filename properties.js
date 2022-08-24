@@ -248,6 +248,7 @@ module.exports = {
   followSnapchatURL: "https://www.snapchat.com/",
 
   /* ------------------------- Hide icons ------------------------- */
+  // Set the following 'hidden' properties to true, if you want the respective social media icons to be hidden in the preselection.
   followLinkedinHidden: false,
   followXingHidden: false,
   followTwitterHidden: false,
@@ -273,7 +274,8 @@ module.exports = {
   /* ============================================================= */
 
   /* ------------------------- Video URL ------------------------- */
-  // Only YouTube videos are supported, please enter YouTube embed URL, e.g. https://www.youtube.com/embed/Ekc_4btc-iM
+  // Only YouTube videos are supported.
+  // Please enter the YouTube embed URL, e.g. https://www.youtube.com/embed/Ekc_4btc-iM, which can be copied by clicking the 'Share' button below a YouTube video.
   videoURL: 'https://www.youtube.com/embed/Ekc_4btc-iM',
 
 
@@ -374,7 +376,9 @@ module.exports = {
   textAreaInfoText: '',
 
   /* ----------------------- Error Texts ------------------------- */
+  // This text is displayed below a form element if the field is required but has not been filled out.
   errorRequiredText: 'Please fill out this field.',
+  // This text is displayed below a form element if the input does not match the expected format.
   errorInvalidText: 'The value you entered for this field is invalid.',
 
 
