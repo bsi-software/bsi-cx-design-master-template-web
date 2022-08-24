@@ -1,0 +1,9 @@
+{% apply spaceless %}
+    {% set dropzoneId = dropzoneId ?: 'header-dropzone-TgF6e2' %}
+
+    <div data-bsi-dropzone="{{ dropzoneId }}" class="mb-5">
+        {% block header %}
+            {% include './../../../shared/content-elements/header-image/template.twig' %}
+        {% endblock %}
+    </div>
+{% endapply %}
