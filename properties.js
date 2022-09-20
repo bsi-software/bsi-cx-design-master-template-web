@@ -74,7 +74,7 @@ module.exports = {
   /* ============================================================= */
 
   /* -------------------- Header image height -------------------- */
-  headerImageHeight: '400px',
+  headerImageHeight: '250px',
 
 
   /* ============================================================= */
@@ -189,6 +189,14 @@ module.exports = {
   titleH2Style: 'bsi-default',
   titleH3Style: 'bsi-default',
 
+  /* ------------------------- Title font weight ------------------------ */
+  // From the following choices, select the value that you want to be preselected:
+  // Regular: 'fw-bold'
+  // Bold: 'fw-light'
+  // Light: 'fw-normal'
+  titleH1Weight: 'fw-normal',
+  titleH2Weight: 'fw-normal',
+  titleH3Weight: 'fw-normal',
 
   /* ============================================================= */
   /*	                            Text 	                           */
@@ -266,7 +274,21 @@ module.exports = {
   /* ============================================================= */
 
   /* ----------------------- Banner height ----------------------- */
-  bannerHeight: '500px',
+  bannerHeight: '250px',
+  
+  /* -------------------- Banner Vertical Alignment --------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Top: 'bsi-vertical-align-top'
+  // Center: 'bsi-vertical-align-center'
+  // Bottom: 'bsi-vertical-align-bottom'
+  bannerVerticalAlignment: 'bsi-vertical-align-center',
+
+  /* -------------------- Banner Horizontal Alignment --------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Left: 'bsi-horizontal-align-left'
+  // Center: 'bsi-horizontal-align-center'
+  // Right: 'bsi-horizontal-align-right'
+  bannerHorizontalAlignment: 'bsi-horizontal-align-center',  
 
 
   /* ============================================================= */
