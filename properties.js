@@ -109,8 +109,7 @@ module.exports = {
   /* ============================================================= */
 
   /* ------------------------- Button text ----------------------- */
-  buttonText: 'Mehr erfahren',
-  // buttonText: 'Read more',
+  buttonText: '',
 
   /* ------------------------ Button color ----------------------- */
   // From the following choices, select the value that you want to be preselected:
@@ -375,12 +374,9 @@ module.exports = {
   phoneInfoText: '',
 
   /* --------------------------- Poll ---------------------------- */
-  pollLabelText: 'Wie wahrscheinlich ist es, dass Sie unser Produkt weiter empfehlen werden?',
-  // pollLabelText: 'How likely is it that you will recommend our product to others?',
-  pollLabelLeftText: 'Unwahrscheinlich',
-  // pollLabelLeftText: 'Unlikely',
-  pollLabelRightText: 'Sehr wahrscheinlich',
-  // pollLabelRightText: 'Very likely',
+  pollLabelText: '', // see translation in DE/EN files
+  pollLabelLeftText: '', // see translation in DE/EN files
+  pollLabelRightText: '', // see translation in DE/EN files
   // If no text is selected, lorem ipsum sample text is used.
   pollInfoText: '',
 
@@ -393,8 +389,7 @@ module.exports = {
   /* ------------------------- Select ---------------------------- */
   // If no text is selected, lorem ipsum sample text is used.
   selectLabelText: '',
-  selectOptionText: 'Bitte wählen',
-  //selectOptionText: 'Please select',
+  selectOptionText: '', // see translation in DE/EN files
   selectInfoText: '',
 
   /* ----------------------- Text area --------------------------- */
@@ -404,11 +399,9 @@ module.exports = {
 
   /* ----------------------- Error Texts ------------------------- */
   // This text is displayed below a form element if the field is required but has not been filled out.
-  errorRequiredText: 'Bitte füllen Sie dieses Feld aus.',
-  //errorRequiredText: 'Please fill out this field.',
+  errorRequiredText: '', // see translation in DE/EN files
   // This text is displayed below a form element if the input does not match the expected format.
-  errorInvalidText: 'Der Wert, den Sie für dieses Feld eingegeben haben, ist ungültig.',
-  //errorInvalidText: 'The value you entered for this field is invalid.',
+  errorInvalidText: '', // see translation in DE/EN files
 
 
   /* ============================================================= */
