@@ -1,10 +1,11 @@
 const path = require('path');
+var package = require('./package.json');
 
 const {BuildConfig, WebpackConfigBuilder, Version, DesignType, ModuleConfig} = require('@bsi-cx/design-build');
 
 const landingpageBuildConfig = new BuildConfig()
   .withName('master-template-cx-22.0-landingpage')
-  .withVersion('1.1.0')
+  .withVersion(package.version)
   .withDesignType(DesignType.LANDINGPAGE)
   .withTargetVersion(Version.CX_22_0)
   .withRootPath(path.resolve(__dirname, 'templates', 'landingpage'))
@@ -17,7 +18,7 @@ const landingpageBuildConfig = new BuildConfig()
 
 const websiteBuildConfig = new BuildConfig()
   .withName('master-template-cx-22.0-website')
-  .withVersion('1.1.0')
+  .withVersion(package.version)
   .withDesignType(DesignType.WEBSITE)
   .withTargetVersion(Version.CX_22_0)
   .withRootPath(path.resolve(__dirname, 'templates', 'website'))
