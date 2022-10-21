@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.1.1] - 21.10.2022
+
+### Changed
+
+* Streamline translations
+* Fix wrong mobile image in header-image element
+
+[1.1.1]: https://github.com/bsi-software/bsi-cx-design-master-template-web/releases/tag/1.1.1
+
+
 ## [1.1.0] - 23.08.2022
 
 ### Changed
