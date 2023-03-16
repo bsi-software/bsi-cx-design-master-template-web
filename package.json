@@ -1,10 +1,11 @@
 {
   "name": "@bsi-cx/design-master-template-web",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "BSI CX master template for websites and landing pages",
   "scripts": {
     "build:dev": "webpack --config webpack.config.js --mode development --progress",
     "build:prod": "webpack --config webpack.config.js --mode production --progress",
+    "build:serve": "npx webpack serve --config webpack.config.js --mode development --progress",
     "watch": "webpack --config webpack.config.js --mode development --watch --progress"
   },
   "license": "MIT",
@@ -31,7 +32,7 @@
     }
   ],
   "dependencies": {
-    "@bsi-cx/design-standard-library-web": "^1.1.5"
+    "@bsi-cx/design-standard-library-web": "^1.2.0"
   },
   "devDependencies": {
     "@bsi-cx/design-build": "^1.0.0"
