@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.5] - 16.03.2023
+
+### Changed
+
+* Updated dependencies
+* Updated readme
+* Solved security issues
+
+[1.1.5]: https://github.com/bsi-software/bsi-cx-design-master-template-web/releases/tag/1.1.5
+
+
 ## [1.1.4] - 16.02.2023
 
 ### Changed
