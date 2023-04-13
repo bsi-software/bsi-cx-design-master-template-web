@@ -35,6 +35,6 @@
     "@bsi-cx/design-standard-library-web": "^1.2.0"
   },
   "devDependencies": {
-    "@bsi-cx/design-build": "^1.0.0"
+    "@bsi-cx/design-build": "^1.12.1"
   }
 }
