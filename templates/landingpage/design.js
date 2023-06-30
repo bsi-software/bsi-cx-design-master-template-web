@@ -43,6 +43,7 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/base/banner'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/button'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/card'),
+        require('@bsi-cx/design-standard-library-web/content-elements/base/accordion'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/news-snippet'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/table'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/video'),
