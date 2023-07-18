@@ -43,7 +43,7 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/base/banner'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/button'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/card'),
-        require('@bsi-cx/design-standard-library-web/content-elements/base/accordion'),
+        //require('@bsi-cx/design-standard-library-web/content-elements/base/accordion'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/news-snippet'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/table'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/video'),
@@ -65,7 +65,14 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/form/checkbox'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/radio'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/poll'),
-        require('@bsi-cx/design-standard-library-web/content-elements/form/recaptcha')))
+        require('@bsi-cx/design-standard-library-web/content-elements/form/recaptcha')),
+        cx.contentElementGroup
+        .withGroupId('interactions-oOKtc8')
+        /*.withLabel('Interactive Elements')*/
+        .withLabel('Interaktive Elemente')
+        .withContentElements(
+          require('@bsi-cx/design-standard-library-web/content-elements/advanced/signature-field'),
+          require('@bsi-cx/design-standard-library-web/content-elements/advanced/webcam-image-upload')))
   .withWebsite(
     cx.website
       .withMaxNavigationLevel(2)
