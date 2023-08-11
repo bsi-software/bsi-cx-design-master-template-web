@@ -1,6 +1,6 @@
 {
   "name": "@bsi-cx/design-master-template-web",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "BSI CX master template for websites and landing pages",
   "scripts": {
     "build:dev": "webpack --config webpack.config.js --mode development --progress",
@@ -15,10 +15,6 @@
       "url": "https://www.bsi-software.com/"
     },
     {
-      "name": "Oliver Fabel",
-      "url": "https://www.bsi-software.com/"
-    },
-    {
       "name": "Lukas Heyer",
       "url": "https://www.bsi-software.com/"
     },
@@ -29,10 +25,14 @@
     {
       "name": "Lukas Steiger",
       "url": "https://www.bsi-software.com/"
+    },
+    {
+      "name": "Benjamin Vier",
+      "url": "https://www.bsi-software.com/"
     }
   ],
   "dependencies": {
-    "@bsi-cx/design-standard-library-web": "^1.2.0"
+    "@bsi-cx/design-standard-library-web": "^1.2.1"
   },
   "devDependencies": {
     "@bsi-cx/design-build": "^1.12.1"
