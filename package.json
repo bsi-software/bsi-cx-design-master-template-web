@@ -35,6 +35,7 @@
     "@bsi-cx/design-standard-library-web": "^1.2.1"
   },
   "devDependencies": {
+    "sass": "1.64.2",
     "@bsi-cx/design-build": "^1.12.1"
   }
 }
