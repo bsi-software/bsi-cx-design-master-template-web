@@ -36,6 +36,6 @@
   },
   "devDependencies": {
     "sass": "1.64.2",
-    "@bsi-cx/design-build": "^1.12.1"
+    "@bsi-cx/design-build": "^1.13.0"
   }
 }
