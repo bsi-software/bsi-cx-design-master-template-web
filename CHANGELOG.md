@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.1.8] - 22.09.2023
+
+### Changed
+* Fixed bug due to circle dependency
+* Updated dependencies
+
+[1.1.8]: https://github.com/bsi-software/bsi-cx-design-master-template-web/releases/tag/1.1.8
+
 ## [1.1.7] - 11.08.2023
 
 ### Changed
