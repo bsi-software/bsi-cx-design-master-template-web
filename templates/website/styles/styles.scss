@@ -9,26 +9,39 @@ $logoWidth: bsiProperty('logoWidth', 60px);
 .navbar {
   .navbar-brand {
     width: $logoWidth;
+
     .logo {
       width: $logoWidth;
     }
+
     figure {
       margin: 0;
+
       img {
         margin: 0;
       }
     }
   }
+
   .container.bsi-logo-align-right {
     justify-content: flex-end !important;
+
     .navbar-brand {
       margin-right: 0 !important;
+    }
+  }
+  
+  .language-switch .dropdown-menu {
+    left: auto;
+
+    .current-active {
+      display: none;
     }
   }
 }
 
 
-.nav-center + .navigation {
+.nav-center+.navigation {
   margin-left: auto;
   margin-right: auto;
 }
@@ -36,6 +49,7 @@ $logoWidth: bsiProperty('logoWidth', 60px);
 .navigation {
   margin-left: 0;
   margin-right: auto;
+
   @include media-breakpoint-down(lg) {
     margin-left: auto;
     margin-right: 0;

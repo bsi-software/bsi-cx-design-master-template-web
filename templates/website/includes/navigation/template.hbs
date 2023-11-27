@@ -17,6 +17,14 @@
             {{/if}}
           </li>
         {{/each}}
+        <li class="nav-item language-switch" x-data="languageSwitch">
+          <a class="nav-link dropdown-toggle active-language" href="#" id="nav-language-dropdown" role="button" data-bs-toggle="dropdown">{{ language }}</a>
+          <ul class="dropdown-menu" aria-labelledby="nav-language-dropdown">
+            {{#each navigation.activePage.localizedUrls as |language|}}
+              <li><a class="dropdown-item select-language" href="{{language}}">{{@key}}</a></li>
+            {{/each}}
+          </ul>
+        </li>
       </ul>
     {{/if}}
 </div>
