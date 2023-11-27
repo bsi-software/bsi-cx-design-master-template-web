@@ -42,6 +42,14 @@ $lg: bsiProperty('gridBreakpointLG', 940px);
       }
     }
   }
+
+  .language-switch .dropdown-menu {
+    left: auto;
+
+    .current-active {
+      display: none;
+    }
+  }
 }
 
 .nav-center + .navigation {
