@@ -30,13 +30,9 @@ $logoWidth: bsiProperty('logoWidth', 60px);
       margin-right: 0 !important;
     }
   }
-  
-  .language-switch .dropdown-menu {
-    left: auto;
 
-    .current-active {
-      display: none;
-    }
+  .language-switch .current-active {
+    display: none;
   }
 }
 
