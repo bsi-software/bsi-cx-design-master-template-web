@@ -46,9 +46,8 @@ $lg: bsiProperty('gridBreakpointLG', 940px);
   .language-switch .dropdown-menu {
     left: auto;
 
-    .current-active {
-      display: none;
-    }
+  .language-switch .current-active {
+    display: none;
   }
 }
 
