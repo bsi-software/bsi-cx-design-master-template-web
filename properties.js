@@ -358,6 +358,12 @@ module.exports = {
   // Outline: 'bsi-form-btn-outline'
   formButtonLayout: 'bsi-form-btn-outline',
 
+  /* ------------------- Form button layout ---------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Info as Text: 'bsi-form-info-as-text'
+  // Info as Tooltip: 'bsi-form-info-as-tooltip'
+  formTooltipStyle: 'bsi-form-info-as-text',
+
   /* ------------------------- Checkbox -------------------------- */
   // If no text is selected, lorem ipsum sample text is used.
   checkboxLabelText: '',
