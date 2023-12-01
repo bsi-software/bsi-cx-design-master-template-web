@@ -1,6 +1,7 @@
 @import '~@bsi-cx/design-standard-library-web/styles/styles.scss';
 
 $logoWidth: bsiProperty('logoWidth', 60px);
+$lg: bsiProperty('gridBreakpointLG', 940px);
 
 /*
  * Global styles that are independent from a specific content element
@@ -25,8 +26,23 @@ $logoWidth: bsiProperty('logoWidth', 60px);
       margin-right: 0 !important;
     }
   }
+  .navbar-nav .nav-item.dropdown:hover {
+    .dropdown-menu {
+      display: block;
+      margin: 0;
+    }
+  }
+  @media (max-width: $lg - 1px) {
+    .navbar-nav .nav-item.dropdown .dropdown-menu {
+      display: block;
+      border: none;
+      padding: 0;
+      a.dropdown-item {
+        color: var(--bs-nav-link-color);
+      }
+    }
+  }
 }
-
 
 .nav-center + .navigation {
   margin-left: auto;
