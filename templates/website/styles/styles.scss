@@ -10,14 +10,11 @@ $lg: bsiProperty('gridBreakpointLG', 940px);
 .navbar {
   .navbar-brand {
     width: $logoWidth;
-
     .logo {
       width: $logoWidth;
     }
-
     figure {
       margin: 0;
-
       img {
         margin: 0;
       }
@@ -26,14 +23,9 @@ $lg: bsiProperty('gridBreakpointLG', 940px);
 
   .container.bsi-logo-align-right {
     justify-content: flex-end !important;
-
     .navbar-brand {
       margin-right: 0 !important;
     }
-  }
-
-  .language-switch .current-active {
-    display: none;
   }
 
   .navbar-nav .nav-item.dropdown:hover {
@@ -42,6 +34,7 @@ $lg: bsiProperty('gridBreakpointLG', 940px);
       margin: 0;
     }
   }
+
   @media (max-width: $lg - 1px) {
     .navbar-nav .nav-item.dropdown .dropdown-menu {
       display: block;
@@ -75,7 +68,6 @@ $lg: bsiProperty('gridBreakpointLG', 940px);
 .navigation {
   margin-left: 0;
   margin-right: auto;
-
   @include media-breakpoint-down(lg) {
     margin-left: auto;
     margin-right: 0;

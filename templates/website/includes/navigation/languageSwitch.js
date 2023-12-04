@@ -19,10 +19,10 @@ document.addEventListener('alpine:init', () => {
 
                     // check if language already exists (e.g. 'de' in case the two locales de-CH and de-DE exist), if so change key to locale
                     if (this.availableLanguages[key]) {
-                        this.availableLanguages[el.innerText] = el.innerText;
                         let locale = this.availableLanguages[key];
-                        this.availableLanguages[locale] = locale;
+                        this.availableLanguages[locale.toUpperCase()] = locale;
                         delete this.availableLanguages[key];
+                        this.availableLanguages[el.innerText.toUpperCase()] = el.innerText;
                     } else {
                         this.availableLanguages[key] = el.innerText;
                     }
