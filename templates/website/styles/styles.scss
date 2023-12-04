@@ -43,11 +43,17 @@ $lg: bsiProperty('gridBreakpointLG', 940px);
     }
   }
 
-  .language-switch .dropdown-menu {
-    left: auto;
+  &.navbar-expand-lg .navbar-collapse {
+    justify-content: space-between;
+  }
 
-  .language-switch .current-active {
-    display: none;
+  .language-switch {
+    .current-active {
+      display: none;
+    }
+    .dropdown-language-switch {
+      min-width: 54px;
+    }
   }
 }
 
@@ -62,5 +68,17 @@ $lg: bsiProperty('gridBreakpointLG', 940px);
   @include media-breakpoint-down(lg) {
     margin-left: auto;
     margin-right: 0;
+  }
+}
+
+// content editor specific CSS
+.bsi-ce-edit-mode .nav-item.dropdown.language-switch {
+  &:hover {
+    .dropdown-menu {
+      display: none;
+    }
+  }
+  .active-language {
+    text-transform: uppercase;
   }
 }
