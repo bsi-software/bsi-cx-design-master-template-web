@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 05.12.2023
+
+### Added
+* Slot finder element
+* Webcam image upload element
+* Language switch for websites with multiple languages
+* Build config of templates designed for CX 23.2 and above
+
+### Changed
+* Fixed bug for website navigation with more than 1 level
+* Updated dependencies
+
+[1.2.0]: https://github.com/bsi-software/bsi-cx-design-master-template-web/releases/tag/1.2.0
 
 ## [1.1.8] - 22.09.2023
 

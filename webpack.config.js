@@ -1,5 +1,5 @@
 const path = require('path');
-var package = require('./package.json');
+const package = require('./package.json');
 
 const {BuildConfig, WebpackConfigBuilder, Version, DesignType, ModuleConfig} = require('@bsi-cx/design-build');
 
@@ -36,27 +36,24 @@ module.exports = WebpackConfigBuilder.fromConfigs(
     .withName('master-template-cx-1.3-website-de')
     .withTargetVersion(Version.CX_1_3)
     .withPropertiesFilePath(path.resolve(__dirname, 'properties-de.js')),
-  /*websiteBuildConfig.clone()
-    .withName('master-template-cx-1.3-website-en')
-    .withTargetVersion(Version.CX_1_3)
-    .withPropertiesFilePath(path.resolve(__dirname, 'properties-en.js')),*/
   websiteBuildConfig.clone()
     .withName('master-template-cx-22.0-website-de')
     .withPropertiesFilePath(path.resolve(__dirname, 'properties-de.js')),
-  /*websiteBuildConfig.clone()
-    .withName('master-template-cx-22.0-website-en')
-    .withPropertiesFilePath(path.resolve(__dirname, 'properties-en.js')),*/
+  websiteBuildConfig.clone()
+    .withName('master-template-cx-23.2-website-de')
+    .withTargetVersion(Version.CX_23_2)
+    .withPropertiesFilePath(path.resolve(__dirname, 'properties-de.js')),
   landingpageBuildConfig.clone()
     .withName('master-template-cx-1.3-landingpage-de')
     .withTargetVersion(Version.CX_1_3)
     .withPropertiesFilePath(path.resolve(__dirname, 'properties-de.js')),
-  /*landingpageBuildConfig.clone()
-    .withName('master-template-cx-1.3-landingpage-en')
-    .withTargetVersion(Version.CX_1_3)
-    .withPropertiesFilePath(path.resolve(__dirname, 'properties-en.js')),*/
   landingpageBuildConfig.clone()
     .withName('master-template-cx-22.0-landingpage-de')
     .withPropertiesFilePath(path.resolve(__dirname, 'properties-de.js')),
+    landingpageBuildConfig.clone()
+        .withName('master-template-cx-23.2-landingpage-de')
+        .withTargetVersion(Version.CX_23_2)
+        .withPropertiesFilePath(path.resolve(__dirname, 'properties-de.js'))
   /*landingpageBuildConfig.clone()
     .withName('master-template-cx-22.0-landingpage-en')
     .withPropertiesFilePath(path.resolve(__dirname, 'properties-en.js'))*/);
