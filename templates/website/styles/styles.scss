@@ -20,18 +20,21 @@ $lg: bsiProperty('gridBreakpointLG', 940px);
       }
     }
   }
+
   .container.bsi-logo-align-right {
     justify-content: flex-end !important;
     .navbar-brand {
       margin-right: 0 !important;
     }
   }
+
   .navbar-nav .nav-item.dropdown:hover {
     .dropdown-menu {
       display: block;
       margin: 0;
     }
   }
+
   @media (max-width: $lg - 1px) {
     .navbar-nav .nav-item.dropdown .dropdown-menu {
       display: block;
@@ -40,6 +43,19 @@ $lg: bsiProperty('gridBreakpointLG', 940px);
       a.dropdown-item {
         color: var(--bs-nav-link-color);
       }
+    }
+  }
+
+  &.navbar-expand-lg .navbar-collapse {
+    justify-content: space-between;
+  }
+
+  .language-switch {
+    .current-active {
+      display: none;
+    }
+    .dropdown-language-switch {
+      min-width: 54px;
     }
   }
 }
@@ -55,5 +71,17 @@ $lg: bsiProperty('gridBreakpointLG', 940px);
   @include media-breakpoint-down(lg) {
     margin-left: auto;
     margin-right: 0;
+  }
+}
+
+// content editor specific CSS
+.bsi-ce-edit-mode .nav-item.dropdown.language-switch {
+  &:hover {
+    .dropdown-menu {
+      display: none;
+    }
+  }
+  .active-language {
+    text-transform: uppercase;
   }
 }
