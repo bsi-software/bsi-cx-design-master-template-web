@@ -33,14 +33,14 @@ const websiteBuildConfig = new BuildConfig()
 
 module.exports = WebpackConfigBuilder.fromConfigs(
   websiteBuildConfig.clone()
-    .withName('master-template-cx-1.3-website-de')
+    .withName('master-template-cx-1.3-website')
     .withTargetVersion(Version.CX_1_3)
     .withPropertiesFilePath(path.resolve(__dirname, 'properties-de.js')),
   websiteBuildConfig.clone()
-    .withName('master-template-cx-22.0-website-de')
+    .withName('master-template-cx-22.0-website')
     .withPropertiesFilePath(path.resolve(__dirname, 'properties-de.js')),
   websiteBuildConfig.clone()
-    .withName('master-template-cx-23.2-website-de')
+    .withName('master-template-cx-23.2-website')
     .withTargetVersion(Version.CX_23_2)
     .withPropertiesFilePath(path.resolve(__dirname, 'properties-de.js')),
   landingpageBuildConfig.clone()
