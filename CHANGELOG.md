@@ -5,6 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 1.2.2024
+
+### Important Change
+Important for customers with custom content elements: We are now using the [CSP Distribution of Alpine.js](https://alpinejs.dev/advanced/csp). Thus, developers my no longer use any inline JavaScript in HTML/TWIG files associated with Alpine. Instead, there must always be a reference pointing to an associated alpine data object. We changed the implementation of a couple of components to comply with this new rule. The advantage of it is that content elements using Alpine.js are now shown properly in the 'Preview' mode of the content editor and in live mode without having to change the CSP settings. By using the CSP distribution of Alpine.js, it is no longer required to add `usafe-eval` to the CSP, which helps to increase security (#355743). Developers might have to adapt their components to comply with this new rule. If you have any questions or concerns regarding this change, reach out to your BSI contact to get more information.
+
+### Additional changes
+* Set content language (lang html attribute) properly to ensure correct translations (#371869, #371869)
+* New style to display a button as a link (#357481)
+* Remove unused caption for logo element (#364438)
+* New style to use a fixed width for the header image element (#365087)
+* Additonal spacer options (#365087)
+* Better description for banner and header image (#365087)
+* Replace Twitter with X, fix typo in YouTube (@#371665)
+* Prevent from chosing the wrong input type for poll element (#355743)
+* Prevent endless loop in the phone number element, which used to cause landingpages/websites to crash in the previous release (#372595)
+* Proper translation of date picker (#371869)
+* Make slot finder texts configurable and translatable (#371869)
+* Make webcam image element translatable on configuration level (#368259)
+* Upgrade dependencies
+
+[1.3.0]: https://github.com/bsi-software/bsi-cx-design-master-template-web/releases/tag/1.3.0
+
+
 ## [1.2.0] - 05.12.2023
 
 ### Added
