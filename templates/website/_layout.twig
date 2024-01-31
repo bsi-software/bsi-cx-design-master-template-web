@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{% verbatim %}{{locale}}{% endverbatim %}">
     <head>
         <title>{% verbatim %}{{ navigation.activePage.pageTitle }}{% endverbatim %}</title>
         {% include  './../shared/html-header.twig' %}
