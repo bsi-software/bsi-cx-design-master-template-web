@@ -272,6 +272,34 @@ module.exports = {
 
 
   /* ============================================================= */
+  /*	                     Social Media Follow	                   */
+  /* ============================================================= */
+
+  /* ------------------------- Icon color ------------------------ */
+  // From the following choices, select the value that you want to be preselected:
+  // Primary color: 'bsi-icon-color-primary'
+  // Secondary color: 'bsi-icon-color-secondary'
+  // Dark: 'bsi-icon-color-dark'
+  // Light: 'bsi-icon-color-light'
+  shareIconColor: 'bsi-icon-color-primary',
+
+  /* ---------------------- Icon hover color --------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Primary color: 'bsi-icon-hover-color-primary'
+  // Secondary color: 'bsi-icon-hover-color-secondary'
+  // Dark: 'bsi-icon-hover-color-dark'
+  // Light: 'bsi-icon-hover-color-light'
+  shareIconHoverColor: 'bsi-icon-hover-color-secondary',
+
+  /* ------------------------- Icon size ------------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Small: 'bsi-icon-size-small'
+  // Medium: 'bsi-icon-size-medium'
+  // Large: 'bsi-icon-size-large'
+  shareIconSize: 'bsi-icon-size-medium',
+
+
+  /* ============================================================= */
   /*	                           Banner 	                         */
   /* ============================================================= */
 
