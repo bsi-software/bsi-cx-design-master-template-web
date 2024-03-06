@@ -350,27 +350,39 @@ module.exports = {
   /*	                           Webcam Image	                     */
   /* ============================================================= */
   
-  /* ----------------------- WI main button color --------------------- */
+  /* -------------------- Main button color ------------------- */
   // From the following choices, select the value that you want to be preselected:
   // Primary color: 'bsi-btn-color-primary'
   // Secondary color: 'bsi-btn-color-secondary'
   // Dark: 'bsi-btn-color-dark'
   // Light: 'bsi-btn-color-light'
-  webcamImgMainButtonColor: 'bsi-btn-color-dark',
+  webcamImgMainButtonColor: 'bsi-btn-color-primary',
 
-  /* ----------------- WI update alternative button color  ------------------- */
+  /* ---------------- Alternative button color  --------------- */
   // From the following choices, select the value that you want to be preselected:
   // Primary color: 'bsi-btn-color-primary'
   // Secondary color: 'bsi-btn-color-secondary'
   // Dark: 'bsi-btn-color-dark'
   // Light: 'bsi-btn-color-light'
-  webcamImgAlternativeButtonColor: 'bsi-btn-color-primary',
+  webcamImgAlternativeButtonColor: 'bsi-btn-color-dark',
 
-  /* ----------------- WI button border radius ------------------- */
+  /* ----------------- Button border radius ------------------- */
   // From the following choices, select the value that you want to be preselected:
   // Sharp corners: 'bsi-corner-sharp'
   // Rounded corners: 'bsi-corner-rounded'
   webcamImgBorderRadius: 'bsi-corner-rounded',
+
+  /* ------------------ Main button layout -------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Filled: 'bsi-form-btn-filled'
+  // Outline: 'bsi-form-btn-outline'
+  webcamImgMainButtonLayout: 'bsi-btn-filled',
+
+  /* ---------------- Alternative button layout --------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Filled: 'bsi-form-btn-filled'
+  // Outline: 'bsi-form-btn-outline'
+  webcamImgAlternativeButtonLayout: 'bsi-btn-outline',
 
   
   /* ============================================================= */
