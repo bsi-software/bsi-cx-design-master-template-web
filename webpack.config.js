@@ -15,7 +15,12 @@ const landingpageBuildConfig = new BuildConfig()
   .withModules(
     new ModuleConfig()
       .withName('main')
-      .withPath('main.js'));
+      .withPath('main.js'))
+  .withAdditionalFilesToCopy({
+    from: path.resolve(__dirname, 'templates', 'shared', 'static', 'header.png'),
+    to: 'static/header.png',
+  });
+      
 
 const websiteBuildConfig = new BuildConfig()
   .withName('master-template-cx-22.0-website')
@@ -29,7 +34,11 @@ const websiteBuildConfig = new BuildConfig()
   .withModules(
     new ModuleConfig()
       .withName('main')
-      .withPath('main.js'));
+      .withPath('main.js'))
+  .withAdditionalFilesToCopy({
+    from: path.resolve(__dirname, 'templates', 'shared', 'static', 'header.png'),
+    to: 'static/header.png',
+  });
 
 module.exports = WebpackConfigBuilder.fromConfigs(
   websiteBuildConfig.clone()
@@ -50,10 +59,10 @@ module.exports = WebpackConfigBuilder.fromConfigs(
   landingpageBuildConfig.clone()
     .withName('master-template-cx-22.0-landingpage-de')
     .withPropertiesFilePath(path.resolve(__dirname, 'properties-de.js')),
-    landingpageBuildConfig.clone()
-        .withName('master-template-cx-23.2-landingpage-de')
-        .withTargetVersion(Version.CX_23_2)
-        .withPropertiesFilePath(path.resolve(__dirname, 'properties-de.js'))
+  landingpageBuildConfig.clone()
+      .withName('master-template-cx-23.2-landingpage-de')
+      .withTargetVersion(Version.CX_23_2)
+      .withPropertiesFilePath(path.resolve(__dirname, 'properties-de.js'))
   /*landingpageBuildConfig.clone()
     .withName('master-template-cx-22.0-landingpage-en')
     .withPropertiesFilePath(path.resolve(__dirname, 'properties-en.js'))*/);

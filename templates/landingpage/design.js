@@ -7,6 +7,7 @@ module.exports = cx.design
   .withTitle('BSI CX Master Template - Landingpage')
   .withAuthor('Design Team - BSI Business Systems Integration AG')
   .withDate('21.01.2022')
+  .withPreviewImage('static/header.png')
   .withDefaultLocale(Locale.EN)
   .withLocales(Locale.EN)
   .withContentElementGroups(
