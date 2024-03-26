@@ -11,30 +11,25 @@
   "license": "MIT",
   "contributors": [
     {
-      "name": "Yann Büchler",
-      "url": "https://www.bsi-software.com/"
+      "name": "Yann Büchler"
     },
     {
-      "name": "Lukas Heyer",
-      "url": "https://www.bsi-software.com/"
+      "name": "Lukas Heyer"
     },
     {
-      "name": "Marleen Jattke",
-      "url": "https://www.bsi-software.com/"
+      "name": "Marleen Jattke"
     },
     {
-      "name": "Lukas Steiger",
-      "url": "https://www.bsi-software.com/"
+      "name": "Lukas Steiger"
     },
     {
-      "name": "Benjamin Vier",
-      "url": "https://www.bsi-software.com/"
+      "name": "Benjamin Vier"
     }
   ],
   "dependencies": {
     "@bsi-cx/design-standard-library-web": "^1.4.3"
   },
   "devDependencies": {
-    "@bsi-cx/design-build": "^1.13.3"
+    "@bsi-cx/design-build": "^1.13.4"
   }
 }

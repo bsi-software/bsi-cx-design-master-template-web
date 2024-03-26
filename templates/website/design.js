@@ -47,6 +47,7 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/base/accordion'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/news-snippet'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/table'),
+        require('@bsi-cx/design-standard-library-web/content-elements/base/table-pagination'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/video'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/social-media-follow'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/social-media-share'),
@@ -72,9 +73,14 @@ module.exports = cx.design
   .withWebsite(
     cx.website
       .withMaxNavigationLevel(2)
+      .withPagination(
+        cx.pagination
+          .withNumDataRecordsPerPage(20)
+          .withNumAdjacentPages(2))
       .withIncludes(
         require('./includes/navigation'),
         require('./includes/logo'),
         require('./includes/header'),
         require('./includes/page'),
+        require('./includes/pagination'),
         require('./includes/footer')));

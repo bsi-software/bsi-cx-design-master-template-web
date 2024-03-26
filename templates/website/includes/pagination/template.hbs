@@ -1,0 +1,14 @@
+{# {% include '@bsi-cx/design-standard-library-web/content-elements/base/table-pagination/template.twig' %} #}
+
+
+<div class="pagination-element" data-bsi-element="table-pagination-od2rhZ" data-bsi-hide-edit-button="true">
+	<a href="{{paginationInfo.firstPageUrl}}">Erste Seite </a>
+	{{#each paginationInfo.previousPages}}
+		<a href="{{url}}">[{{pageNo}}]</a>
+	{{/each}}
+	{{paginationInfo.currentPageNo}}
+	{{#each paginationInfo.nextPages}}
+	<a href="{{{url}}}">[{{pageNo}}]</a>
+	{{/each}}
+	<a href="{{paginationInfo.lastPageUrl}}">Letzte Seite</a>
+</div>
