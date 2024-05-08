@@ -254,7 +254,6 @@ module.exports = {
   followWhatsappURL: "https://api.whatsapp.com/",
   followPinterestURL: "https://www.pinterest.com/",
   followSnapchatURL: "https://www.snapchat.com/",
-  followTiktokURL: "https://www.tiktok.com/",
 
   /* ------------------------- Hide icons ------------------------- */
   // Set the following 'hidden' properties to true, if you want the respective social media icons to be hidden in the preselection.
@@ -268,7 +267,6 @@ module.exports = {
   followWhatsappHidden: true,
   followPinterestHidden: true,
   followSnapchatHidden: true,
-  followTiktokHidden: true,
 
 
   /* ============================================================= */
