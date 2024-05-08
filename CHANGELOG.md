@@ -13,7 +13,6 @@ Hint: You will find the list of compatible BSI versions for each template in the
 
 ### Changed
 - Add preview image to the template
-- Add Tiktok to social share element
 - Improve social share element controls
 - Update webcam image element
 
