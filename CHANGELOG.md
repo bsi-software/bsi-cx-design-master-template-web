@@ -8,7 +8,16 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 Hint: You will find the list of compatible BSI versions for each template in the [Compatibility section of the README](https://github.com/bsi-software/bsi-cx-design-master-template-web?tab=readme-ov-file#compatibility).
 
 ## Next
+
+## [1.3.2] - 8.5.2024
+
+### Changed
 - Add preview image to the template
+- Add Tiktok to social share element
+- Improve social share element controls
+- Update webcam image element
+
+[1.3.2]: https://github.com/bsi-software/bsi-cx-design-master-template-web/releases/tag/1.3.2
 
 ## [1.3.1] - 6.2.2024
 
