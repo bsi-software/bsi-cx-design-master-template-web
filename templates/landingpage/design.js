@@ -53,7 +53,8 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/advanced/webcam-image-upload'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/slot-finder'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/chart'),
-        require('@bsi-cx/design-standard-library-web/content-elements/base/html')),
+        require('@bsi-cx/design-standard-library-web/content-elements/base/html'),
+        require('@bsi-cx/design-standard-library-web/content-elements/advanced/signature-field')),
     cx.contentElementGroup
       .withGroupId('forms-NjbmnQ')
       /*.withLabel('Forms')*/
