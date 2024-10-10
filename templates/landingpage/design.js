@@ -39,7 +39,7 @@ module.exports = cx.design
       /*.withLabel('Content')*/
       .withLabel('Inhalt')
       .withContentElements(
-        require('@bsi-cx/design-standard-library-web/content-elements/base/text').editor(require('../shared/configs/editor/formatted-text-editor')),
+        require('@bsi-cx/design-standard-library-web/content-elements/base/text'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/figure'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/banner'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/button'),
