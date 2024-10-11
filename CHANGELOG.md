@@ -9,6 +9,14 @@ Hint: You will find the list of compatible BSI versions for each template in the
 
 ## Next
 
+## [1.3.3] - 11.10.2024
+
+### Changed
+- Change Meta Tag to allow zoom
+- Remove editor extension issues
+
+[1.3.3]: https://github.com/bsi-software/bsi-cx-design-master-template-web/releases/tag/1.3.3
+
 ## [1.3.2] - 8.5.2024
 
 ### Changed
