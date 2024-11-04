@@ -167,9 +167,15 @@ module.exports = {
   titleH3FontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
 
   /* ---------------------- Title font size ---------------------- */
+  // if no fontSizeMobile for title is set, the same fontSize is used like normal title fontSize
   titleH1FontSize: '2.5rem',
+  titleH1FontSizeMobile: '2rem',
   titleH2FontSize: '2rem',
+  titleH2FontSizeMobile: '1.5rem',
   titleH3FontSize: '1.75rem',
+  titleH3FontSizeMobile: '1.25rem',
+
+  bigTitleFontSizeFactor: 1.5,
 
   /* ------------------------- Title color ----------------------- */
   // From the following choices, select the value that you want to be preselected:
