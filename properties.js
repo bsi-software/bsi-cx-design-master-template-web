@@ -246,7 +246,7 @@ module.exports = {
   /* -------------------- Social Media URLs ---------------------- */
   followLinkedinURL: "https://www.linkedin.com/",
   followXingURL: "https://www.xing.com/",
-  followTwitterURL: "https://www.twitter.com/",
+  followXURL: "https://www.x.com/",
   followFacebookURL: "https://www.facebook.com/",
   followYoutubeURL: "https://www.youtube.com/",
   followInstagramURL: "https://www.instagram.com/",
@@ -259,7 +259,7 @@ module.exports = {
   // Set the following 'hidden' properties to true, if you want the respective social media icons to be hidden in the preselection.
   followLinkedinHidden: false,
   followXingHidden: false,
-  followTwitterHidden: false,
+  followXHidden: false,
   followFacebookHidden: false,
   followYoutubeHidden: false,
   followInstagramHidden: false,
