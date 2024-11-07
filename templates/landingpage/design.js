@@ -41,7 +41,8 @@ module.exports = cx.design
       .withContentElements(
         require('@bsi-cx/design-standard-library-web/content-elements/base/text'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/figure'),
-        require('@bsi-cx/design-standard-library-web/content-elements/base/banner'),
+        require('@bsi-cx/design-standard-library-web/content-elements/base/banner')
+          .withExtendedDropzone('header-image-dropzone-Dt5Gll', require('@bsi-cx/design-standard-library-web/content-elements/base/text')),
         require('@bsi-cx/design-standard-library-web/content-elements/base/button'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/card'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/accordion'),

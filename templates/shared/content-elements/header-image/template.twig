@@ -12,9 +12,12 @@
                 color: 'bsi-text-light',
                 style: 'display-1'
             } only %}
+            {% include '@bsi-cx/design-standard-library-web/content-elements/base/text/template.twig' with {
+                color: 'bsi-text-primary-color'
+            } only %}
             {% include '@bsi-cx/design-standard-library-web/content-elements/layout/spacer/template.twig' with {
                 spacingStyle: 'pt-7'
-            } only %}            
+            } only %}           
         {% endblock %}
     {% endembed %}
 {% endapply %}
