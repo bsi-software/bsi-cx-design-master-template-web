@@ -3,6 +3,9 @@
     <head>
         <title>{% verbatim %}{{ navigation.activePage.pageTitle }}{% endverbatim %}</title>
         {% include  './../shared/html-header.twig' %}
+        
+        {# Delete if Google reCAPTCHA is unused #}
+        <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
     </head>
 
     <body class="d-flex flex-column min-vh-100">
