@@ -167,9 +167,15 @@ module.exports = {
   titleH3FontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
 
   /* ---------------------- Title font size ---------------------- */
+  // if no fontSizeMobile for title is set, the same fontSize is used like normal title fontSize
   titleH1FontSize: '2.5rem',
+  titleH1FontSizeMobile: '2rem',
   titleH2FontSize: '2rem',
+  titleH2FontSizeMobile: '1.5rem',
   titleH3FontSize: '1.75rem',
+  titleH3FontSizeMobile: '1.25rem',
+
+  bigTitleFontSizeFactor: 1.5,
 
   /* ------------------------- Title color ----------------------- */
   // From the following choices, select the value that you want to be preselected:
@@ -246,7 +252,7 @@ module.exports = {
   /* -------------------- Social Media URLs ---------------------- */
   followLinkedinURL: "https://www.linkedin.com/",
   followXingURL: "https://www.xing.com/",
-  followTwitterURL: "https://www.twitter.com/",
+  followXURL: "https://www.x.com/",
   followFacebookURL: "https://www.facebook.com/",
   followYoutubeURL: "https://www.youtube.com/",
   followInstagramURL: "https://www.instagram.com/",
@@ -254,13 +260,12 @@ module.exports = {
   followWhatsappURL: "https://api.whatsapp.com/",
   followPinterestURL: "https://www.pinterest.com/",
   followSnapchatURL: "https://www.snapchat.com/",
-  followTiktokURL: "https://www.tiktok.com/",
 
   /* ------------------------- Hide icons ------------------------- */
   // Set the following 'hidden' properties to true, if you want the respective social media icons to be hidden in the preselection.
   followLinkedinHidden: false,
   followXingHidden: false,
-  followTwitterHidden: false,
+  followXHidden: false,
   followFacebookHidden: false,
   followYoutubeHidden: false,
   followInstagramHidden: false,
@@ -268,7 +273,6 @@ module.exports = {
   followWhatsappHidden: true,
   followPinterestHidden: true,
   followSnapchatHidden: true,
-  followTiktokHidden: true,
 
 
   /* ============================================================= */
