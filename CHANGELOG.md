@@ -9,6 +9,15 @@ Hint: You will find the list of compatible BSI versions for each template in the
 
 ## Next
 
+## [1.3.4] - 19.11.2024
+
+### Changed
+- Add properties for title size
+- Remove recaptcha element from landingpage
+- Update social media elements
+
+[1.3.4]: https://github.com/bsi-software/bsi-cx-design-master-template-web/releases/tag/1.3.4
+
 ## [1.3.3] - 11.10.2024
 
 ### Changed
