@@ -8,6 +8,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 Hint: You will find the list of compatible BSI versions for each template in the [Compatibility section of the README](https://github.com/bsi-software/bsi-cx-design-master-template-web?tab=readme-ov-file#compatibility).
 
 ## Next
+- Remove List & List-Item, until the elements are fully released
+
 
 ## [1.3.4] - 19.11.2024
 
