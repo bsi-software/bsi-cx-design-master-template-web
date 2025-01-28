@@ -33,7 +33,10 @@ module.exports = cx.design
       .withContentElements(
         require('@bsi-cx/design-standard-library-web/content-elements/base/h1'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/h2'),
-        require('@bsi-cx/design-standard-library-web/content-elements/base/h3')),
+        require('@bsi-cx/design-standard-library-web/content-elements/base/h3'),
+        require('@bsi-cx/design-standard-library-web/content-elements/base/h4'),
+        require('@bsi-cx/design-standard-library-web/content-elements/base/h5'),
+        require('@bsi-cx/design-standard-library-web/content-elements/base/h6')),
     cx.contentElementGroup
       .withGroupId('content-JFLFHv')
       /*.withLabel('Content')*/
