@@ -10,6 +10,7 @@ Hint: You will find the list of compatible BSI versions for each template in the
 ## Next
 - Remove List & List-Item, until the elements are fully released
 - change code for new h4, h5, h6 element from standard libary
+- Add property to activate / deactivate the alt warning on images
 
 
 ## [1.3.4] - 19.11.2024

@@ -236,6 +236,15 @@ module.exports = {
   /* ---------------------- Text font size ---------------------- */
   textFontSize: '16px',
 
+  /* ============================================================= */
+  /*	                        Figure / Image  	                   */
+  /* ============================================================= */
+
+  /* ------------------------- Alt Warning ----------------------- */
+  // From the following choices, select the value that you want to be preselected:
+  // Show warning: 'show-alt-warning'
+  // No warning: 'no-alt-warning'
+  figureAltWarning: 'show-alt-warning',
 
   /* ============================================================= */
   /*	                     Social Media Follow	                   */
