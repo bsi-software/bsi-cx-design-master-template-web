@@ -31,9 +31,12 @@ module.exports = cx.design
       /*.withLabel('Headings')*/
       .withLabel('Überschriften')
       .withContentElements(
-        require('@bsi-cx/design-standard-library-web/content-elements/base/h1'),
-        require('@bsi-cx/design-standard-library-web/content-elements/base/h2'),
-        require('@bsi-cx/design-standard-library-web/content-elements/base/h3')),
+        require('@bsi-cx/design-standard-library-web/content-elements/base/headlines/h1'),
+        require('@bsi-cx/design-standard-library-web/content-elements/base/headlines/h2'),
+        require('@bsi-cx/design-standard-library-web/content-elements/base/headlines/h3'),
+        require('@bsi-cx/design-standard-library-web/content-elements/base/headlines/h4'),
+        require('@bsi-cx/design-standard-library-web/content-elements/base/headlines/h5'),
+        require('@bsi-cx/design-standard-library-web/content-elements/base/headlines/h6')),
     cx.contentElementGroup
       .withGroupId('content-JFLFHv')
       /*.withLabel('Content')*/
