@@ -162,27 +162,27 @@ module.exports = {
   titleH3Text: '',
 
   /* --------------------- Title font family --------------------- */
-  titleStyleDisplayFontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
   titleStyle1FontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
   titleStyle2FontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
   titleStyle3FontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
   titleStyle4FontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
   titleStyle5FontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
+  titleStyle6FontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
 
   /* ---------------------- Title font size ---------------------- */
   // if no fontSizeMobile for title is set, the same fontSize is used like normal title fontSize
-  titleStyleDisplayFontSize: '2.5rem',
-  titleStyleDisplayFontSizeMobile: '2rem',
-  titleStyle1FontSize: '2rem',
-  titleStyle1FontSizeMobile: '1.75rem',
-  titleStyle2FontSize: '1.75rem',
-  titleStyle2FontSizeMobile: '1.5rem',
-  titleStyle3FontSize: '1.5rem',
-  titleStyle3FontSizeMobile: '1.25rem',
-  titleStyle4FontSize: '1.25rem',
-  titleStyle4FontSizeMobile: '1.1rem',
-  titleStyle5FontSize: '1.1rem',
-  titleStyle5FontSizeMobile: '1rem',
+  titleStyle1FontSize: '2.5rem',
+  titleStyle1FontSizeMobile: '2rem',
+  titleStyle2FontSize: '2rem',
+  titleStyle2FontSizeMobile: '1.75rem',
+  titleStyle3FontSize: '1.75rem',
+  titleStyle3FontSizeMobile: '1.5rem',
+  titleStyle4FontSize: '1.5rem',
+  titleStyle4FontSizeMobile: '1.25rem',
+  titleStyle5FontSize: '1.25rem',
+  titleStyle5FontSizeMobile: '1.1rem',
+  titleStyle6FontSize: '1.1rem',
+  titleStyle6FontSizeMobile: '1rem',
 
   /* ------------------------- Title color ----------------------- */
   // From the following choices, select the value that you want to be preselected:
@@ -199,13 +199,13 @@ module.exports = {
 
   /* ------------------------- Title style ------------------------ */
   // From the following choices, select the value that you want to be preselected:
-  // 'bsi-header-style-display', 'bsi-header-style-1', bsi-header-style-2, bsi-header-style-3, bsi-header-style-4, bsi-header-style-5
-  titleH1Style: 'bsi-header-style-display',
-  titleH2Style: 'bsi-header-style-1',
-  titleH3Style: 'bsi-header-style-2',
-  titleH4Style: 'bsi-header-style-3',
-  titleH5Style: 'bsi-header-style-4',
-  titleH6Style: 'bsi-header-style-5',
+  // 'bsi-header-style-1', 'bsi-header-style-2', bsi-header-style-3, bsi-header-style-4, bsi-header-style-5, bsi-header-style-6
+  titleH1Style: 'bsi-header-style-1',
+  titleH2Style: 'bsi-header-style-2',
+  titleH3Style: 'bsi-header-style-3',
+  titleH4Style: 'bsi-header-style-4',
+  titleH5Style: 'bsi-header-style-5',
+  titleH6Style: 'bsi-header-style-6',
 
   /* ------------------------- Title font weight ------------------------ */
   // From the following choices, select the value that you want to be preselected:
