@@ -15,8 +15,7 @@ module.exports = cx.design
       .withGroupId("header-Eev4oq")
       .withLabel("Header")
       .withContentElements(
-        // require("@bsi-cx/design-standard-library-web/content-elements/advanced/logo-with-darkmode"),
-        require("./../shared/content-elements/logo"),
+        require("@bsi-cx/design-standard-library-web/content-elements/advanced/logo-with-darkmode"),
         require("./../shared/content-elements/header-image")
       ),
     cx.contentElementGroup
