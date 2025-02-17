@@ -14,6 +14,5 @@ module.exports = contentElement(
   /*'Header image'*/
   'Header Bild',
   'header-image-mobile-part-29bfdf',
-  'Header Mobile Bild'
-  
+  'Header Bild Mobile'
 );
