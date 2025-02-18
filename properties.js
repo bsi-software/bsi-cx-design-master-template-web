@@ -14,6 +14,7 @@ const backgroundLight = css.color('#f4f4f4');
 const backgroundMedium = css.color('#efe3d4');
 const backgroundDark = css.color('#7c3d01');
 
+const darkModeTextColor = lightColor;
 
 module.exports = {
 
@@ -26,6 +27,7 @@ module.exports = {
   darkColor,
   lightColor,
   infoColor,
+  darkModeTextColor,
 
   /* --------------------- Background Colors --------------------- */
 
