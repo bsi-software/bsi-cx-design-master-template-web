@@ -4,14 +4,14 @@
         <title>BSI CX Master Template</title>
         {% include  './../shared/html-header.twig' %}
     </head>
-
-    <body class="d-flex flex-column min-vh-100">
+    {# target dark mode #}
+    <body class="d-flex flex-column min-vh-100 bsi-dm-bg-color">
     {% apply spaceless %}
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container {{ properties.logoAlignment }}">
-                <div class="navbar-brand" data-bsi-dropzone="logo-dropzone-vBnV9R" data-bsi-dropzone-max-number-of-elements="1" data-bsi-dropzone-allowed-elements="logo-pm7eOT">
+                <div class="navbar-brand" data-bsi-dropzone="logo-dropzone-vBnV9R" data-bsi-dropzone-max-number-of-elements="1" data-bsi-dropzone-allowed-elements="logo-4c8c3a">
                     {% block logo %}
-                        {% include  './../shared/content-elements/logo/template.twig' %}
+                        {% include  '@bsi-cx/design-standard-library-web/content-elements/advanced/logo-with-darkmode/template.twig' %}
                     {% endblock %}
                 </div>
             </div>
