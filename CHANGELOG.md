@@ -10,6 +10,8 @@ Hint: You will find the list of compatible BSI versions for each template in the
 ## Next
 - Remove default elements from header-image dropzone
 - Add style colors for dark mode
+- Fix poll element dark mode version
+- Fix poll element tab navigation
 
 ## [1.3.5] - 05.02.2024
 
