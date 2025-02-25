@@ -14,6 +14,9 @@
     "email": "design@bsi-software.com",
     "url": "https://bsi-software.github.io/bsi-cx-docs/"
   },
+  "dependencies": {
+    "@bsi-cx/design-standard-library-web": "^1.4.10"
+  },
   "devDependencies": {
     "@bsi-cx/design-build": "^1.13.5"
   }
