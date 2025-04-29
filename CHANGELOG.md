@@ -8,6 +8,16 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 Hint: You will find the list of compatible BSI versions for each template in the [Compatibility section of the README](https://github.com/bsi-software/bsi-cx-design-master-template-web?tab=readme-ov-file#compatibility).
 
 ## Next
+
+
+## [1.3.7] - 25.02.2024
+
+### Changed
+- Update dependencies
+
+## [1.3.6] - 25.02.2024
+
+### Changed
 - Remove default elements from header-image dropzone
 - Add style colors for dark mode
 
