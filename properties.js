@@ -6,6 +6,9 @@ const darkColor = css.color('#383e42');
 const lightColor = css.color('#ffffff');
 const infoColor = css.color('#6c757d');
 
+const invalidColor = css.color('#dc3545');
+const validColor = css.color('#198754');
+
 
 const lightGrey = css.color('#e6e6e6');
 const darkGrey = css.color('#383e42');
@@ -28,6 +31,8 @@ module.exports = {
   lightColor,
   infoColor,
   darkModeTextColor,
+  invalidColor,
+  validColor,
 
   /* --------------------- Background Colors --------------------- */
 
@@ -283,6 +288,7 @@ module.exports = {
   // Show warning: 'show-alt-warning'
   // No warning: 'no-alt-warning'
   figureAltWarning: 'show-alt-warning',
+  figureAltWarningMessage: 'Bitte gib einen Text an',
 
   /* ============================================================= */
   /*	                     Social Media Follow	                   */
