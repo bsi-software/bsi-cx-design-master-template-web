@@ -20,7 +20,7 @@ Hint: You will find the list of compatible BSI versions for each template in the
 
 ### Changed
 - Add pin element
-- Fix required error
+- Fix required error on form validation
 - Update dependencies
 - Update poll submit behaviour
 
