@@ -9,14 +9,6 @@ const infoColor = css.color('#6c757d');
 const invalidColor = css.color('#dc3545');
 const validColor = css.color('#198754');
 
-
-const lightGrey = css.color('#e6e6e6');
-const darkGrey = css.color('#383e42');
-
-const backgroundLight = css.color('#f4f4f4');
-const backgroundMedium = css.color('#efe3d4');
-const backgroundDark = css.color('#7c3d01');
-
 const darkModeTextColor = lightColor;
 
 module.exports = {
@@ -33,28 +25,6 @@ module.exports = {
   darkModeTextColor,
   invalidColor,
   validColor,
-
-  /* --------------------- Background Colors --------------------- */
-
-  // Elements using layoutBaseBackgroundColor: layout base
-  layoutBaseBackgroundColor: lightColor,
-
-  // A bright and neutral color should be chosen here, a discrete color matching the primary or secondary color can be generated here: https://mycolor.space/
-  // Elements using layoutColoredBackgroundColor: layout with background color
-  layoutColoredBackgroundColor: backgroundLight,
-  layoutColoredBackgroundColorDarkMode: darkGrey,
-
-  // Elements using highlightedBackgroundColor: highlighted content
-  highlightBackgroundColor: backgroundMedium,
-  highlightBackgroundColorDarkMode: backgroundDark,
-
-  // Elements using eventBackgroundColor: event
-  eventBackgroundColor: secondaryColor,
-
-  // Elements using footerBackgroundColor: footer layout base
-  footerDarkBackgroundColor: darkGrey,
-  // Elements using footerLightBackgroundColor: footer layout light
-  footerLightBackgroundColor: lightColor,
 
   /* ============================================================= */
   /*	                           Fonts	                           */
