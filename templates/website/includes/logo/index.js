@@ -12,4 +12,6 @@ module.exports = cx.include
     cx.dropzone
       .withDropzone('logo-dropzone-vBnV9R')
       .withMaxAllowedElements(1)
-      .withAllowedElements(require('./../../../shared/content-elements/logo')));
+      .withAllowedElements(
+        require('@bsi-cx/design-standard-library-web/content-elements/advanced/logo-with-darkmode')
+    ));

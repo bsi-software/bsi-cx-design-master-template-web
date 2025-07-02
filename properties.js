@@ -1,17 +1,30 @@
 const {css} = require('@bsi-cx/design-build');
 
+const primaryColor = css.color('#16616d');
+const secondaryColor = css.color('#ff7d00');
+const darkColor = css.color('#383e42');
+const lightColor = css.color('#ffffff');
+const infoColor = css.color('#6c757d');
+
+const invalidColor = css.color('#dc3545');
+const validColor = css.color('#198754');
+
+const darkModeTextColor = lightColor;
+
 module.exports = {
 
   /* ============================================================= */
   /*	                           Colors	                           */
   /* ============================================================= */
 
-  primaryColor: css.color('#16616d'),
-  secondaryColor: css.color('#ff7d00'),
-  darkColor: css.color('#383e42'),
-  lightColor: css.color('#ffffff'),
-  infoColor: css.color('#6c757d'),
-
+  primaryColor,
+  secondaryColor,
+  darkColor,
+  lightColor,
+  infoColor,
+  darkModeTextColor,
+  invalidColor,
+  validColor,
 
   /* ============================================================= */
   /*	                           Fonts	                           */
@@ -245,6 +258,7 @@ module.exports = {
   // Show warning: 'show-alt-warning'
   // No warning: 'no-alt-warning'
   figureAltWarning: 'show-alt-warning',
+  figureAltWarningMessage: 'Bitte gib einen Text an',
 
   /* ============================================================= */
   /*	                     Social Media Follow	                   */

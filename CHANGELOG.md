@@ -8,10 +8,29 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 Hint: You will find the list of compatible BSI versions for each template in the [Compatibility section of the README](https://github.com/bsi-software/bsi-cx-design-master-template-web?tab=readme-ov-file#compatibility).
 
 ## Next
+
+
+
+## [1.3.8] - 03.06.2025
+
+### Changed
+- Add property for alt-text warning
+
+## [1.3.7] - 29.04.2025
+
+### Changed
+- Add pin element
+- Fix required error on form validation
+- Update dependencies
+- Update poll submit behaviour
+
+## [1.3.6] - 25.02.2025
+
+### Changed
 - Remove default elements from header-image dropzone
+- Add style colors for dark mode
 
-
-## [1.3.5] - 05.02.2024
+## [1.3.5] - 05.02.2025
 
 ### Changed
 - Remove List & List-Item, until the elements are fully released
