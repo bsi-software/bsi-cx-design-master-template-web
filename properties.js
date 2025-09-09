@@ -25,7 +25,6 @@ module.exports = {
   darkModeTextColor,
   invalidColor,
   validColor,
-
   /* ============================================================= */
   /*	                           Fonts	                           */
   /* ============================================================= */
@@ -57,6 +56,8 @@ module.exports = {
 
   // Allowed values: de, en
   language: 'de',
+
+  darkModeActiveProperty: false,
 
 
 
