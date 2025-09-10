@@ -70,7 +70,8 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/form/select'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/checkbox'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/radio'),
-        require('@bsi-cx/design-standard-library-web/content-elements/form/poll')),
+        require('@bsi-cx/design-standard-library-web/content-elements/form/poll'),
+        require('@bsi-cx/design-standard-library-web/content-elements/form/audiorecorder')),
     cx.contentElementGroup
       .withGroupId('footer-lJ2X2V')
       .withLabel('Footer')
