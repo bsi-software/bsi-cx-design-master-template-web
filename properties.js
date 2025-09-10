@@ -62,6 +62,8 @@ module.exports = {
   // Allowed values: de, en
   language: 'de',
 
+  darkModeActiveProperty: false,
+
 
 
   /* ============================================================= */
