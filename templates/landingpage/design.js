@@ -2,6 +2,8 @@ require('./styles/styles.scss');
 
 const {cx, SchemaVersion, Locale} = require('@bsi-cx/design-build');
 
+const { newFormElements } = require("@bsi-cx/design-standard-library-web/content-elements/new-form/form-elements");
+
 module.exports = cx.design
   .withSchemaVersion(SchemaVersion.V_22_0)
   .withTitle('BSI CX Master Template - Landingpage')
@@ -78,7 +80,7 @@ module.exports = cx.design
         .withContentElements(
           require('@bsi-cx/design-standard-library-web/content-elements/new-form/form-container'),
           require('@bsi-cx/design-standard-library-web/content-elements/new-form/form-section'),
-          require('@bsi-cx/design-standard-library-web/content-elements/new-form/form-field'),
+          ...newFormElements,
         ),
     cx.contentElementGroup
       .withGroupId('footer-lJ2X2V')
