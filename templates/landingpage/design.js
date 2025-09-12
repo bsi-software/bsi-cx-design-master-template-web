@@ -72,6 +72,15 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/form/radio'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/poll')),
     cx.contentElementGroup
+        .withGroupId('forms-5d136552')
+        /*.withLabel('Forms')*/
+        .withLabel('Neues Formular')
+        .withContentElements(
+          require('@bsi-cx/design-standard-library-web/content-elements/new-form/form-container'),
+          require('@bsi-cx/design-standard-library-web/content-elements/new-form/form-section'),
+          require('@bsi-cx/design-standard-library-web/content-elements/new-form/form-field'),
+        ),
+    cx.contentElementGroup
       .withGroupId('footer-lJ2X2V')
       .withLabel('Footer')
       .withContentElements(
