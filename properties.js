@@ -489,6 +489,10 @@ module.exports = {
   // If no text is selected, lorem ipsum sample text is used.
   formFieldLabelText: '',
   formFieldInfoText: '',
+  // Set behaviour of input type date
+  // Datum kann nur per Picker eingegeben werden: 'reject-input'
+  // Datum kann als Text oder per Picker eingegeben werden: 'allow-input'
+  flatpickrInput: 'allow-input',
 
   /* ------------------ Form field phone number ------------------ */
   // If no text is selected, lorem ipsum sample text is used.
@@ -529,7 +533,7 @@ module.exports = {
   regexInfoText: '',
   // This property is a stringified JSON object which defines the available Regex patterns
   // example: JSON.stringify({ "Datum": "\\d{2}\\.\\d{2}\\.\\d{4}", "PLZ": "[0-9]{5}", "KFZ": "[A-ZÖÜÄ]{1,3} [A-ZÖÜÄ]{1,2} [1-9]{1}[0-9]{1,3}" })
-  regexPattern: JSON.stringify({ "Datum": "\\d{2}\\.\\d{2}\\.\\d{4}", "PLZ": "[0-9]{5}", "KFZ": "[A-ZÖÜÄ]{1,3} [A-ZÖÜÄ]{1,2} [1-9]{1}[0-9]{1,3}" }),
+  regexPattern: JSON.stringify({}),
 
   /* ----------------------- Error Texts ------------------------- */
   // This text is displayed below a form element if the field is required but has not been filled out.
