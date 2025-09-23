@@ -10,7 +10,7 @@ Hint: You will find the list of compatible BSI versions for each template in the
 ## Next
 * Add audio recorder element
 * Add dark mode property
-* Add new wenn-dann group element
+* Add new if-else-group element
 
 ## [1.3.8] - 03.06.2025
 
