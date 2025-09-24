@@ -489,10 +489,6 @@ module.exports = {
   // If no text is selected, lorem ipsum sample text is used.
   formFieldLabelText: '',
   formFieldInfoText: '',
-  // Set behaviour of input type date
-  // Datum kann nur per Picker eingegeben werden: 'reject-input'
-  // Datum kann als Text oder per Picker eingegeben werden: 'allow-input'
-  flatpickrInput: 'allow-input',
 
   /* ------------------ Form field phone number ------------------ */
   // If no text is selected, lorem ipsum sample text is used.
