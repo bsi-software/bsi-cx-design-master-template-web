@@ -10,6 +10,9 @@ Hint: You will find the list of compatible BSI versions for each template in the
 ## Next
 * Add audio recorder element
 * Add dark mode property
+* Add regexPattern property
+* Add radioOrientationStyle property
+* Change documentation of formTooltipStyle property 
 
 
 ## [1.3.8] - 03.06.2025
