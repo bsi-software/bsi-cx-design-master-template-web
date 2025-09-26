@@ -8,6 +8,7 @@ const infoColor = css.color('#6c757d');
 
 const invalidColor = css.color('#dc3545');
 const validColor = css.color('#198754');
+const audioRecorderColor = css.color('#25D366');
 const recordingColor = css.color('#ff0000');
 
 const darkModeTextColor = lightColor;
@@ -26,6 +27,7 @@ module.exports = {
   darkModeTextColor,
   invalidColor,
   validColor,
+  audioRecorderColor,
   recordingColor,
 
   /* ============================================================= */
