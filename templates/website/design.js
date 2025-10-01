@@ -1,6 +1,7 @@
 require("./styles/styles.scss");
 
-const { cx, SchemaVersion, Locale } = require("@bsi-cx/design-build");
+const { cx, SchemaVersion } = require("@bsi-cx/design-build");
+const properties = require("../../properties");
 
 module.exports = cx.design
   .withSchemaVersion(SchemaVersion.V_22_0)
@@ -8,8 +9,8 @@ module.exports = cx.design
   .withAuthor("Design Team - BSI Business Systems Integration AG")
   .withDate("21.01.2022")
   .withPreviewImage("static/header.png")
-  .withDefaultLocale(Locale.EN)
-  .withLocales(Locale.EN)
+  .withDefaultLocale(properties.language)
+  .withLocales(properties.language)
   .withContentElementGroups(
     cx.contentElementGroup
       .withGroupId("header-Eev4oq")
