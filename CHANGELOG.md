@@ -8,6 +8,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 Hint: You will find the list of compatible BSI versions for each template in the [Compatibility section of the README](https://github.com/bsi-software/bsi-cx-design-master-template-web?tab=readme-ov-file#compatibility).
 
 ## Next
+* Add new if-else-group element
 
 
 ## [1.3.9] - 01.10.2025
@@ -18,7 +19,6 @@ Hint: You will find the list of compatible BSI versions for each template in the
 * Add radioOrientationStyle property
 * Add regexPattern property
 * Change documentation of formTooltipStyle property 
-
 
 ## [1.3.8] - 03.06.2025
 
