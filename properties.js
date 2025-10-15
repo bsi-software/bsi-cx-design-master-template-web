@@ -12,6 +12,28 @@ const recordingColor = css.color('#ff0000');
 
 const darkModeTextColor = lightColor;
 
+  // new formular colors
+  const formElementBackgroundColor = lightColor;
+  const formBorderColor = darkColor;
+  const formLabelColor = darkColor;
+  const formActiveColor = lightColor;
+  const formActiveBackgroundColor = darkColor;
+  const formHelperTextColor = darkColor;
+  const formErrorColor = invalidColor;
+  const formSuccessColor = validColor;
+  const formButtonSubmitColor = lightColor;
+  const formButtonSubmitBackgroundColor = primaryColor;
+  const formButtonResetColor = darkColor;
+  const formButtonResetBackgroundColor = lightColor;
+
+  // formHoverColor: css.color('#383e42'),
+  // formHoverBackgroundColor: css.color('#383e42'),  
+
+  // formButtonSubmitHoverColor: css.color('#ffffff'),
+  // formButtonResetHoverColor: css.color('#383e42'),
+  // formButtonSubmitHoverBackgroundColor: css.color('#2F4E66'),
+  // formButtonResetHoverBackgroundColor: css.color('#ffffff'),
+
 module.exports = {
 
   /* ============================================================= */
@@ -27,6 +49,21 @@ module.exports = {
   invalidColor,
   validColor,
   recordingColor,
+
+  // new form colors
+  formElementBackgroundColor,
+  formBorderColor,
+  formLabelColor,
+  formActiveColor,
+  formActiveBackgroundColor,
+  formHelperTextColor,
+  formErrorColor,
+  formSuccessColor,
+  formButtonSubmitColor,
+  formButtonSubmitBackgroundColor,
+  formButtonResetColor,
+  formButtonResetBackgroundColor,
+
 
   /* ============================================================= */
   /*	                      Global Variables                       */
@@ -555,6 +592,32 @@ module.exports = {
   // This text is displayed below a form element if the input does not match the expected format.
   errorInvalidText: '', // see translation in DE/EN files
 
+  /* ============================================================= */
+  /*	                           new Form 	                           */
+  /* ============================================================= */
+
+  // new formular colors
+
+  // new formular fileupload
+  fileUploadBorderColor: css.color(formBorderColor.red, formBorderColor.green, formBorderColor.blue, 0.1),
+  fileUploadBorderActiveColor: formActiveColor,
+  fileUploadBorderFocusColor: formActiveColor,
+  fileUploadBorderColorDropover: primaryColor,
+  fileUploadBackgroundColor: formElementBackgroundColor,
+  fileUploadBackgroundColorDropover: css.color(primaryColor.red, primaryColor.green, primaryColor.blue, 0.1),
+  fileUploadButtonColor: primaryColor,
+  fileUploadButtonFontColor: formButtonSubmitColor,  
+  fileUploadButtonHoverColor: formButtonSubmitColor,
+  fileUploadIconUploadFontName: 'bootstrap-icons',
+  fileUploadIconUploadFontCharacter: '\F296',
+  fileUploadIconDeleteFontName: 'bootstrap-icons',
+  fileUploadIconDeleteFontCharacter: '\F622',
+  fileUploadDeleteButtomColor: formErrorColor,
+  fileUploadDeleteButtomHoverColor: css.color(formErrorColor.red, formErrorColor.green, formErrorColor.blue, 0.3),
+
+  // new formular poll
+  pollHoverColor: formActiveColor,
+  pollHoverBackgroundColor: formActiveBackgroundColor,
 
   /* ============================================================= */
   /*	                          Columns 	                         */
