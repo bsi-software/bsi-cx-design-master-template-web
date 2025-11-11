@@ -1,6 +1,6 @@
 require('./styles/styles.scss');
 
-const {cx, SchemaVersion, Locale} = require('@bsi-cx/design-build');
+const { cx, SchemaVersion, Locale } = require('@bsi-cx/design-build');
 
 module.exports = cx.design
   .withSchemaVersion(SchemaVersion.V_22_0)
@@ -42,7 +42,8 @@ module.exports = cx.design
       /*.withLabel('Content')*/
       .withLabel('Inhalt')
       .withContentElements(
-        require('@bsi-cx/design-standard-library-web/content-elements/base/text'),
+        require('@bsi-cx/design-standard-library-web/content-elements/base/text')
+          .editor(require('./../shared/configs/editor/custom_editor')),
         require('@bsi-cx/design-standard-library-web/content-elements/base/figure'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/banner'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/button'),

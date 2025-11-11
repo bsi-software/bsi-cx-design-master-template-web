@@ -44,7 +44,8 @@ module.exports = cx.design
       /*.withLabel('Content')*/
       .withLabel("Inhalt")
       .withContentElements(
-        require("@bsi-cx/design-standard-library-web/content-elements/base/text"),
+        require("@bsi-cx/design-standard-library-web/content-elements/base/text")
+          .editor(require('../shared/configs/editor/custom_editor')),
         require("@bsi-cx/design-standard-library-web/content-elements/base/figure"),
         require("@bsi-cx/design-standard-library-web/content-elements/base/banner"),
         require("@bsi-cx/design-standard-library-web/content-elements/base/button"),
@@ -79,6 +80,9 @@ module.exports = cx.design
         require("@bsi-cx/design-standard-library-web/content-elements/form/recaptcha"),
         // require("@bsi-cx/design-standard-library-web/content-elements/form/regex-input"), !!! set properties.regexPattern first !!!
       )
+  )
+  .withHtmlEditorConfigs(
+    require('../shared/configs/editor/custom_editor')
   )
   .withWebsite(
     cx.website
