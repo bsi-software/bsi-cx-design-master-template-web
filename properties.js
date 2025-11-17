@@ -12,27 +12,27 @@ const recordingColor = css.color('#ff0000');
 
 const darkModeTextColor = lightColor;
 
-  // new formular colors
-  const formElementBackgroundColor = lightColor;
-  const formBorderColor = darkColor;
-  const formLabelColor = darkColor;
-  const formActiveColor = lightColor;
-  const formActiveBackgroundColor = darkColor;
-  const formHelperTextColor = darkColor;
-  const formErrorColor = invalidColor;
-  const formSuccessColor = validColor;
-  const formButtonSubmitColor = lightColor;
-  const formButtonSubmitBackgroundColor = primaryColor;
-  const formButtonResetColor = darkColor;
-  const formButtonResetBackgroundColor = lightColor;
+// new formular colors
+const formElementBackgroundColor = lightColor;
+const formBorderColor = darkColor;
+const formLabelColor = darkColor;
+const formActiveColor = lightColor;
+const formActiveBackgroundColor = darkColor;
+const formHelperTextColor = darkColor;
+const formErrorColor = invalidColor;
+const formSuccessColor = validColor;
+const formButtonSubmitColor = lightColor;
+const formButtonSubmitBackgroundColor = primaryColor;
+const formButtonResetColor = darkColor;
+const formButtonResetBackgroundColor = lightColor;
 
-  // formHoverColor: css.color('#383e42'),
-  // formHoverBackgroundColor: css.color('#383e42'),  
+// formHoverColor: css.color('#383e42'),
+// formHoverBackgroundColor: css.color('#383e42'),  
 
-  // formButtonSubmitHoverColor: css.color('#ffffff'),
-  // formButtonResetHoverColor: css.color('#383e42'),
-  // formButtonSubmitHoverBackgroundColor: css.color('#2F4E66'),
-  // formButtonResetHoverBackgroundColor: css.color('#ffffff'),
+// formButtonSubmitHoverColor: css.color('#ffffff'),
+// formButtonResetHoverColor: css.color('#383e42'),
+// formButtonSubmitHoverBackgroundColor: css.color('#2F4E66'),
+// formButtonResetHoverBackgroundColor: css.color('#ffffff'),
 
 module.exports = {
 
@@ -611,9 +611,11 @@ module.exports = {
   fileUploadIconUploadFontName: 'bootstrap-icons',
   fileUploadIconUploadFontCharacter: '\F296',
   fileUploadIconDeleteFontName: 'bootstrap-icons',
-  fileUploadIconDeleteFontCharacter: '\F622',
-  fileUploadDeleteButtomColor: formErrorColor,
-  fileUploadDeleteButtomHoverColor: css.color(formErrorColor.red, formErrorColor.green, formErrorColor.blue, 0.3),
+  fileUploadIconDeleteFontCharacter: '\F62A',
+  fileUploadDeleteButtomBackgroundColor: darkColor,
+  fileUploadDeleteButtomHoverBackgroundColor: css.color(darkColor.red, darkColor.green, darkColor.blue, 0.3),
+  fileUploadDeleteButtomColor: lightColor,
+  fileUploadDeleteButtomHoverColor: css.color(lightColor.red, lightColor.green, lightColor.blue, 0.3),
 
   // new formular poll
   pollHoverColor: formActiveColor,
