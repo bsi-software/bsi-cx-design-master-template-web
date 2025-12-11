@@ -61,9 +61,9 @@ module.exports = {
 // TODO: Kann später raus, ist nur zum prüfen ob in der StandardLib alles korrekt referenziert ist
   /* ---------------------- Regex input--------------------------- */
   // If no text is selected, lorem ipsum sample text is used.
-  regexLabelText: '',
-  regexInfoText: '',
+  // regexLabelText: '',
+  // regexInfoText: '',
   // This property is a stringified JSON object which defines the available Regex patterns
   // example: JSON.stringify({ "Datum": "\\d{2}\\.\\d{2}\\.\\d{4}", "PLZ": "[0-9]{5}", "KFZ": "[A-ZÖÜÄ]{1,3} [A-ZÖÜÄ]{1,2} [1-9]{1}[0-9]{1,3}" })
-  regexPattern: JSON.stringify({ "Datum": "\\d{2}\\.\\d{2}\\.\\d{4}", "PLZ": "[0-9]{5}", "KFZ": "[A-ZÖÜÄ]{1,3} [A-ZÖÜÄ]{1,2} [1-9]{1}[0-9]{1,3}" }),
+  // regexPattern: JSON.stringify({ "Datum": "\\d{2}\\.\\d{2}\\.\\d{4}", "PLZ": "[0-9]{5}", "KFZ": "[A-ZÖÜÄ]{1,3} [A-ZÖÜÄ]{1,2} [1-9]{1}[0-9]{1,3}" }),
 }
