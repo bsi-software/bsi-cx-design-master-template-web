@@ -55,6 +55,6 @@ module.exports = cx.design
       .withGroupId('footer-lJ2X2V')
       .withLabel('Footer')
       .withContentElements(
-
+        
       )
   );
