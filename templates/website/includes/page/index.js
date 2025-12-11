@@ -15,4 +15,4 @@ module.exports = cx.pageInclude
     cx.dropzone
       .withDropzone('page-content-dropzone-JPzHJO')
       .withAllowedElements()
-  );
+  ); // TODO: prüfen, ob es sinnvoll ist, hier alles zu erlauben
