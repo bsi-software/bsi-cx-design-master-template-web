@@ -3,7 +3,7 @@ const globalVars = {
     resourceBaseUrl: getMetaValue('resourceBaseUrl'),
     language: getMetaValue('language'),
     locale: getMetaValue('locale'),
-    localizedWebsiteBaseUrl: getMetaValue('localizedWebsiteBaseUrl'),W
+    localizedWebsiteBaseUrl: getMetaValue('localizedWebsiteBaseUrl'),
 }
 
 module.exports.globalVars = globalVars;
