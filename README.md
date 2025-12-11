@@ -3,7 +3,7 @@
 [![BSI CX >= 25.2.0](https://img.shields.io/badge/BSI%20CX-%3E%3D1.3.0-brightgreen)](https://www.bsi-software.com/cx)
 [![Latest available version](https://img.shields.io/github/v/tag/bsi-software/bsi-cx-design-master-template-web?label=npm)](https://github.com/bsi-software/bsi-cx-design-master-template-web/releases)
 
-<!-- TODO: Wie handhaben wir das? Wenn wir eine neue Version machen, wäre es vielleciht ugt, wenn wir das von der alten trennen -->
+<!-- TODO: Wie handhaben wir das? Wenn wir eine neue Version machen, wäre es vielleicht gut, wenn wir das von der alten trennen -->
 [![Open GitHub issues](https://img.shields.io/github/issues/bsi-software/bsi-cx-design-master-template-web)](https://github.com/bsi-software/bsi-cx-design-master-template-web/issues)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/w/bsi-software/bsi-cx-design-master-template-web)](https://github.com/bsi-software/bsi-cx-design-master-template-web/commits)
 [![GitHub last commit](https://img.shields.io/github/last-commit/bsi-software/bsi-cx-design-master-template-web)](https://github.com/bsi-software/bsi-cx-design-master-template-web/commits)
