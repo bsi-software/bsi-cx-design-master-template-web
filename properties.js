@@ -5,7 +5,7 @@ const secondaryColor = css.color('#0082a1');
 const tertiaryColor = css.color('#2bb198');
 const darkColor = css.color('#333333');
 const lightColor = css.color('#ffffff');
-const infoColor = css.color('#abb3b8')
+const infoColor = css.color('#abb3b8');
 
 const invalidColor = css.color('#d11928');
 const validColor = css.color('#19804b');
