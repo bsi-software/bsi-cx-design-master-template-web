@@ -32,7 +32,6 @@ jobs:
         run: |
           npm ls @bsi-cx/design-standard-library-web
 
-
       # Buld project
       - name: Build project
         run: |
