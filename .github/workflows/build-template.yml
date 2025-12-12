@@ -4,7 +4,7 @@ on:
   workflow_dispatch:  # allows you to launch the workflow manually
   push:                                  # to delete
     branches:                            # to delete
-      - 'features/mima/pipeline-to-build-master-template'  # to delete before to merge in the main, it is used just for test 
+      - 'features/mima/pipeline-to-build-master-template-web'  # to delete before to merge in the main, it is used just for test 
 
 jobs:
   build:
