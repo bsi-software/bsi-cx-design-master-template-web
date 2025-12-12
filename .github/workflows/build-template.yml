@@ -1,0 +1,52 @@
+name: Build & Merge Dist Artifacts
+
+on:
+  workflow_dispatch:  # allows you to launch the workflow manually
+  push:                                  # to delete
+    branches:                            # to delete
+      - 'features/mima/pipeline-to-build-master-template'  # to delete before to merge in the main, it is used just for test 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out the current branch
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Environment setup
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'
+
+      # Installing dependencies and the latest version of the standard library
+      - name: Install dependencies
+        run: |       
+          npm install                          
+          npm update @bsi-cx/design-standard-library-web
+
+      # Check installed standard library version
+      - name: Check installed standard library version
+        run: |
+          npm ls @bsi-cx/design-standard-library-web
+
+
+      # Buld project
+      - name: Build project
+        run: |
+          npm run build:prod
+
+      # Flatten all ZIPs into a single folder
+      - name: Collect all zip files into a flat folder
+        run: |
+          mkdir -p artifacts-flat
+          find dist -name "*.zip" -exec cp {} artifacts-flat/ \;
+
+      # Upload flat artifact 
+      - name: Upload Combined Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: master-template-web-all-builds
+          path: artifacts-flat
