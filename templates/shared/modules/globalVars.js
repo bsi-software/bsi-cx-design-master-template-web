@@ -1,3 +1,5 @@
+const getMetaValue = (attribute) => document.querySelector(`meta[name=x-${attribute}]`).getAttribute('value');
+
 const globalVars = {
     websiteBaseUrl: getMetaValue('websiteBaseUrl'),
     resourceBaseUrl: getMetaValue('resourceBaseUrl'),
