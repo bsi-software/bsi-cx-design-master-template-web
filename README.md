@@ -1,7 +1,9 @@
 [![node >= 16.16.0](https://img.shields.io/badge/node-%3E%3D16.16.0-brightgreen)](https://nodejs.org/)
-[![BSI CX >= 1.3.0](https://img.shields.io/badge/BSI%20CX-%3E%3D1.3.0-brightgreen)](https://www.bsi-software.com/cx)
+<!-- TODO: Links anpassen! -->
+[![BSI CX >= 25.2.0](https://img.shields.io/badge/BSI%20CX-%3E%3D1.3.0-brightgreen)](https://www.bsi-software.com/cx)
 [![Latest available version](https://img.shields.io/github/v/tag/bsi-software/bsi-cx-design-master-template-web?label=npm)](https://github.com/bsi-software/bsi-cx-design-master-template-web/releases)
 
+<!-- TODO: Wie handhaben wir das? Wenn wir eine neue Version machen, wäre es vielleicht gut, wenn wir das von der alten trennen -->
 [![Open GitHub issues](https://img.shields.io/github/issues/bsi-software/bsi-cx-design-master-template-web)](https://github.com/bsi-software/bsi-cx-design-master-template-web/issues)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/w/bsi-software/bsi-cx-design-master-template-web)](https://github.com/bsi-software/bsi-cx-design-master-template-web/commits)
 [![GitHub last commit](https://img.shields.io/github/last-commit/bsi-software/bsi-cx-design-master-template-web)](https://github.com/bsi-software/bsi-cx-design-master-template-web/commits)
@@ -32,9 +34,7 @@ Refer to the following compatibility matrix to choose the right template
 
 | Design ZIP `[version]`  | Compatible BSI Release |
 | ------------- | ------------- |
-| 1.3  | Studio 1.2, CX 1.3, BSI 16.2, BSI 16.3 |
-| 22.0  | BSI 22, BSI 23/1 |
-| 23.2  | >= BSI 23/2 |
+| 25.2  | >= BSI 25/2 |
 
 ## Requirements
 

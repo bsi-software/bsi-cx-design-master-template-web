@@ -1,47 +1,36 @@
 <!DOCTYPE html>
 <html> {# lang attribute for landingpages will be automatically set by BSI CX #}
     <head>
-        <title>BSI CX Master Template</title>
+        <title>BSI CX Master Template 2.0</title>
         {% include  './../shared/html-header.twig' %}
     </head>
-    {# target dark mode #}
-    <body class="d-flex flex-column min-vh-100 bsi-dm-bg-color">
+    <body class="d-flex flex-column min-vh-100">
     {% apply spaceless %}
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container {{ properties.logoAlignment }}">
-                <div class="navbar-brand" data-bsi-dropzone="logo-dropzone-vBnV9R" data-bsi-dropzone-max-number-of-elements="1" data-bsi-dropzone-allowed-elements="logo-4c8c3a">
+                <div class="navbar-brand" data-bsi-dropzone="logo-dropzone-vBnV9R" data-bsi-dropzone-allowed-elements="logo-4c8c3a">
                     {% block logo %}
-                        {% include  '@bsi-cx/design-standard-library-web/content-elements/advanced/logo-with-darkmode/template.twig' %}
+
                     {% endblock %}
                 </div>
             </div>
         </nav>
-        <div id="header" class="mb-4" data-bsi-dropzone="header-dropzone-JPzHJO" data-bsi-dropzone-max-number-of-elements="1" data-bsi-dropzone-allowed-elements="header-image-xC4085">
+        <div id="header" class="mb-4" data-bsi-dropzone="header-dropzone-JPzHJO">
             {% block header %}
-                {% include './../shared/content-elements/header-image/template.twig' %}
+                
             {% endblock %}
         </div>
         <div id="content" class="mb-4 flex-grow-1 d-flex flex-column" data-bsi-dropzone="content-dropzone-r5vJUs" data-bsi-dropzone-allowed-elements="col-one-l2ZclN col-two-ILRIL0 col-three-MEOl1p col-four-yFAGKM spacer-jarY9b html-VN5KXz">
             {% block content %}
+
             {% endblock %}
         </div>
-        <div id="footer" data-bsi-dropzone="footer-dropzone-z8x25E" data-bsi-dropzone-max-number-of-elements="1" data-bsi-dropzone-allowed-elements="footer-nJDYZP">
-            {% embed './content-elements/footer/template.twig' %}
-                {% block footer %}
-                    {% embed '@bsi-cx/design-standard-library-web/content-elements/layout/col-one/template.twig' with {
-                    colOneAlignment: 'bsi-col-align-center'
-                    } %}
-                        {% block col_one_dropzone %}
-                            {% include '@bsi-cx/design-standard-library-web/content-elements/base/social-media-follow/template.twig' with {
-                                iconColor: 'bsi-icon-color-light'
-                            } only %}
-                        {% endblock %}
-                    {% endembed %}
-                {% endblock %}
-            {% endembed %}
+        <div id="footer" data-bsi-dropzone="footer-dropzone-z8x25E">
+
         </div>
     {% endapply %}
 
+    {# TODO: Was macht dieses Script? Brauchen wir das noch? #}
     <script src="{{ bsi_cx_js_module_runtime_href() }}" data-bsi-remove-if="draft" defer="defer"></script>
     {{ bsi_cx_js_module_missing_chunks_import() }}
     </body>

@@ -1,1 +1,1 @@
-import '@bsi-cx/design-standard-library-web/core/main/index';
+import '../../shared/modules/main.js';
