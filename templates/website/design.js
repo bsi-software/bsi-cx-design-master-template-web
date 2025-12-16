@@ -11,7 +11,7 @@ module.exports = cx.design
   .withDefaultLocale(Locale.DE)
   .withLocales(Locale.DE) // TODO: Was ganu kann man hier angeben? Das sollte ja eigentlcih ein Array sein, warum ist nur eine Sprache angegeben?
   .withContentElementGroups(
-    ...require('../shared/groups').websiteGroups
+    ...require('../shared/groups').websiteGroups,
   )
   .withWebsite(
     cx.website
