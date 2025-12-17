@@ -2,9 +2,9 @@ name: Build & Merge Dist Artifacts
 
 on:
   workflow_dispatch:  # allows you to launch the workflow manually
-  push:                                  # to delete
-    branches:                            # to delete
-      - 'features/mima/pipeline-to-build-master-template-web'  # to delete before to merge in the main, it is used just for test 
+  # push:                                  
+  #   branches:                            
+  #     - 'features/mima/pipeline-to-build-master-template-web'  # Restricts push trigger to this branch for pipeline testing purposes
 
 jobs:
   build:
