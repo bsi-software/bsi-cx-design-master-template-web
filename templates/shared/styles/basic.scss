@@ -1,0 +1,20 @@
+// ------------------------------------------------------------
+// Project Base Styles
+//
+// Purpose:
+// - Contains project-specific base styles that extend or
+//   supplement the library's basic styles.
+// - Uses library-config.scss to access all properties and
+//   Bootstrap variables (including overrides).
+//
+// Notes:
+// - Only add project-specific styles or overrides that are
+//   missing from the library.
+// - Should not duplicate library base styles.
+// ------------------------------------------------------------
+
+@use './library-config.scss' as lib;
+
+#content {
+    gap: lib.$gapBetweenElements;
+}

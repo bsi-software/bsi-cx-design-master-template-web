@@ -1,0 +1,16 @@
+// ------------------------------------------------------------
+// Project Components
+//
+// Purpose:
+// - Serves as a central entry point for all project-specific component styles.
+// - Only forwards individual component SCSS files (e.g., button.scss, card.scss).
+// - Does not contain any styles itself.
+//
+// Notes:
+// - Properties and Bootstrap variables from the library can be accessed
+//   in the individual component files via `@use './library-config.scss' as lib`.
+// - Forwarding here allows the project to `@use` a single file to include
+//   all component styles.
+// ------------------------------------------------------------
+
+@use './library-config.scss' as lib;

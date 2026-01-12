@@ -1,0 +1,26 @@
+// ------------------------------------------------------------
+// Library Configuration (Project-level)
+//
+// This file bridges the design library with the project.
+// It forwards the library's properties and Bootstrap configurations
+// while allowing project-specific overrides.
+//
+// Purpose:
+// - Allows overriding library properties or Bootstrap variables for the project.
+// - Uses `@forward ... with(...)` so all project files see the updated values.
+// - Ensures that library components automatically use the overridden values
+//   when included in the project.
+//
+// Notes:
+// - Only variables defined with `!default` in the library can be overridden here.
+// - Do NOT use `!default` in this file; you are intentionally overriding values.
+// - Component styles should not be imported here individually; they are
+//   already included via the library index.
+// ------------------------------------------------------------
+
+@forward '~@bsi-cx/design-standard-library-web/styles/index.scss' with (
+  $primary: #00ff00,
+  $bootstrap-theme-colors: (
+    'primary': #4b2b01,
+  ),
+);
