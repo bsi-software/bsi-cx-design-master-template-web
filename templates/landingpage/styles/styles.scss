@@ -1,5 +1,9 @@
-@import '~@bsi-cx/design-standard-library-web/styles/styles.scss';
+@use '../../shared/styles/styles.scss';
 
+// enable bootstrap css Grid - must be before import bootstrap styles
+$enable-cssgrid: true;
+
+@import '~@bsi-cx/design-standard-library-web/styles/styles.scss';
 
 /*
  * Global styles that are independent from a specific content element
