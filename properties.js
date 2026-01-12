@@ -1,4 +1,6 @@
-const {css} = require('@bsi-cx/design-build');
+const properties = require('@bsi-cx/design-standard-library-web/styles/properties.js');
+
+const { css } = require('@bsi-cx/design-build');
 
 const primaryColor = css.color('#fe9915');
 const secondaryColor = css.color('#0082a1');
@@ -13,11 +15,13 @@ const validColor = css.color('#19804b');
 const textColor = css.color('#282322');
 
 module.exports = {
+  ...properties,
 
   /* ============================================================= */
   /*	                           Colors	                           */
   /* ============================================================= */
 
+  // override colors from standardLib
   primaryColor,
   secondaryColor,
   tertiaryColor,
