@@ -7,4 +7,4 @@ module.exports = cx.include
   .withIdentifier('navigation-Vp05IU')
   .withName('Navigation')
   .withEditable(false)
-  .withFile(require('./template.hbs'));
+  .withFile(require('./template.hbs.twig'));

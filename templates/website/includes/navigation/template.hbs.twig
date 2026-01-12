@@ -1,4 +1,5 @@
 <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    {% verbatim %}
     {{#if navigation}}
       <ul class="navbar-nav">
         {{#each navigation.items as |lv1|}}
@@ -29,4 +30,5 @@
         </li>
       </ul>
     {{/if}}
+  {% endverbatim %}
 </div>

@@ -1,0 +1,17 @@
+// ------------------------------------------------------------
+// Shared Entry Point
+//
+// Purpose:
+// - Serves as the central entry point for the project.
+// - Bundles basic styles, project components, and the library-config.
+// - Allows the project to `@use` a single file for all shared styles.
+//
+// Notes:
+// - Only forward here; do not `@use`, because this file is
+//   the entry point for consumption.
+// - This ensures that all overrides in library-config.scss are applied.
+// ------------------------------------------------------------
+
+@forward "./library-config.scss";
+@forward "./basic.scss";
+@forward "./project-components.scss";

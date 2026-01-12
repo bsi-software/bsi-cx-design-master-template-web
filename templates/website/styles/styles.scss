@@ -1,5 +1,13 @@
-@import '~@bsi-cx/design-standard-library-web/styles/styles.scss';
+// ------------------------------------------------------------
+// Website Entry
+//
+// Purpose:
+// - Entry point for the website build.
+// - Uses the shared styles from shared/styles/index.scss.
+//
+// Notes:
+// - This file should only `@use` shared/styles/index.scss, which already
+//   includes basic styles, project components, and library overrides.
+// ------------------------------------------------------------
 
-/*
- * Global styles that are independent from a specific content element
- */
+@use '../../shared/styles/index.scss';
