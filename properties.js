@@ -50,7 +50,12 @@ module.exports = {
 
   // this is the gap between every element.
   // If you set it to 0 there is no gap because Elements has no margin.
-  gapBetweenElements: '24px'
+  gapBetweenElements: '1.5rem',
+  // this ist the padding of each column
+  colPadding: '1rem',
+  // border-radius for column element
+  columnRoundetCorner: '0.5rem',
+
 
   /* ============================================================= */
   /* ============================================================= */
