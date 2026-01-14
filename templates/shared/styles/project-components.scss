@@ -14,3 +14,5 @@
 // ------------------------------------------------------------
 
 @use './library-config.scss' as lib;
+
+@forward '../content-elements/override-button/styles.scss';

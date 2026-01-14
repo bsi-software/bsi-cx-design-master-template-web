@@ -6,6 +6,8 @@
  */
 
 // TODO: Kann später raus, ist nur zum prüfen ob in der StandardLib alles korrekt referenziert ist
+const { cx } = require('@bsi-cx/design-build');
+
 const { oldContentElementGroup } = require('@bsi-cx/design-standard-library-web/content-elements/_old-content-elements');
 
 const { layoutGroup } = require('@bsi-cx/design-standard-library-web/content-elements/layout');
@@ -17,7 +19,7 @@ sharedGroups = [
     oldContentElementGroup,
 
     layoutGroup,
-    buttonGroup,
+    buttonGroup.withContentElements(require('./content-elements/override-button')),
     textGroup,
 ]
 

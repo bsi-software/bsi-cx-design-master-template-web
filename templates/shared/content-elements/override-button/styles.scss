@@ -1,0 +1,13 @@
+@use "../../styles/library-config.scss" as lib;
+
+// @use "@bsi-cx/design-standard-library-web/content-elements/buttons/button-filled/styles.scss" with (
+//     $buttonPadding: 0.5rem,
+//     $buttonBorder: lib.border-width(100) solid #ff0000,
+//     $buttonBorderRadius: 16px,
+//     $buttonGap: 8px,
+//     $buttonTextColor: #000000
+// );
+
+.bsi-button-template-part {
+    height: 200px;
+}

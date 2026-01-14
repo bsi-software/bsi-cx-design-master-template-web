@@ -11,6 +11,12 @@
 // - Ensures that library components automatically use the overridden values
 //   when included in the project.
 //
+// Important:
+// - Do NOT reference variables from the forwarded library in this file.
+//   The `with(...)` configuration is evaluated *before* the library is loaded.
+//   Accessing library variables here would create circular dependencies
+//   and is therefore not supported by the Sass module system.
+//
 // Notes:
 // - Only variables defined with `!default` in the library can be overridden here.
 // - Do NOT use `!default` in this file; you are intentionally overriding values.
@@ -18,9 +24,16 @@
 //   already included via the library index.
 // ------------------------------------------------------------
 
+
+// 
 @forward '~@bsi-cx/design-standard-library-web/styles/index.scss' with (
-  $primary: #00ff00,
+  // $primary: #00ff00,
   $bootstrap-theme-colors: (
     'primary': #4b2b01,
   ),
+  $buttonPadding: 0.5rem,
+  $buttonBorder: 3px solid #ff0000,
+  $buttonBorderRadius: 16px,
+  $buttonGap: 8px,
+  $buttonTextColor: #000000
 );
