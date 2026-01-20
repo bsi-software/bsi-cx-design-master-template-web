@@ -19,7 +19,7 @@ sharedGroups = [
     oldContentElementGroup,
 
     layoutGroup,
-    buttonGroup.withContentElements(require('./content-elements/override-button')),
+    buttonGroup.addOrReplaceElements(require('./content-elements/override-button')),
     textGroup,
 ]
 

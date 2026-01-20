@@ -1,5 +1,6 @@
 {
   "name": "@bsi-cx/design-master-template-web",
+  "project": "master-template",
   "version": "2.0.0",
   "description": "BSI CX master template for websites and landing pages",
   "scripts": {

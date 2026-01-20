@@ -21,6 +21,7 @@
 const properties = require('@bsi-cx/design-standard-library-web/properties.js');
 
 module.exports = {
+  project: "master-template",
   ...properties,
 
   /* ============================================================= */
