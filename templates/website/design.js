@@ -15,7 +15,7 @@ module.exports = cx.design
       .withGroupId("header-Eev4oq")
       .withLabel("Header")
       .withContentElements(
-        require("@bsi-cx/design-standard-library-web/content-elements/advanced/logo-with-darkmode"),
+        require('./../shared/content-elements/logo'),
         require("./../shared/content-elements/header-image")
       ),
     cx.contentElementGroup
@@ -67,6 +67,8 @@ module.exports = cx.design
       .withContentElements(
         require("@bsi-cx/design-standard-library-web/content-elements/form/form-container"),
         require("@bsi-cx/design-standard-library-web/content-elements/form/multi-column"),
+        require('@bsi-cx/design-standard-library-web/content-elements/form/if-then/if-layout'),
+        require('@bsi-cx/design-standard-library-web/content-elements/form/if-then/then-group'),
         require("@bsi-cx/design-standard-library-web/content-elements/form/form-field"),
         require("@bsi-cx/design-standard-library-web/content-elements/form/form-field-tel"),
         require("@bsi-cx/design-standard-library-web/content-elements/form/text-area"),
