@@ -70,7 +70,7 @@ module.exports = WebpackConfigBuilder.fromConfigs(
   landingpageBuildConfig.clone()
     .withName('master-template-cx-24.2-landingpage-de')
     .withTargetVersion(Version.CX_24_2)
-    .withPropertiesFilePath(path.resolve(__dirname, 'properties-de.js'))
-  /*landingpageBuildConfig.clone()
+    .withPropertiesFilePath(path.resolve(__dirname, 'properties-de.js')),
+  landingpageBuildConfig.clone()
     .withName('master-template-cx-22.0-landingpage-en')
-    .withPropertiesFilePath(path.resolve(__dirname, 'properties-en.js'))*/);
+    .withPropertiesFilePath(path.resolve(__dirname, 'properties-en.js')));

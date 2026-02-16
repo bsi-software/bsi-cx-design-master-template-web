@@ -8,14 +8,8 @@ const infoColor = css.color('#6c757d');
 
 const invalidColor = css.color('#dc3545');
 const validColor = css.color('#198754');
-
-
-const lightGrey = css.color('#e6e6e6');
-const darkGrey = css.color('#383e42');
-
-const backgroundLight = css.color('#f4f4f4');
-const backgroundMedium = css.color('#efe3d4');
-const backgroundDark = css.color('#7c3d01');
+const audioRecorderColor = css.color('#25D366');
+const recordingColor = css.color('#ff0000');
 
 const darkModeTextColor = lightColor;
 
@@ -33,28 +27,8 @@ module.exports = {
   darkModeTextColor,
   invalidColor,
   validColor,
-
-  /* --------------------- Background Colors --------------------- */
-
-  // Elements using layoutBaseBackgroundColor: layout base
-  layoutBaseBackgroundColor: lightColor,
-
-  // A bright and neutral color should be chosen here, a discrete color matching the primary or secondary color can be generated here: https://mycolor.space/
-  // Elements using layoutColoredBackgroundColor: layout with background color
-  layoutColoredBackgroundColor: backgroundLight,
-  layoutColoredBackgroundColorDarkMode: darkGrey,
-
-  // Elements using highlightedBackgroundColor: highlighted content
-  highlightBackgroundColor: backgroundMedium,
-  highlightBackgroundColorDarkMode: backgroundDark,
-
-  // Elements using eventBackgroundColor: event
-  eventBackgroundColor: secondaryColor,
-
-  // Elements using footerBackgroundColor: footer layout base
-  footerDarkBackgroundColor: darkGrey,
-  // Elements using footerLightBackgroundColor: footer layout light
-  footerLightBackgroundColor: lightColor,
+  audioRecorderColor,
+  recordingColor,
 
   /* ============================================================= */
   /*	                           Fonts	                           */
@@ -87,6 +61,8 @@ module.exports = {
 
   // Allowed values: de, en
   language: 'de',
+
+  darkModeActiveProperty: false,
 
 
 
@@ -501,7 +477,8 @@ module.exports = {
 
   /* ------------------- Form button layout ---------------------- */
   // From the following choices, select the value that you want to be preselected:
-  // Info as Text: 'bsi-form-info-as-text'
+  // Info as Text below input: 'bsi-form-info-below-input'
+  // Info as Text above input: 'bsi-form-info-as-text'
   // Info as Tooltip: 'bsi-form-info-as-tooltip'
   formTooltipStyle: 'bsi-form-info-as-text',
 
@@ -532,6 +509,10 @@ module.exports = {
   radioGroupLabelText: '',
   radioLabelText: '',
   radioInfoText: '',
+  // From the following choices, select the value that you want to be preselected:
+  // Radios below each other: 'bsi-radio-block'
+  // Radios next to each other: 'bsi-radio-inline'
+  radioOrientationStyle:'bsi-radio-block',
 
   /* ------------------------- Select ---------------------------- */
   // If no text is selected, lorem ipsum sample text is used.
@@ -543,6 +524,14 @@ module.exports = {
   // If no text is selected, lorem ipsum sample text is used.
   textAreaLabelText: '',
   textAreaInfoText: '',
+
+  /* ---------------------- Regex input--------------------------- */
+  // If no text is selected, lorem ipsum sample text is used.
+  regexLabelText: '',
+  regexInfoText: '',
+  // This property is a stringified JSON object which defines the available Regex patterns
+  // example: JSON.stringify({ "Datum": "\\d{2}\\.\\d{2}\\.\\d{4}", "PLZ": "[0-9]{5}", "KFZ": "[A-ZÖÜÄ]{1,3} [A-ZÖÜÄ]{1,2} [1-9]{1}[0-9]{1,3}" })
+  regexPattern: JSON.stringify({}),
 
   /* ----------------------- Error Texts ------------------------- */
   // This text is displayed below a form element if the field is required but has not been filled out.

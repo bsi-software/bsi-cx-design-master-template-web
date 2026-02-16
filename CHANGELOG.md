@@ -8,9 +8,20 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 Hint: You will find the list of compatible BSI versions for each template in the [Compatibility section of the README](https://github.com/bsi-software/bsi-cx-design-master-template-web?tab=readme-ov-file#compatibility).
 
 ## Next
-- Use language property for Website build
+* Use language property for Website build
+* Add git pipeline to build master template
+* Add new if-else-group element
+* Reintroduce shared logo element extending `logo-with-darkmode` to restore centralized and brand-specific logo support
 
 
+## [1.3.9] - 01.10.2025
+
+### Changed
+* Add audio recorder element
+* Add dark mode property
+* Add radioOrientationStyle property
+* Add regexPattern property
+* Change documentation of formTooltipStyle property 
 
 ## [1.3.8] - 03.06.2025
 
@@ -37,6 +48,7 @@ Hint: You will find the list of compatible BSI versions for each template in the
 - Remove List & List-Item, until the elements are fully released
 - change code for new h4, h5, h6 element from standard libary
 - Add property to activate / deactivate the alt warning on images
+- Add new mobile banner image
 
 ## [1.3.4] - 19.11.2024
 
