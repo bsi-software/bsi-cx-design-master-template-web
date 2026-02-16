@@ -503,6 +503,10 @@ module.exports = {
   pollLabelRightText: '', // see translation in DE/EN files
   // If no text is selected, lorem ipsum sample text is used.
   pollInfoText: '',
+  // From the following choices, select the value that you want to be preselected:
+  // Classic NPS: 'poll-nps'
+  // Stars: 'poll-star'
+  pollDefaultType: 'poll-nps',
 
   /* -------------------------- Radio ---------------------------- */
   // If no text is selected, lorem ipsum sample text is used.
