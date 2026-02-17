@@ -25,15 +25,14 @@
 // ------------------------------------------------------------
 
 
-// 
 @forward '~@bsi-cx/design-standard-library-web/styles/index.scss' with (
-  // $primary: #00ff00,
+  $primary: #00ff00,
   $bootstrap-theme-colors: (
     'primary': #4b2b01,
   ),
-  $buttonPadding: 0.5rem,
-  $buttonBorder: 3px solid #ff0000,
-  $buttonBorderRadius: 16px,
-  $buttonGap: 8px,
-  $buttonTextColor: #000000
+  $buttons-padding: 0.5rem,
+  $buttons-border: 3px solid #ff0000,
+  $buttons-borderRadius: 16px,
+  $buttons-gap: 8px,
+  $buttons-textColor: #000000
 );
