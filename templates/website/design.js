@@ -76,6 +76,7 @@ module.exports = cx.design
         require("@bsi-cx/design-standard-library-web/content-elements/form/checkbox"),
         require("@bsi-cx/design-standard-library-web/content-elements/form/radio"),
         require("@bsi-cx/design-standard-library-web/content-elements/form/poll"),
+        require('@bsi-cx/design-standard-library-web/content-elements/form/friendly-captcha'),
         require("@bsi-cx/design-standard-library-web/content-elements/form/recaptcha"),
         // require("@bsi-cx/design-standard-library-web/content-elements/form/regex-input"), !!! set properties.regexPattern first !!!
       )
