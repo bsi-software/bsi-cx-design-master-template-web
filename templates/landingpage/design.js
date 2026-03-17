@@ -62,6 +62,7 @@ module.exports = cx.design
       /*.withLabel('Forms')*/
       .withLabel('Formular')
       .withContentElements(
+        require('@bsi-cx/design-standard-library-web/content-elements/form/advanced-file-upload'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/form-container'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/multi-column'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/if-then/if-layout'),
