@@ -10,7 +10,7 @@ Hint: You will find the list of compatible BSI versions for each template in the
 ## Next
 
 
-## [1.3.10] - 07.04.2026
+## [1.3.10] - 08.04.2026
 
 ### Changed
 * Add git pipeline to build master template
