@@ -496,6 +496,8 @@ module.exports = {
   // If no text is selected, lorem ipsum sample text is used.
   phoneLabelText: '',
   phoneInfoText: '',
+  phoneAvailableCountries: 'de, ch, at',
+  phoneCountryPreselect: 'de',
 
   /* --------------------------- Poll ---------------------------- */
   pollLabelText: '', // see translation in DE/EN files
