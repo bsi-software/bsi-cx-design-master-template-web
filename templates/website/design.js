@@ -82,6 +82,7 @@ module.exports = cx.design
         // require("@bsi-cx/design-standard-library-web/content-elements/form/regex-input"), !!! set properties.regexPattern first !!!
       )
   )
+  .withFeatureFormFieldRules(true)
   .withWebsite(
     cx.website
       .withMaxNavigationLevel(2)
