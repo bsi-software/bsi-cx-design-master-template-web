@@ -527,6 +527,10 @@ module.exports = {
   textAreaLabelText: '',
   textAreaInfoText: '',
 
+  /* ---------------------------- NPS ---------------------------- */
+  // Setting to determine whether the NPS form should start at 0 or 1
+  npsStartWith0: true,
+
   /* ---------------------- Regex input--------------------------- */
   // If no text is selected, lorem ipsum sample text is used.
   regexLabelText: '',
