@@ -57,6 +57,7 @@ module.exports = {
   borderWidth: {
     100: '1px',
     200: '2px',
+    300: '3px',
   },
 
 
