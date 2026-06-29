@@ -26,6 +26,9 @@ const formButtonSubmitColor = lightColor;
 const formButtonSubmitBackgroundColor = primaryColor;
 const formButtonResetColor = darkColor;
 const formButtonResetBackgroundColor = lightColor;
+const formPlaceholderColor = darkColor;
+const formErrorIconFontName = 'bootstrap-icons';
+const formErrorIconFontCharacter = '\F333';
 
 // formHoverColor: css.color('#383e42'),
 // formHoverBackgroundColor: css.color('#383e42'),  
@@ -65,6 +68,9 @@ module.exports = {
   formButtonSubmitBackgroundColor,
   formButtonResetColor,
   formButtonResetBackgroundColor,
+  formPlaceholderColor,
+  formErrorIconFontName,
+  formErrorIconFontCharacter,
 
 
   /* ============================================================= */
@@ -609,34 +615,56 @@ module.exports = {
   // This text is displayed below a form element if the input does not match the expected format.
   errorInvalidText: '', // see translation in DE/EN files
 
-  /* ============================================================= */
-  /*	                           new Form 	                           */
-  /* ============================================================= */
+  // // New form specific error texts
+  // formErrorValueMissingText: '', // see translation in DE/EN files
+  // formErrorTypeMissmatchText: '', // see translation in DE/EN files
+  // formOtherError: '', // see translation in DE/EN files
+  // emailInvalidText: '', // see translation in DE/EN files
 
-  // new formular colors
+  // /* ============================================================= */
+  // /*	                           new Form 	                           */
+  // /* ============================================================= */
 
-  // new formular fileupload
-  fileUploadBorderColor: css.color(formBorderColor.red, formBorderColor.green, formBorderColor.blue, 0.1),
-  fileUploadBorderActiveColor: formActiveColor,
-  fileUploadBorderFocusColor: formActiveColor,
-  fileUploadBorderColorDropover: primaryColor,
-  fileUploadBackgroundColor: formElementBackgroundColor,
-  fileUploadBackgroundColorDropover: css.color(primaryColor.red, primaryColor.green, primaryColor.blue, 0.1),
-  fileUploadButtonColor: primaryColor,
-  fileUploadButtonFontColor: formButtonSubmitColor,  
-  fileUploadButtonHoverColor: formButtonSubmitColor,
-  fileUploadIconUploadFontName: 'bootstrap-icons',
-  fileUploadIconUploadFontCharacter: '\F296',
-  fileUploadIconDeleteFontName: 'bootstrap-icons',
-  fileUploadIconDeleteFontCharacter: '\F62A',
-  fileUploadDeleteButtomBackgroundColor: darkColor,
-  fileUploadDeleteButtomHoverBackgroundColor: css.color(darkColor.red, darkColor.green, darkColor.blue, 0.3),
-  fileUploadDeleteButtomColor: lightColor,
-  fileUploadDeleteButtomHoverColor: css.color(lightColor.red, lightColor.green, lightColor.blue, 0.3),
+  // // new formular colors
+  // borderRadiusFormElements: '4px',
+  // formLabelInfoPosition: 'top-bottom',
+  // formButtonAlignment: 'form-button-alignment-start',
+  // spaceBetweenFormSections: '48px',
+  // spaceBetweenFormElements: '24px',
+  // spaceWithinFormelements: '4px',
+  // showFormFieldTypeField: 'false',
 
-  // new formular poll
-  pollHoverColor: formActiveColor,
-  pollHoverBackgroundColor: formActiveBackgroundColor,
+  // // new formular field icons
+  // checkboxIconFontName: 'bootstrap-icons',
+  // checkboxIconFontCharacter: '\F26E',
+  // selectIconFontName: 'bootstrap-icons',
+  // selectIconFontCharacter: '\F282',
+
+  // // new formular fileupload
+  // fileUploadBorderColor: css.color(formBorderColor.red, formBorderColor.green, formBorderColor.blue, 0.1),
+  // fileUploadBorderActiveColor: formActiveColor,
+  // fileUploadBorderFocusColor: formActiveColor,
+  // fileUploadBorderColorDropover: primaryColor,
+  // fileUploadBackgroundColor: formElementBackgroundColor,
+  // fileUploadBackgroundColorDropover: css.color(primaryColor.red, primaryColor.green, primaryColor.blue, 0.1),
+  // fileUploadButtonBackgroundColor: primaryColor,
+  // fileUploadButtonFontColor: formButtonSubmitColor,  
+  // fileUploadButtonHoverBackgroundColor: css.color(primaryColor.red, primaryColor.green, primaryColor.blue, 0.1),
+  // fileUploadButtonHoverFontColor: formButtonSubmitColor,
+  // fileUploadIconUploadFontName: 'bootstrap-icons',
+  // fileUploadIconUploadFontCharacter: '\F296',
+  // fileUploadIconDeleteFontName: 'bootstrap-icons',
+  // fileUploadIconDeleteFontCharacter: '\F62A',
+  // fileUploadDeleteButtonBackgroundColor: darkColor,
+  // fileUploadDeleteButtonHoverBackgroundColor: css.color(darkColor.red, darkColor.green, darkColor.blue, 0.3),
+  // fileUploadDeleteButtonColor: lightColor,
+  // fileUploadDeleteButtonHoverColor: css.color(lightColor.red, lightColor.green, lightColor.blue, 0.3),
+
+  // // new formular poll
+  // pollHoverColor: formActiveColor,
+  // pollHoverBackgroundColor: formActiveBackgroundColor,
+  // npsStartWith0: true,
+  // formPollLabelPosition: 'pollLabelPositionBelow',
 
   /* ============================================================= */
   /*	                          Columns 	                         */

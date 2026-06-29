@@ -35,5 +35,9 @@ module.exports = {
 
   /* ----------------------- Error Texts ------------------------- */
   errorRequiredText: 'Bitte füllen Sie dieses Feld aus.',
-  errorInvalidText: 'Der Wert, den Sie für dieses Feld eingegeben haben, ist ungültig.'
+  errorInvalidText: 'Der Wert, den Sie für dieses Feld eingegeben haben, ist ungültig.',
+  // formErrorValueMissingText: 'Bitte füllen Sie dieses Feld aus.',
+  // formErrorTypeMissmatchText: 'Das Format ist ungültig.',
+  // formOtherError: 'Ungültige Eingabe.',
+  // emailInvalidText: 'Sie haben keine gültige E-Mail Adresse eingegeben. Beispiel: mail@example.com'
 }

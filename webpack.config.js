@@ -52,10 +52,10 @@ module.exports = WebpackConfigBuilder.fromConfigs(
   //   .withName('master-template-cx-23.2-website')
   //   .withTargetVersion(Version.CX_23_2)
   //   .withPropertiesFilePath(path.resolve(__dirname, 'properties-de.js')),
-  // websiteBuildConfig.clone()
-  //   .withName('master-template-cx-24.2-website')
-  //   .withTargetVersion(Version.CX_24_2)
-  //   .withPropertiesFilePath(path.resolve(__dirname, 'properties-de.js')),
+  websiteBuildConfig.clone()
+    .withName('master-template-cx-24.2-website')
+    .withTargetVersion(Version.CX_24_2)
+    .withPropertiesFilePath(path.resolve(__dirname, 'properties-de.js')),
   // landingpageBuildConfig.clone()
   //   .withName('master-template-cx-1.3-landingpage-de')
   //   .withTargetVersion(Version.CX_1_3)
