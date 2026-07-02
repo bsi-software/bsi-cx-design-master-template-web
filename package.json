@@ -18,7 +18,7 @@
     "@bsi-cx/design-standard-library-web": "1.4.17"
   },
   "devDependencies": {
-    "@bsi-cx/design-build": "^2.0.1",
+    "@bsi-cx/design-build": "^1.14.1",
     "less": "4.4.2"
   }
 }
