@@ -529,7 +529,7 @@ module.exports = {
 
   /* ---------------------------- NPS ---------------------------- */
   // Setting to determine whether the NPS form should start at 0 or 1
-  npsStartWith0: true,
+  npsStartWithZero: true,
 
   /* ---------------------- Regex input--------------------------- */
   // If no text is selected, lorem ipsum sample text is used.
