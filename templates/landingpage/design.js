@@ -71,6 +71,7 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/form/advanced-file-upload'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/text-area'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/select'),
+        require("@bsi-cx/design-standard-library-web/content-elements/form/dynamic-select"),
         require('@bsi-cx/design-standard-library-web/content-elements/form/checkbox'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/radio'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/poll'),
@@ -81,4 +82,5 @@ module.exports = cx.design
       .withGroupId('footer-lJ2X2V')
       .withLabel('Footer')
       .withContentElements(
-        require('./content-elements/footer')));
+        require('./content-elements/footer')))
+      .withFeatureFormFieldRules(true);
