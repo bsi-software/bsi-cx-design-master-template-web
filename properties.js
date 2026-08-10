@@ -380,21 +380,6 @@ module.exports = {
 
 
   /* ============================================================= */
-  /*	                           Chart 	                           */
-  /* ============================================================= */
-
-  /* ------------------------ Chart colors ----------------------- */
-  chartBorderColor1: css.color('#116985ff'),
-  chartBorderColor2: css.color('#27aab0ff'),
-  chartBorderColor3: css.color('#94e7a8ff'),
-  chartBorderColor4: css.color('#c7f296ff'),
-  chartBackgroundColor1: css.color('#11698566'),
-  chartBackgroundColor2: css.color('#27aab066'),
-  chartBackgroundColor3: css.color('#94e7a866'),
-  chartBackgroundColor4: css.color('#c7f29666'),
-
-
-  /* ============================================================= */
   /*	                           Webcam Image	                     */
   /* ============================================================= */
   
