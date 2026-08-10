@@ -9,6 +9,7 @@ Hint: You will find the list of compatible BSI versions for each template in the
 
 ## Next
 * Add Feature FormfieldRules
+* Add dynamic select from standard library
 
 
 ## [1.3.10] - 15.04.2026
