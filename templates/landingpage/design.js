@@ -2,6 +2,8 @@ require('./styles/styles.scss');
 
 const {cx, SchemaVersion, Locale} = require('@bsi-cx/design-build');
 
+const { newFormElements } = require("@bsi-cx/design-standard-library-web/content-elements/new-form/form-elements");
+
 module.exports = cx.design
   .withSchemaVersion(SchemaVersion.V_22_0)
   .withTitle('BSI CX Master Template - Landingpage')
@@ -77,6 +79,16 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/form/audiorecorder'),
         // require("@bsi-cx/design-standard-library-web/content-elements/form/regex-input"), !!! set properties.regexPattern first !!!
       ),
+    // TODO: delete this group when the new form elements are tested to awoid using this new form in normal projects
+    // cx.contentElementGroup
+    //     .withGroupId('forms-5d136552')
+    //     /*.withLabel('Forms')*/
+    //     .withLabel('Neues Formular')
+    //     .withContentElements(
+    //       require('@bsi-cx/design-standard-library-web/content-elements/new-form/form-container'),
+    //       require('@bsi-cx/design-standard-library-web/content-elements/new-form/form-section'),
+    //       ...newFormElements,
+    //     ),
     cx.contentElementGroup
       .withGroupId('footer-lJ2X2V')
       .withLabel('Footer')

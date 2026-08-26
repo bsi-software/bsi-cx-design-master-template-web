@@ -35,5 +35,9 @@ module.exports = {
 
   /* ----------------------- Error Texts ------------------------- */
   errorRequiredText: 'Please fill out this field.',
-  errorInvalidText: 'The value you entered for this field is invalid.'
+  errorInvalidText: 'The value you entered for this field is invalid.',
+  // formErrorValueMissingText: 'Please fill out this field.',
+  // formErrorTypeMissmatchText: 'The format is invalid.',
+  // formOtherError: 'Invalid input.',
+  // emailInvalidText: 'You did not enter a valid email address. Example: mail@example.com'
 }
