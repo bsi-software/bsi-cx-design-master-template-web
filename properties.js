@@ -28,18 +28,17 @@ const formButtonResetColor = darkColor;
 const formButtonResetBackgroundColor = lightColor;
 const formPlaceholderColor = darkColor;
 const formErrorIconFontName = 'bootstrap-icons';
-const formErrorIconFontCharacter = '\F333';
+const formErrorIconFontCharacter = '"\\F333"';
 
-// formHoverColor: css.color('#383e42'),
-// formHoverBackgroundColor: css.color('#383e42'),  
+// const formHoverColor = css.color('#383e42');
+// const formHoverBackgroundColor = css.color('#383e42');
 
-// formButtonSubmitHoverColor: css.color('#ffffff'),
-// formButtonResetHoverColor: css.color('#383e42'),
-// formButtonSubmitHoverBackgroundColor: css.color('#2F4E66'),
-// formButtonResetHoverBackgroundColor: css.color('#ffffff'),
+// const formButtonSubmitHoverColor = css.color('#ffffff');
+// const formButtonResetHoverColor = css.color('#383e42');
+// const formButtonSubmitHoverBackgroundColor = css.color('#2F4E66');
+// const formButtonResetHoverBackgroundColor = css.color('#ffffff');
 
 module.exports = {
-
   /* ============================================================= */
   /*	                           Colors	                           */
   /* ============================================================= */
@@ -71,6 +70,12 @@ module.exports = {
   formPlaceholderColor,
   formErrorIconFontName,
   formErrorIconFontCharacter,
+  // formHoverColor,
+  // formHoverBackgroundColor,
+  // formButtonSubmitHoverColor,
+  // formButtonResetHoverColor,
+  // formButtonSubmitHoverBackgroundColor,
+  // formButtonResetHoverBackgroundColor,
 
 
   /* ============================================================= */
@@ -636,9 +641,9 @@ module.exports = {
 
   // // new formular field icons
   // checkboxIconFontName: 'bootstrap-icons',
-  // checkboxIconFontCharacter: '\F26E',
+  // checkboxIconFontCharacter: '"\\F26E"',
   // selectIconFontName: 'bootstrap-icons',
-  // selectIconFontCharacter: '\F282',
+  // selectIconFontCharacter: '"\\F282"',
 
   // // new formular fileupload
   // fileUploadBorderColor: css.color(formBorderColor.red, formBorderColor.green, formBorderColor.blue, 0.1),
@@ -652,9 +657,9 @@ module.exports = {
   // fileUploadButtonHoverBackgroundColor: css.color(primaryColor.red, primaryColor.green, primaryColor.blue, 0.1),
   // fileUploadButtonHoverFontColor: formButtonSubmitColor,
   // fileUploadIconUploadFontName: 'bootstrap-icons',
-  // fileUploadIconUploadFontCharacter: '\F296',
+  // fileUploadIconUploadFontCharacter: '"\\F296"',
   // fileUploadIconDeleteFontName: 'bootstrap-icons',
-  // fileUploadIconDeleteFontCharacter: '\F62A',
+  // fileUploadIconDeleteFontCharacter: '"\\F62A"',
   // fileUploadDeleteButtonBackgroundColor: darkColor,
   // fileUploadDeleteButtonHoverBackgroundColor: css.color(darkColor.red, darkColor.green, darkColor.blue, 0.3),
   // fileUploadDeleteButtonColor: lightColor,
