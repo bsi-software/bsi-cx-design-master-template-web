@@ -3,7 +3,6 @@
     <head>
         <title>{% verbatim %}{{ navigation.activePage.pageTitle }}{% endverbatim %}</title>
         {% include  './../shared/html-header.twig' %}
-        
         {# Delete if Google reCAPTCHA is unused #}
         <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
     </head>
@@ -20,6 +19,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 {% block navigation %}{% endblock %}
+                {% block logout_button %}{% endblock %}
             </div>
         </nav>
         {% block header %}{% endblock %}
