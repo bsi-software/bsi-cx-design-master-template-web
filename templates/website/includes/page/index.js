@@ -17,5 +17,6 @@ module.exports = cx.pageInclude
     cx.dropzone
       .withDropzone('page-content-dropzone-JPzHJO')
       .withAllowedElements(
+        require('@bsi-cx/design-standard-library-web/content-elements/base/carousel'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/html'),
         ...layoutElements));
