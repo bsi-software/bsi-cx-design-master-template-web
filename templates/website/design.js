@@ -87,6 +87,7 @@ module.exports = cx.design
       .withMaxNavigationLevel(2)
       .withIncludes(
         require("./includes/navigation"),
+        require("./includes/logout"),
         require("./includes/logo"),
         require("./includes/header"),
         require("./includes/page"),
