@@ -63,7 +63,7 @@ module.exports = {
   language: 'de',
 
   darkModeActiveProperty: false,
-  showLogoutButton: true,
+  showLogoutButton: false,
 
 
   /* ============================================================= */
