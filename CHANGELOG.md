@@ -9,6 +9,7 @@ Hint: You will find the list of compatible BSI versions for each template in the
 
 ## Next
 * Remove Regex Field (deprecated)
+* Add new content element group "Iterator" with the elements "Iterator" and "Produkt Iterator" (landingpage and website)
 
 
 ## [1.3.10] - 15.04.2026

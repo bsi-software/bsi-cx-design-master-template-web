@@ -27,6 +27,12 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/layout/col-four'),
         require('@bsi-cx/design-standard-library-web/content-elements/layout/spacer')),
     cx.contentElementGroup
+      .withGroupId('iterator-Rf5tWa')
+      .withLabel('Iterator')
+      .withContentElements(
+        require('@bsi-cx/design-standard-library-web/content-elements/iterator/iterator'),
+        require('@bsi-cx/design-standard-library-web/content-elements/iterator/product-iterator')),
+    cx.contentElementGroup
       .withGroupId('headings-J9rRcv')
       /*.withLabel('Headings')*/
       .withLabel('Überschriften')
