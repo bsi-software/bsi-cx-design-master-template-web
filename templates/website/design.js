@@ -79,7 +79,8 @@ module.exports = cx.design
         require("@bsi-cx/design-standard-library-web/content-elements/form/poll"),
         require('@bsi-cx/design-standard-library-web/content-elements/form/audiorecorder'),
         require("@bsi-cx/design-standard-library-web/content-elements/form/recaptcha")
-      )
+      ),
+      require('../shared/template-elements/group')
   )
   .withWebsite(
     cx.website

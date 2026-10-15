@@ -9,6 +9,7 @@ Hint: You will find the list of compatible BSI versions for each template in the
 
 ## Next
 * Remove Regex Field (deprecated)
+* POC for adding Template Elements in existing master template
 
 
 ## [1.3.10] - 15.04.2026

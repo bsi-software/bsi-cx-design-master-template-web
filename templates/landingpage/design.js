@@ -1,6 +1,6 @@
 require('./styles/styles.scss');
 
-const {cx, SchemaVersion, Locale} = require('@bsi-cx/design-build');
+const { cx, SchemaVersion, Locale } = require('@bsi-cx/design-build');
 
 module.exports = cx.design
   .withSchemaVersion(SchemaVersion.V_22_0)
@@ -76,6 +76,7 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/form/poll'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/audiorecorder')
       ),
+    require('../shared/template-elements/group'),
     cx.contentElementGroup
       .withGroupId('footer-lJ2X2V')
       .withLabel('Footer')
