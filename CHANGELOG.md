@@ -9,7 +9,13 @@ Hint: You will find the list of compatible BSI versions for each template in the
 
 ## Next
 * Add logout header dropzone
+* Add Feature FormfieldRules
+* Add dynamic select from standard library
+* Remove Chart from Master Template
+* Add npsStartWithZero property and set it to true
+* Add pollDefaultType property
 * Remove Regex Field (deprecated)
+* Add Friendly Captcha Element
 
 
 ## [1.3.10] - 15.04.2026
@@ -25,6 +31,7 @@ Hint: You will find the list of compatible BSI versions for each template in the
 * Add git pipeline to build master template
 * Add new if-else-group element
 * Reintroduce shared logo element extending `logo-with-darkmode` to restore centralized and brand-specific logo support
+
 
 ## [1.3.9] - 01.10.2025
 

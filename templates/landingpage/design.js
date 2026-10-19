@@ -55,7 +55,6 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/base/social-media-share'),
         require('@bsi-cx/design-standard-library-web/content-elements/advanced/webcam-image-upload'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/slot-finder'),
-        require('@bsi-cx/design-standard-library-web/content-elements/base/chart'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/html')),
     cx.contentElementGroup
       .withGroupId('forms-NjbmnQ')
@@ -71,13 +70,16 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/form/advanced-file-upload'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/text-area'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/select'),
+        require("@bsi-cx/design-standard-library-web/content-elements/form/dynamic-select"),
         require('@bsi-cx/design-standard-library-web/content-elements/form/checkbox'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/radio'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/poll'),
-        require('@bsi-cx/design-standard-library-web/content-elements/form/audiorecorder')
+        require('@bsi-cx/design-standard-library-web/content-elements/form/friendly-captcha'),
+        require('@bsi-cx/design-standard-library-web/content-elements/form/audiorecorder'),
       ),
     cx.contentElementGroup
       .withGroupId('footer-lJ2X2V')
       .withLabel('Footer')
       .withContentElements(
-        require('./content-elements/footer')));
+        require('./content-elements/footer')))
+      .withFeatureFormFieldRules(true);

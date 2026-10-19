@@ -380,21 +380,6 @@ module.exports = {
 
 
   /* ============================================================= */
-  /*	                           Chart 	                           */
-  /* ============================================================= */
-
-  /* ------------------------ Chart colors ----------------------- */
-  chartBorderColor1: css.color('#116985ff'),
-  chartBorderColor2: css.color('#27aab0ff'),
-  chartBorderColor3: css.color('#94e7a8ff'),
-  chartBorderColor4: css.color('#c7f296ff'),
-  chartBackgroundColor1: css.color('#11698566'),
-  chartBackgroundColor2: css.color('#27aab066'),
-  chartBackgroundColor3: css.color('#94e7a866'),
-  chartBackgroundColor4: css.color('#c7f29666'),
-
-
-  /* ============================================================= */
   /*	                           Webcam Image	                     */
   /* ============================================================= */
   
@@ -505,6 +490,10 @@ module.exports = {
   pollLabelRightText: '', // see translation in DE/EN files
   // If no text is selected, lorem ipsum sample text is used.
   pollInfoText: '',
+  // From the following choices, select the value that you want to be preselected:
+  // Classic NPS: 'poll-nps'
+  // Stars: 'poll-star'
+  pollDefaultType: 'poll-nps',
 
   /* -------------------------- Radio ---------------------------- */
   // If no text is selected, lorem ipsum sample text is used.
@@ -526,6 +515,10 @@ module.exports = {
   // If no text is selected, lorem ipsum sample text is used.
   textAreaLabelText: '',
   textAreaInfoText: '',
+
+  /* ---------------------------- NPS ---------------------------- */
+  // Setting to determine whether the NPS form should start at 0 or 1
+  npsStartWithZero: true,
 
   /* ----------------------- Error Texts ------------------------- */
   // This text is displayed below a form element if the field is required but has not been filled out.
