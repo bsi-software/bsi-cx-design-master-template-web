@@ -57,7 +57,6 @@ module.exports = cx.design
         require("@bsi-cx/design-standard-library-web/content-elements/base/social-media-share"),
         require("@bsi-cx/design-standard-library-web/content-elements/advanced/webcam-image-upload"),
         require("@bsi-cx/design-standard-library-web/content-elements/base/slot-finder"),
-        require("@bsi-cx/design-standard-library-web/content-elements/base/chart"),
         require("@bsi-cx/design-standard-library-web/content-elements/base/html")
       ),
     cx.contentElementGroup
@@ -79,8 +78,8 @@ module.exports = cx.design
         require("@bsi-cx/design-standard-library-web/content-elements/form/radio"),
         require("@bsi-cx/design-standard-library-web/content-elements/form/poll"),
         require('@bsi-cx/design-standard-library-web/content-elements/form/audiorecorder'),
-        require("@bsi-cx/design-standard-library-web/content-elements/form/recaptcha"),
-        // require("@bsi-cx/design-standard-library-web/content-elements/form/regex-input"), !!! set properties.regexPattern first !!!
+        require('@bsi-cx/design-standard-library-web/content-elements/form/friendly-captcha'),
+        require("@bsi-cx/design-standard-library-web/content-elements/form/recaptcha")
       )
   )
   .withFeatureFormFieldRules(true)
