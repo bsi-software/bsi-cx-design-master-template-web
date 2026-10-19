@@ -78,8 +78,7 @@ module.exports = cx.design
         require("@bsi-cx/design-standard-library-web/content-elements/form/poll"),
         require('@bsi-cx/design-standard-library-web/content-elements/form/audiorecorder'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/friendly-captcha'),
-        require("@bsi-cx/design-standard-library-web/content-elements/form/recaptcha"),
-        require("@bsi-cx/design-standard-library-web/content-elements/form/dynamic-select")
+        require("@bsi-cx/design-standard-library-web/content-elements/form/recaptcha")
       )
   )
   .withWebsite(
