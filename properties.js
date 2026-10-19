@@ -60,6 +60,8 @@ module.exports = {
   language: 'de',
 
   darkModeActiveProperty: false,
+  showLogoutButton: false,
+
 
   /* ============================================================= */
   /* ============================================================= */

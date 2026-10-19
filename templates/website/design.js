@@ -73,6 +73,7 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/form/advanced-file-upload'),
         require("@bsi-cx/design-standard-library-web/content-elements/form/text-area"),
         require("@bsi-cx/design-standard-library-web/content-elements/form/select"),
+        require("@bsi-cx/design-standard-library-web/content-elements/form/dynamic-select"),
         require("@bsi-cx/design-standard-library-web/content-elements/form/checkbox"),
         require("@bsi-cx/design-standard-library-web/content-elements/form/radio"),
         require("@bsi-cx/design-standard-library-web/content-elements/form/poll"),
@@ -81,11 +82,13 @@ module.exports = cx.design
         require("@bsi-cx/design-standard-library-web/content-elements/form/recaptcha")
       )
   )
+  .withFeatureFormFieldRules(true)
   .withWebsite(
     cx.website
       .withMaxNavigationLevel(2)
       .withIncludes(
         require("./includes/navigation"),
+        require("./includes/logout"),
         require("./includes/logo"),
         require("./includes/header"),
         require("./includes/page"),

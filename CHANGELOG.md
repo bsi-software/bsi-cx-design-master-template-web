@@ -9,6 +9,9 @@ Hint: You will find the list of compatible BSI versions for each template in the
 
 ## Next
 * Add property check for opening the social media link in a new tab.
+* Add logout header dropzone
+* Add Feature FormfieldRules
+* Add dynamic select from standard library
 * Remove Chart from Master Template
 * Add npsStartWithZero property and set it to true
 * Add pollDefaultType property
