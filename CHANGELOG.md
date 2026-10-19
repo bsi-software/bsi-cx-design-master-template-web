@@ -9,7 +9,7 @@ Hint: You will find the list of compatible BSI versions for each template in the
 
 ## Next
 * Remove Chart from Master Template
-
+* Remove Regex Field (deprecated)
 
 
 ## [1.3.10] - 15.04.2026
