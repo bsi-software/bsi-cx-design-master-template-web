@@ -9,6 +9,7 @@ Hint: You will find the list of compatible BSI versions for each template in the
 
 ## Next
 * Add logout header dropzone
+* Remove Regex Field (deprecated)
 
 
 ## [1.3.10] - 15.04.2026
