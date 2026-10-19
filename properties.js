@@ -234,8 +234,7 @@ module.exports = {
   textContent: '',
 
   /* --------------------- Text font family --------------------- */
-  textFontFamily:
-    'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
+  textFontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
 
   /* ------------------------ Text color ------------------------ */
   textColor: css.color('#383e42'),
