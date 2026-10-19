@@ -9,6 +9,19 @@ Hint: You will find the list of compatible BSI versions for each template in the
 
 ## Next
 * Add pollDefaultType property
+* Remove Regex Field (deprecated)
+
+
+## [1.3.10] - 15.04.2026
+
+### Changed
+* Add country-selection properties for tel-input element
+* Fix text-color for dark-mode
+
+
+## [1.3.10] - 08.04.2026
+
+### Changed
 * Add git pipeline to build master template
 * Add new if-else-group element
 * Reintroduce shared logo element extending `logo-with-darkmode` to restore centralized and brand-specific logo support

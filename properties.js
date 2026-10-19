@@ -496,6 +496,8 @@ module.exports = {
   // If no text is selected, lorem ipsum sample text is used.
   phoneLabelText: '',
   phoneInfoText: '',
+  phoneAvailableCountries: 'de, ch, at',
+  phoneCountryPreselect: 'de',
 
   /* --------------------------- Poll ---------------------------- */
   pollLabelText: '', // see translation in DE/EN files
@@ -528,14 +530,6 @@ module.exports = {
   // If no text is selected, lorem ipsum sample text is used.
   textAreaLabelText: '',
   textAreaInfoText: '',
-
-  /* ---------------------- Regex input--------------------------- */
-  // If no text is selected, lorem ipsum sample text is used.
-  regexLabelText: '',
-  regexInfoText: '',
-  // This property is a stringified JSON object which defines the available Regex patterns
-  // example: JSON.stringify({ "Datum": "\\d{2}\\.\\d{2}\\.\\d{4}", "PLZ": "[0-9]{5}", "KFZ": "[A-ZÖÜÄ]{1,3} [A-ZÖÜÄ]{1,2} [1-9]{1}[0-9]{1,3}" })
-  regexPattern: JSON.stringify({}),
 
   /* ----------------------- Error Texts ------------------------- */
   // This text is displayed below a form element if the field is required but has not been filled out.

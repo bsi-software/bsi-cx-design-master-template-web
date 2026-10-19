@@ -68,13 +68,13 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/form/if-then/then-group'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/form-field'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/form-field-tel'),
+        require('@bsi-cx/design-standard-library-web/content-elements/form/advanced-file-upload'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/text-area'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/select'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/checkbox'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/radio'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/poll'),
-        require('@bsi-cx/design-standard-library-web/content-elements/form/audiorecorder'),
-        // require("@bsi-cx/design-standard-library-web/content-elements/form/regex-input"), !!! set properties.regexPattern first !!!
+        require('@bsi-cx/design-standard-library-web/content-elements/form/audiorecorder')
       ),
     cx.contentElementGroup
       .withGroupId('footer-lJ2X2V')
