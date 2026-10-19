@@ -8,16 +8,23 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 Hint: You will find the list of compatible BSI versions for each template in the [Compatibility section of the README](https://github.com/bsi-software/bsi-cx-design-master-template-web?tab=readme-ov-file#compatibility).
 
 ## Next
-* Add property check for opening the social media link in a new tab.
-* Add logout header dropzone
-* Add Feature FormfieldRules
+
+
+
+## [1.5.3] - 19.10.2026
+
+### Changed
 * Add dynamic select from standard library
-* Remove Chart from Master Template
+* Add Feature FormfieldRules
+* Add Friendly Captcha Element
+* Add logout header dropzone
 * Add npsStartWithZero property and set it to true
 * Add pollDefaultType property
-* Remove Regex Field (deprecated)
+* Add property check for opening the social media link in a new tab.
 * POC for adding Template Elements in existing master template
-* Add Friendly Captcha Element
+* POC Script Element as Template Element
+* Remove Chart from Master Template
+* Remove Regex Field (deprecated)
 
 
 ## [1.3.10] - 15.04.2026

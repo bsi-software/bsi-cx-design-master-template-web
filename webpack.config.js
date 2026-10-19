@@ -22,7 +22,11 @@ const landingpageBuildConfig = new BuildConfig()
   .withAssetResourceRuleFilename('static/[name][ext]')
   .withPropertiesFilePath(path.resolve(__dirname, 'properties.js'))
   .withModulesRootPath('modules')
-  .withModules(...filesToCopy);
+  .withModules(
+    new ModuleConfig()
+      .withName('main')
+      .withPath('main.js'))
+  .withAdditionalFilesToCopy(...filesToCopy);
 
 
 const websiteBuildConfig = new BuildConfig()
@@ -34,8 +38,12 @@ const websiteBuildConfig = new BuildConfig()
   .withAssetResourceRuleFilename('static/[name][ext]')
   .withPropertiesFilePath(path.resolve(__dirname, 'properties.js'))
   .withModulesRootPath('modules')
-  .withModules(...filesToCopy)
-  .withAdditionalFilesToCopy();
+  .withModules(
+    new ModuleConfig()
+      .withName('main')
+      .withPath('main.js'))
+  .withAdditionalFilesToCopy(...filesToCopy);
+
 
 module.exports = WebpackConfigBuilder.fromConfigs(
   websiteBuildConfig.clone()
