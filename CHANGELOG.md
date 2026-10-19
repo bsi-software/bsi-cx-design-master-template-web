@@ -8,6 +8,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 Hint: You will find the list of compatible BSI versions for each template in the [Compatibility section of the README](https://github.com/bsi-software/bsi-cx-design-master-template-web?tab=readme-ov-file#compatibility).
 
 ## Next
+* Add pollDefaultType property
 * Remove Regex Field (deprecated)
 
 
@@ -24,6 +25,7 @@ Hint: You will find the list of compatible BSI versions for each template in the
 * Add git pipeline to build master template
 * Add new if-else-group element
 * Reintroduce shared logo element extending `logo-with-darkmode` to restore centralized and brand-specific logo support
+
 
 ## [1.3.9] - 01.10.2025
 
