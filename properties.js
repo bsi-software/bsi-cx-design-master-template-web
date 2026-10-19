@@ -531,6 +531,10 @@ module.exports = {
   textAreaLabelText: '',
   textAreaInfoText: '',
 
+  /* ---------------------------- NPS ---------------------------- */
+  // Setting to determine whether the NPS form should start at 0 or 1
+  npsStartWithZero: true,
+
   /* ----------------------- Error Texts ------------------------- */
   // This text is displayed below a form element if the field is required but has not been filled out.
   errorRequiredText: '', // see translation in DE/EN files
