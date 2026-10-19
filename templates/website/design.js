@@ -22,7 +22,8 @@ module.exports = cx.design
       .withGroupId("layout-EhFpQ7")
       .withLabel("Layout")
       .withContentElements(
-        require("@bsi-cx/design-standard-library-web/content-elements/layout/col-one"),
+        require("@bsi-cx/design-standard-library-web/content-elements/layout/col-one")
+          .withExtendAllDropzones(require("../shared/template-elements/script")),
         require("@bsi-cx/design-standard-library-web/content-elements/layout/col-two"),
         require("@bsi-cx/design-standard-library-web/content-elements/layout/col-three"),
         require("@bsi-cx/design-standard-library-web/content-elements/layout/col-four"),
@@ -80,7 +81,8 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/form/audiorecorder'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/friendly-captcha'),
         require("@bsi-cx/design-standard-library-web/content-elements/form/recaptcha")
-      )
+      ),
+      require('../shared/template-elements/group')
   )
   .withFeatureFormFieldRules(true)
   .withWebsite(

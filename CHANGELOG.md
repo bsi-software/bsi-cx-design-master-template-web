@@ -16,6 +16,7 @@ Hint: You will find the list of compatible BSI versions for each template in the
 * Add npsStartWithZero property and set it to true
 * Add pollDefaultType property
 * Remove Regex Field (deprecated)
+* POC for adding Template Elements in existing master template
 * Add Friendly Captcha Element
 
 

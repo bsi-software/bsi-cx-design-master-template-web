@@ -1,7 +1,17 @@
 const path = require('path');
 const package = require('./package.json');
 
-const {BuildConfig, WebpackConfigBuilder, Version, DesignType, ModuleConfig} = require('@bsi-cx/design-build');
+const { BuildConfig, WebpackConfigBuilder, Version, DesignType, ModuleConfig } = require('@bsi-cx/design-build');
+
+const filesToCopy = [{
+  from: path.resolve(__dirname, 'templates', 'shared', 'static', 'header.png'),
+  to: 'static/header.png',
+},
+{
+  from: '../shared/template-elements/**/*.json',
+  to: 'context/[name][ext]'
+}
+]
 
 const landingpageBuildConfig = new BuildConfig()
   .withName('master-template-cx-22.0-landingpage')
@@ -12,15 +22,8 @@ const landingpageBuildConfig = new BuildConfig()
   .withAssetResourceRuleFilename('static/[name][ext]')
   .withPropertiesFilePath(path.resolve(__dirname, 'properties.js'))
   .withModulesRootPath('modules')
-  .withModules(
-    new ModuleConfig()
-      .withName('main')
-      .withPath('main.js'))
-  .withAdditionalFilesToCopy({
-    from: path.resolve(__dirname, 'templates', 'shared', 'static', 'header.png'),
-    to: 'static/header.png',
-  });
-      
+  .withModules(...filesToCopy);
+
 
 const websiteBuildConfig = new BuildConfig()
   .withName('master-template-cx-22.0-website')
@@ -31,14 +34,8 @@ const websiteBuildConfig = new BuildConfig()
   .withAssetResourceRuleFilename('static/[name][ext]')
   .withPropertiesFilePath(path.resolve(__dirname, 'properties.js'))
   .withModulesRootPath('modules')
-  .withModules(
-    new ModuleConfig()
-      .withName('main')
-      .withPath('main.js'))
-  .withAdditionalFilesToCopy({
-    from: path.resolve(__dirname, 'templates', 'shared', 'static', 'header.png'),
-    to: 'static/header.png',
-  });
+  .withModules(...filesToCopy)
+  .withAdditionalFilesToCopy();
 
 module.exports = WebpackConfigBuilder.fromConfigs(
   websiteBuildConfig.clone()
@@ -81,4 +78,5 @@ module.exports = WebpackConfigBuilder.fromConfigs(
     .withPropertiesFilePath(path.resolve(__dirname, 'properties-de.js')),
   landingpageBuildConfig.clone()
     .withName('master-template-cx-22.0-landingpage-en')
-    .withPropertiesFilePath(path.resolve(__dirname, 'properties-en.js')));
+    .withPropertiesFilePath(path.resolve(__dirname, 'properties-en.js'))
+);

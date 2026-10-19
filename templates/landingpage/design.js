@@ -1,6 +1,6 @@
 require('./styles/styles.scss');
 
-const {cx, SchemaVersion, Locale} = require('@bsi-cx/design-build');
+const { cx, SchemaVersion, Locale } = require('@bsi-cx/design-build');
 
 module.exports = cx.design
   .withSchemaVersion(SchemaVersion.V_22_0)
@@ -21,7 +21,8 @@ module.exports = cx.design
       .withGroupId('layout-EhFpQ7')
       .withLabel('Layout')
       .withContentElements(
-        require('@bsi-cx/design-standard-library-web/content-elements/layout/col-one'),
+        require('@bsi-cx/design-standard-library-web/content-elements/layout/col-one')
+          .withExtendAllDropzones(require('../shared/template-elements/script')),
         require('@bsi-cx/design-standard-library-web/content-elements/layout/col-two'),
         require('@bsi-cx/design-standard-library-web/content-elements/layout/col-three'),
         require('@bsi-cx/design-standard-library-web/content-elements/layout/col-four'),
@@ -77,6 +78,7 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/form/friendly-captcha'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/audiorecorder'),
       ),
+    require('../shared/template-elements/group'),
     cx.contentElementGroup
       .withGroupId('footer-lJ2X2V')
       .withLabel('Footer')
