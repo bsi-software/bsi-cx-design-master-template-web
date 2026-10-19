@@ -1,3 +1,5 @@
+require('./styles.scss');
+
 module.exports = {
     type: "template-element",
     elementId: "script-m7vt8z",

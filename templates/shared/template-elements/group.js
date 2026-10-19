@@ -5,5 +5,4 @@ module.exports = cx.contentElementGroup
     .withLabel('Template Elements')
     .withMinVersion(Version.CX_25_2)
     .withRawContentElements(
-        require('./plainText'),
         require('./script'))

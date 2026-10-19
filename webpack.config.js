@@ -40,7 +40,7 @@ const websiteBuildConfig = new BuildConfig()
     to: 'static/header.png',
   },{
     from: '../shared/template-elements/**/*.json',
-    to: 'context/[name].[ext]'
+    to: 'context/[name][ext]'
   });
 
 module.exports = WebpackConfigBuilder.fromConfigs(
