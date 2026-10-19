@@ -1,4 +1,4 @@
-const {css} = require('@bsi-cx/design-build');
+const { css } = require('@bsi-cx/design-build');
 
 const primaryColor = css.color('#16616d');
 const secondaryColor = css.color('#ff7d00');
@@ -14,7 +14,6 @@ const recordingColor = css.color('#ff0000');
 const darkModeTextColor = lightColor;
 
 module.exports = {
-
   /* ============================================================= */
   /*	                           Colors	                           */
   /* ============================================================= */
@@ -41,7 +40,6 @@ module.exports = {
   // To change the font family of the following elements, please scroll down and adjust it there: title H1-H3, text
   primaryFontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
 
-
   /* ============================================================= */
   /*	                      Grid breakpoint	                       */
   /* ============================================================= */
@@ -54,7 +52,6 @@ module.exports = {
   gridBreakpointXL: '1200px',
   gridBreakpointXXL: '1400px',
 
-
   /* ============================================================= */
   /*	                          Language	                         */
   /* ============================================================= */
@@ -63,7 +60,7 @@ module.exports = {
   language: 'de',
 
   darkModeActiveProperty: false,
-
+  showLogoutButton: false,
 
 
   /* ============================================================= */
@@ -71,8 +68,6 @@ module.exports = {
   /*              Content elements - Master Template               */
   /* ============================================================= */
   /* ============================================================= */
-
-
 
   /* ============================================================= */
   /*	                            Logo   	                         */
@@ -87,14 +82,12 @@ module.exports = {
   /* ------------------------- Logo width ------------------------ */
   logoWidth: '60px',
 
-
   /* ============================================================= */
   /*	                        Header image	                       */
   /* ============================================================= */
 
   /* -------------------- Header image height -------------------- */
   headerImageHeight: '250px',
-
 
   /* ============================================================= */
   /*	                           Footer 	                         */
@@ -114,14 +107,11 @@ module.exports = {
   // Show background gradient: 'bg-gradient'
   footerGradient: 'bg-gradient',
 
-
   /* ============================================================= */
   /* ============================================================= */
   /*              Content elements - Standard Library              */
   /* ============================================================= */
   /* ============================================================= */
-
-
 
   /* ============================================================= */
   /*	                           Button	                           */
@@ -168,7 +158,6 @@ module.exports = {
   // Default: 'bsi-btn-letter-default'
   // All uppercase: 'bsi-btn-letter-uppercase'
   buttonLetterCase: 'bsi-btn-letter-default',
-
 
   /* ============================================================= */
   /*	                       Title H1 - H3	                       */
@@ -294,16 +283,16 @@ module.exports = {
   followIconSize: 'bsi-icon-size-medium',
 
   /* -------------------- Social Media URLs ---------------------- */
-  followLinkedinURL: "https://www.linkedin.com/",
-  followXingURL: "https://www.xing.com/",
-  followXURL: "https://www.x.com/",
-  followFacebookURL: "https://www.facebook.com/",
-  followYoutubeURL: "https://www.youtube.com/",
-  followInstagramURL: "https://www.instagram.com/",
-  followKununuURL: "https://www.kununu.com/",
-  followWhatsappURL: "https://api.whatsapp.com/",
-  followPinterestURL: "https://www.pinterest.com/",
-  followSnapchatURL: "https://www.snapchat.com/",
+  followLinkedinURL: 'https://www.linkedin.com/',
+  followXingURL: 'https://www.xing.com/',
+  followXURL: 'https://www.x.com/',
+  followFacebookURL: 'https://www.facebook.com/',
+  followYoutubeURL: 'https://www.youtube.com/',
+  followInstagramURL: 'https://www.instagram.com/',
+  followKununuURL: 'https://www.kununu.com/',
+  followWhatsappURL: 'https://api.whatsapp.com/',
+  followPinterestURL: 'https://www.pinterest.com/',
+  followSnapchatURL: 'https://www.snapchat.com/',
 
   /* ------------------------- Hide icons ------------------------- */
   // Set the following 'hidden' properties to true, if you want the respective social media icons to be hidden in the preselection.
@@ -318,6 +307,9 @@ module.exports = {
   followPinterestHidden: true,
   followSnapchatHidden: true,
 
+  /* ------------------------- Hide icons ------------------------- */
+  // Set this variable to true if you want the social media link to open in a new tab.
+  openSocialMediaOnANewTab: false,
 
   /* ============================================================= */
   /*	                     Social Media Share	                   */
@@ -346,14 +338,13 @@ module.exports = {
   // Large: 'bsi-icon-size-large'
   shareIconSize: 'bsi-icon-size-medium',
 
-
   /* ============================================================= */
   /*	                           Banner 	                         */
   /* ============================================================= */
 
   /* ----------------------- Banner height ----------------------- */
   bannerHeight: '250px',
-  
+
   /* -------------------- Banner Vertical Alignment --------------------- */
   // From the following choices, select the value that you want to be preselected:
   // Top: 'bsi-vertical-align-top'
@@ -366,8 +357,7 @@ module.exports = {
   // Left: 'bsi-horizontal-align-left'
   // Center: 'bsi-horizontal-align-center'
   // Right: 'bsi-horizontal-align-right'
-  bannerHorizontalAlignment: 'bsi-horizontal-align-center',  
-
+  bannerHorizontalAlignment: 'bsi-horizontal-align-center',
 
   /* ============================================================= */
   /*	                           Video 	                           */
@@ -378,26 +368,10 @@ module.exports = {
   // Please enter the YouTube embed URL, e.g. https://www.youtube.com/embed/Ekc_4btc-iM, which can be copied by clicking the 'Share' button below a YouTube video.
   videoURL: 'https://www.youtube.com/embed/Ekc_4btc-iM',
 
-
-  /* ============================================================= */
-  /*	                           Chart 	                           */
-  /* ============================================================= */
-
-  /* ------------------------ Chart colors ----------------------- */
-  chartBorderColor1: css.color('#116985ff'),
-  chartBorderColor2: css.color('#27aab0ff'),
-  chartBorderColor3: css.color('#94e7a8ff'),
-  chartBorderColor4: css.color('#c7f296ff'),
-  chartBackgroundColor1: css.color('#11698566'),
-  chartBackgroundColor2: css.color('#27aab066'),
-  chartBackgroundColor3: css.color('#94e7a866'),
-  chartBackgroundColor4: css.color('#c7f29666'),
-
-
   /* ============================================================= */
   /*	                           Webcam Image	                     */
   /* ============================================================= */
-  
+
   /* -------------------- Main button color ------------------- */
   // From the following choices, select the value that you want to be preselected:
   // Primary color: 'bsi-btn-color-primary'
@@ -432,7 +406,6 @@ module.exports = {
   // Outline: 'bsi-form-btn-outline'
   webcamImgAlternativeButtonLayout: 'bsi-btn-outline',
 
-  
   /* ============================================================= */
   /*	                           Form 	                           */
   /* ============================================================= */
@@ -505,6 +478,10 @@ module.exports = {
   pollLabelRightText: '', // see translation in DE/EN files
   // If no text is selected, lorem ipsum sample text is used.
   pollInfoText: '',
+  // From the following choices, select the value that you want to be preselected:
+  // Classic NPS: 'poll-nps'
+  // Stars: 'poll-star'
+  pollDefaultType: 'poll-nps',
 
   /* -------------------------- Radio ---------------------------- */
   // If no text is selected, lorem ipsum sample text is used.
@@ -514,7 +491,7 @@ module.exports = {
   // From the following choices, select the value that you want to be preselected:
   // Radios below each other: 'bsi-radio-block'
   // Radios next to each other: 'bsi-radio-inline'
-  radioOrientationStyle:'bsi-radio-block',
+  radioOrientationStyle: 'bsi-radio-block',
 
   /* ------------------------- Select ---------------------------- */
   // If no text is selected, lorem ipsum sample text is used.
@@ -527,12 +504,15 @@ module.exports = {
   textAreaLabelText: '',
   textAreaInfoText: '',
 
+  /* ---------------------------- NPS ---------------------------- */
+  // Setting to determine whether the NPS form should start at 0 or 1
+  npsStartWithZero: true,
+
   /* ----------------------- Error Texts ------------------------- */
   // This text is displayed below a form element if the field is required but has not been filled out.
   errorRequiredText: '', // see translation in DE/EN files
   // This text is displayed below a form element if the input does not match the expected format.
   errorInvalidText: '', // see translation in DE/EN files
-
 
   /* ============================================================= */
   /*	                          Columns 	                         */
@@ -546,5 +526,5 @@ module.exports = {
   colOneAlignment: 'bsi-col-align-left',
   colTwoAlignment: 'bsi-col-align-left',
   colThreeAlignment: 'bsi-col-align-left',
-  colFourAlignment: 'bsi-col-align-left'
-}
+  colFourAlignment: 'bsi-col-align-left',
+};
