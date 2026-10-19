@@ -10,6 +10,7 @@ Hint: You will find the list of compatible BSI versions for each template in the
 ## Next
 * Add pollDefaultType property
 * Remove Regex Field (deprecated)
+* Add Friendly Captcha Element
 
 
 ## [1.3.10] - 15.04.2026
