@@ -75,7 +75,6 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/form/poll'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/friendly-captcha'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/audiorecorder'),
-        require("@bsi-cx/design-standard-library-web/content-elements/form/dynamic-select")
       ),
     cx.contentElementGroup
       .withGroupId('footer-lJ2X2V')
