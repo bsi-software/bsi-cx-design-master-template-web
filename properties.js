@@ -38,8 +38,7 @@ module.exports = {
 
   // Elements using primaryFontFamily: all elements that do not explicitly have another font assigned to them
   // To change the font family of the following elements, please scroll down and adjust it there: title H1-H3, text
-  primaryFontFamily:
-    'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
+  primaryFontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
 
   /* ============================================================= */
   /*	                      Grid breakpoint	                       */
@@ -169,18 +168,12 @@ module.exports = {
   titleH3Text: '',
 
   /* --------------------- Title font family --------------------- */
-  titleStyle1FontFamily:
-    'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
-  titleStyle2FontFamily:
-    'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
-  titleStyle3FontFamily:
-    'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
-  titleStyle4FontFamily:
-    'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
-  titleStyle5FontFamily:
-    'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
-  titleStyle6FontFamily:
-    'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
+  titleStyle1FontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
+  titleStyle2FontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
+  titleStyle3FontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
+  titleStyle4FontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
+  titleStyle5FontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
+  titleStyle6FontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
 
   /* ---------------------- Title font size ---------------------- */
   // if no fontSizeMobile for title is set, the same fontSize is used like normal title fontSize
