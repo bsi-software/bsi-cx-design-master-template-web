@@ -7,9 +7,12 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Hint: You will find the list of compatible BSI versions for each template in the [Compatibility section of the README](https://github.com/bsi-software/bsi-cx-design-master-template-web?tab=readme-ov-file#compatibility).
 
-## Next
+
+## [1.6.0] - Next release
+* Change webpack.config to just build the used version with project prefix
 
 
+[1.6.0]: https://github.com/bsi-software/bsi-cx-design-master-template-web/releases/tag/1.6.0
 
 ## [1.5.3] - 19.10.2026
 
