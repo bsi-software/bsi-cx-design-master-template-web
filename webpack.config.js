@@ -8,9 +8,11 @@ const version = Version.CX_25_2;
 
 const templatesToGenerate = [
   { designType: "landingpage" },
-  { designType: "landingpage", properties: '-en' },
+  { designType: "landingpage", langSuffix: '-en' },
   { designType: "website" },
 ]
+
+// end project properties
 
 const filesToCopy = [
   {
@@ -37,5 +39,5 @@ const build = (designType, langSuffix = "") => new BuildConfig()
   .withAdditionalFilesToCopy(...filesToCopy);
 
 module.exports = WebpackConfigBuilder.fromConfigs(
-  ...templatesToGenerate.map(template => build(template.designType, template.properties))
+  ...templatesToGenerate.map(template => build(template.designType, template.langSuffix))
 );
