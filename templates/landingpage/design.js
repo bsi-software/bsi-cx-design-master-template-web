@@ -28,12 +28,6 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/layout/col-four'),
         require('@bsi-cx/design-standard-library-web/content-elements/layout/spacer')),
     cx.contentElementGroup
-      .withGroupId('iterator-Rf5tWa')
-      .withLabel('Iterator')
-      .withContentElements(
-        require('@bsi-cx/design-standard-library-web/content-elements/iterator/iterator'),
-        require('@bsi-cx/design-standard-library-web/content-elements/iterator/product-iterator')),
-    cx.contentElementGroup
       .withGroupId('headings-J9rRcv')
       /*.withLabel('Headings')*/
       .withLabel('Überschriften')
@@ -70,8 +64,6 @@ module.exports = cx.design
       .withContentElements(
         require('@bsi-cx/design-standard-library-web/content-elements/form/form-container'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/multi-column'),
-        require('@bsi-cx/design-standard-library-web/content-elements/form/if-then/if-layout'),
-        require('@bsi-cx/design-standard-library-web/content-elements/form/if-then/then-group'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/form-field'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/form-field-tel'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/advanced-file-upload'),
@@ -90,4 +82,4 @@ module.exports = cx.design
       .withLabel('Footer')
       .withContentElements(
         require('./content-elements/footer')))
-      .withFeatureFormFieldRules(true);
+  .withFeatureFormFieldRules(true);
