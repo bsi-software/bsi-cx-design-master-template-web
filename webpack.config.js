@@ -8,7 +8,7 @@ const version = Version.CX_25_2;
 
 const templatesToGenerate = [
   { designType: "landingpage" },
-  { designType: "landingpage", langSuffix: '-en' },
+  // { designType: "landingpage", langSuffix: '-en' },
   { designType: "website" },
 ]
 
