@@ -9,11 +9,14 @@ Hint: You will find the list of compatible BSI versions for each template in the
 
 
 ## [1.6.0] - Next release
+
+### Changed
 * Change webpack.config to just build the used version with project prefix
+* Add testing script for Standard Library
 * Add new content element group "Iterator" with the elements "Iterator" and "Produkt Iterator" (landingpage and website)
 
-
 [1.6.0]: https://github.com/bsi-software/bsi-cx-design-master-template-web/releases/tag/1.6.0
+
 
 ## [1.5.3] - 19.10.2026
 
