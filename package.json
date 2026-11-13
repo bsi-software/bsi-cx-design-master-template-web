@@ -15,7 +15,8 @@
     "url": "https://bsi-software.github.io/bsi-cx-docs/"
   },
   "dependencies": {
-    "@bsi-cx/design-standard-library-web": "file:../bsi-cx-design-standard-library-web/bsi-cx-design-standard-library-web-1.6.0.tgz"
+    "@bsi-cx/design-standard-library-web": "file:../bsi-cx-design-standard-library-web/bsi-cx-design-standard-library-web-1.6.0.tgz",
+    "@bsi-cx/web-frontend": "file:./bsi-cx-web-frontend-26.1.2.tgz"
   },
   "devDependencies": {
     "@bsi-cx/design-build": "^1.14.3"
