@@ -4,7 +4,7 @@ const { BuildConfig, WebpackConfigBuilder, Version, DesignType, ModuleConfig } =
 
 // project Properties
 const project = "master-template";
-const version = Version.CX_25_2;
+const version = Version.CX_26_2;
 
 const templatesToGenerate = [
   { designType: "landingpage" },
