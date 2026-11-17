@@ -1,6 +1,6 @@
 require("./styles/styles.scss");
 
-const { cx, SchemaVersion, Locale } = require("@bsi-cx/design-build");
+const { cx, SchemaVersion, Locale, WebsiteContentType } = require("@bsi-cx/design-build");
 
 module.exports = cx.design
   .withSchemaVersion(SchemaVersion.V_22_0)
@@ -73,8 +73,6 @@ module.exports = cx.design
       .withContentElements(
         require("@bsi-cx/design-standard-library-web/content-elements/form/form-container"),
         require("@bsi-cx/design-standard-library-web/content-elements/form/multi-column"),
-        require('@bsi-cx/design-standard-library-web/content-elements/form/if-then/if-layout'),
-        require('@bsi-cx/design-standard-library-web/content-elements/form/if-then/then-group'),
         require("@bsi-cx/design-standard-library-web/content-elements/form/form-field"),
         require("@bsi-cx/design-standard-library-web/content-elements/form/form-field-tel"),
         require('@bsi-cx/design-standard-library-web/content-elements/form/advanced-file-upload'),
@@ -88,7 +86,7 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/form/friendly-captcha'),
         require("@bsi-cx/design-standard-library-web/content-elements/form/recaptcha")
       ),
-      require('../shared/template-elements/group')
+    require('../shared/template-elements/group')
   )
   .withFeatureFormFieldRules(true)
   .withWebsite(
@@ -102,4 +100,9 @@ module.exports = cx.design
         require("./includes/page"),
         require("./includes/footer")
       )
-  );
+  )
+  .withWebsiteContentTypes(
+    WebsiteContentType.BLOG,
+    WebsiteContentType.POP_UP,
+    WebsiteContentType.PRESS_RELEASE,
+    WebsiteContentType.EVENT);

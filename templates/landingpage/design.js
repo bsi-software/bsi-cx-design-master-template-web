@@ -70,8 +70,6 @@ module.exports = cx.design
       .withContentElements(
         require('@bsi-cx/design-standard-library-web/content-elements/form/form-container'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/multi-column'),
-        require('@bsi-cx/design-standard-library-web/content-elements/form/if-then/if-layout'),
-        require('@bsi-cx/design-standard-library-web/content-elements/form/if-then/then-group'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/form-field'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/form-field-tel'),
         require('@bsi-cx/design-standard-library-web/content-elements/form/advanced-file-upload'),
@@ -90,4 +88,4 @@ module.exports = cx.design
       .withLabel('Footer')
       .withContentElements(
         require('./content-elements/footer')))
-      .withFeatureFormFieldRules(true);
+  .withFeatureFormFieldRules(true);
