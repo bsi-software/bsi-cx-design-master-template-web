@@ -8,6 +8,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 Hint: You will find the list of compatible BSI versions for each template in the [Compatibility section of the README](https://github.com/bsi-software/bsi-cx-design-master-template-web?tab=readme-ov-file#compatibility).
 
 
+
 ## [1.6.0] - 17.11.2026
 
 ### Changed
@@ -15,6 +16,7 @@ Hint: You will find the list of compatible BSI versions for each template in the
 * Add support for website content types
 * Add testing script for Standard Library
 * Change webpack.config to just build the used version with project prefix
+* HOTFIX: Script element is only available for 26.1
 
 [1.6.0]: https://github.com/bsi-software/bsi-cx-design-master-template-web/releases/tag/1.6.0
 
