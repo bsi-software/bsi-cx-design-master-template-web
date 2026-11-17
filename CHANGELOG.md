@@ -7,9 +7,18 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Hint: You will find the list of compatible BSI versions for each template in the [Compatibility section of the README](https://github.com/bsi-software/bsi-cx-design-master-template-web?tab=readme-ov-file#compatibility).
 
-## Next
+
+
+## [1.6.0] - 17.11.2026
+
+### Changed
+* Add new content element group "Iterator" with the elements "Iterator" and "Produkt Iterator" (landingpage and website)
+* Add support for website content types
+* Add testing script for Standard Library
+* Change webpack.config to just build the used version with project prefix
 * HOTFIX: Script element is only available for 26.1
 
+[1.6.0]: https://github.com/bsi-software/bsi-cx-design-master-template-web/releases/tag/1.6.0
 
 
 ## [1.5.3] - 19.10.2026
