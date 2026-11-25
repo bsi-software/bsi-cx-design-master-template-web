@@ -27,7 +27,7 @@ const filesToCopy = [
 ]
 
 const build = (designType, langSuffix = "") => new BuildConfig()
-  .withName([project, version._value.substring(0, 4), designType + langSuffix].join("-"))
+  .withName([project, version._value.substring(0, 4), `${designType}${langSuffix}`].join("_"))
   .withVersion(package.version)
   .withDesignType(designType === "landingpage" ? DesignType.LANDINGPAGE : DesignType.WEBSITE)
   .withTargetVersion(version)
